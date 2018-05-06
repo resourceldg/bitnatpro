@@ -1,0 +1,42 @@
+{% load i18n %}
+<ul class="statistics">
+  <li>
+    {% blocktrans count author_count=authors %}{{ author_count }} autor{% plural %}{{ author_count }} autores{% endblocktrans %}
+  </li>
+  <li>
+    {% blocktrans count entry_count=entries %}{{ entry_count }} entrada{% plural %}{{ entry_count }} entradas{% endblocktrans %}
+  </li>
+  <li>
+    {% blocktrans count tag_count=tags %}{{ tag_count }} Etiqueta{% plural %}{{ tag_count }} Etiquetas{% endblocktrans %}
+  </li>
+  <li>
+    {% blocktrans count category_count=categories %}{{ category_count }} categoría{% plural %}{{ category_count }} categorías{% endblocktrans %}
+  </li>
+  <li>
+    {% blocktrans count comment_count=comments %}{{ comment_count }} comentario{% plural %}{{ comment_count }} comentarios{% endblocktrans %}
+  </li>
+  <li>
+    {% blocktrans count pingback_count=pingbacks %}{{ pingback_count }} pingback{% plural %}{{ pingback_count }} pingbacks{% endblocktrans %}
+  </li>
+  <li>
+    {% blocktrans count trackback_count=trackbacks %}{{ trackback_count }} trackback{% plural %}{{ trackback_count }} trackbacks{% endblocktrans %}
+  </li>
+  <li>
+    {% blocktrans count reject_count=rejects %}{{ reject_count }}Artículo rechazado{% plural %}{{ reject_count }} Artículos rechazados{% endblocktrans %}
+  </li>
+  <li>
+    {% blocktrans with entries_per_month=entries_per_month|floatformat:2 %}{{ entries_per_month }} Entradas por mes{% endblocktrans %}
+  </li>
+  <li>
+    {% blocktrans with words_per_entry=words_per_entry|floatformat:2 %}{{ words_per_entry }} Palabras por entrada{% endblocktrans %}
+  </li>
+  <li>
+    {% blocktrans with words_per_comment=words_per_comment|floatformat:2 %}{{ words_per_comment }} Palabras por comentario{% endblocktrans %}
+  </li>
+  <li>
+    {% blocktrans with comments_per_entry=comments_per_entry|floatformat:2 %}{{ comments_per_entry }} Comentarios por entrada{% endblocktrans %}
+  </li>
+  <li>
+    {% blocktrans with linkbacks_per_entry=linkbacks_per_entry|floatformat:2 %}{{ linkbacks_per_entry }} Enlaces por entrada{% endblocktrans %}
+  </li>
+</ul>
