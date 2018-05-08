@@ -50,7 +50,7 @@ class Contact(View):
                     to=[settings.EMAIL_HOST_USER],
                 )
                 email_message.content_subtype = 'html'
-                #email_message.send()
+                email_message.send()
                 return HttpResponseRedirect('gracias', {'form': form})
 
         else:

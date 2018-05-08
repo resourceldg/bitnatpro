@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '*fkewr^5v&!sz4(+0=v)c%h1)6tw_+m_-2zo)+^srum871j*_s'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['bitnativo.com','168.181.185.152']
 
 #ADMINS = ('peluca', 'resourceldg@gmail.com')
 #MANAGERS = ('pelucas', 'resourceldg@gmail.com')
@@ -99,9 +99,9 @@ WSGI_APPLICATION = 'btn.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'btndb',
-        'USER': 'userbtn',
-        'PASSWORD': 'userbtn',
+        'NAME': 'basedatos',
+        'USER': 'btn',
+        'PASSWORD': 'btn',
         'HOST': 'localhost',
         'PORT': '',
     }
@@ -146,9 +146,9 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATICFILES_DIRS = os.path.join(BASE_DIR, "static_pro", "static"),
+STATICFILES_DIRS= os.path.join(BASE_DIR, "static_pro", "static"),
 MEDIA_URL = '/media/'
 
 
 STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), "static_s", "static_root")
-MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), "static_s", "media_root")
+#MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), "static_s", "media_root")
