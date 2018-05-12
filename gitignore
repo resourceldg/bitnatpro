@@ -21,6 +21,7 @@ views.py
 manage.py
 forms.py
 urls.py
+bitnat/
 __pycache__/
 build/
 dist/
