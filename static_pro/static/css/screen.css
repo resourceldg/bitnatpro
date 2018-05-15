@@ -423,7 +423,7 @@ table {
       display: none; }
   .zinnia #header .top-navigation {
     margin: 0;
-    padding-right: 2em;
+    padding-right: 1em;
     padding-top: 1em;
     float: right;
     display: none; }
@@ -444,7 +444,9 @@ table {
       padding-left: 1.5em; }
   @media (min-width: 480px) {
     .zinnia #header form, .zinnia #header .top-navigation {
-      display: block; }
+      display: block;
+
+       }
     .zinnia #header h1{
      font-size: 2em;
      } }
@@ -577,11 +579,14 @@ table {
     right: -2em; } }
 @media (max-width: 600px) {
       .social-btns {
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
 }
     }
-@media (max-width: 400px) {
+@media (max-width: 480px) {
+     .social-btns {
+    font-size: 16px;
+    }
   .zinnia .slider-container {
     display: none; }
     .ana p{
@@ -593,6 +598,7 @@ table {
   display: none; }
 
 @media (min-width: 480px) {
+
   .zinnia .breadcrumbs {
     display: block;
     margin: 0;
@@ -793,9 +799,9 @@ table {
   background-color: #fff;
   background: transparent url("../images/background.gif") repeat-x scroll left top; }
   .zinnia.default h1, .zinnia.default h2, .zinnia.default h3, .zinnia.default h4, .zinnia.default h5, .zinnia.default h6 {
-    color: #333; }
+    color: #fff; }
   .zinnia.default a {
-    color: #666; }
+    color: #fff; }
     .zinnia.default a:visited {
       color: #666; }
     .zinnia.default a:focus {
@@ -1179,21 +1185,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', end
 
 .zinnia.blue h1, .zinnia.blue h3, .zinnia.blue h4, .zinnia.blue h5, .zinnia.blue h6 {
  padding-left:1em;
-  color:  #f8fbfb; }
+
+  }
 
 .zinnia.blue a {
   padding-left:1em;
-  color: #074489; }
-  .zinnia.blue a:visited {
-    color: #268bd2; }
-  .zinnia.blue a:focus {
-    color: #f3f6f9; }
+  color:#000; }
+
   .zinnia.blue a:hover {
 
-    color: #eef6f6;
+     color:#33e0ff;
     }
-  .zinnia.blue a:active {
-    color: #333;}
+
 
 .zinnia.blue ol.flex-control-nav li a.active {
   background: #268bd2; }
@@ -1251,7 +1254,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', end
   padding: 0.5em;
   margin-bottom: 1em; }
   .zinnia .info a {
-    font-weight: bold;
+     <div class= "glob"> <h2><a href="{% url 'zinnia:entry_archive_index' %}">Blog</a></h2></div>ight: bold;
     color: white; }
     .zinnia .info a:visited {
       color: white; }
