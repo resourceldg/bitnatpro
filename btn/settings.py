@@ -28,8 +28,8 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['.bitnativo.com','168.181.185.152']
 
-#ADMINS = ('peluca', 'resourceldg@gmail.com')
-#MANAGERS = ('pelucas', 'resourceldg@gmail.com')
+ADMINS = ADMINS
+MANAGERS = ADMINS
 
 SITE_ID = 1
 
@@ -47,6 +47,7 @@ EMAIL_PORT = EMAIL_PORT
 INSTALLED_APPS = INSTALLED_APPS
 
 MIDDLEWARE = [
+    'django.middleware.cache.UpdateCacheMiddleware' ,
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -54,7 +55,17 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django.middleware.cache.FetchFromCacheMiddleware' ,
 ]
+
+# Key in `CACHES` dict
+# CACHE_MIDDLEWARE_ALIAS = 'default'
+
+ # Additional prefix for cache keys
+# CACHE_MIDDLEWARE_KEY_PREFIX = ''
+
+ # Cache key TTL in seconds
+# CACHE_MIDDLEWARE_SECONDS = 600
 
 ROOT_URLCONF = ROOT_URLCONF
 
@@ -130,3 +141,11 @@ MEDIA_URL = MEDIA_URL
 
 STATIC_ROOT = STATIC_ROOT
 MEDIA_ROOT = MEDIA_ROOT
+
+CACHES = {
+   'default' : {
+      'BACKEND' : 'django.core.cache.backends.db.DatabaseCache' ,
+      'LOCATION' : 'my_cache_table' ,
+     }
+}
+
