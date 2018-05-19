@@ -476,18 +476,8 @@ a.lah{
             flex-wrap:wrap;
             justify-content:space-between;
             align-items:center;
-	}
-	
-	
- and (orientation: landscape){
-    .glob{
-            display:flex;
-            flex-wrap:wrap;
-            flex-direction:row;
-            justify-content:space-between;
-            align-items:center;
-	}
-}
+	}	
+
 }
 
 @media screen and (max-width: 640px) and (orientation: landscape){
@@ -1458,7 +1448,7 @@ background-color:#f34cfe;
 
     <!-- Collect the nav links, forms, and other content for toggling -->
             <div class= "glob">
-            <h2><a href="{% url 'zinnia:entry_archive_index' %}"><i class="fa fa-bullhorn" size=5x></i></a></h2>
+            <h2><a href="/blog"><i class="fa fa-bullhorn"></i></a></h2>
             <h2><a href="#nosotros"><i class="fa fa-home"></i></a></h2>
             <h2><a href="{% url 'Contact' %}"><i class="fa fa-envelope"></i></a></h2>
             </div>
@@ -1470,7 +1460,7 @@ background-color:#f34cfe;
                 <li><a class="page-scroll scroll" href="#carousel">Inicio</a></li>
                 <li><a class="page-scroll scroll" href="#nosotros">Nosotros</a></li>
                 <li><a class="page-scroll scroll" href="#servicios">Servicios</a></li>
-                <li><a href="{% url 'zinnia:entry_archive_index' %}">Blog</a></li>
+                <li><a href="/blog">Blog</a></li>
                 <li><a href="{% url 'Contact' %}">Contacto</a></li>
             </ul>
         </div>
@@ -1834,3 +1824,4 @@ background-color:#f34cfe;
 </div>
   </body>
 </html>
+
