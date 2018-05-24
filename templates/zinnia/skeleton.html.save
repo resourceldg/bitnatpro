@@ -6,9 +6,10 @@
     <meta charset="utf-8">
     <meta name="robots" content="follow, all" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="{% block meta-description %}{% trans "Marketing digital para empresas sustentables" %}{% endblock meta-description %}{% block meta-description-page %}{% endblock meta-description-page %}" />
-    <meta name="keywords" content="{% block meta-keywords %}marketing, digital, empresa, sustentable {% endblock meta-keywords %}" />
-       {% block meta %}{% endblock meta %}
+    <meta name="description" content="Estás cambiando el mundo...nosotros tambien." />
+    <meta name="keywords" content="" />
+    
+    {% block meta %}{% endblock meta %}
     <link rel="pingback" href="/xmlrpc/" />
     <link rel="shortcut icon" href="{% static "images/icon.ico" %}" />
     <link rel="home" href="{% url 'zinnia:entry_archive_index' %}" />
