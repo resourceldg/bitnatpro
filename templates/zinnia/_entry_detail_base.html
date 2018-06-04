@@ -90,6 +90,21 @@
     <div class="entry-content" itemprop="articleBody">
       {{ object_content|safe }}
     </div>
+      <div class="social">
+			<ul class="navi"">
+					<li><a  class="fa fa-share-alt"> Compartir</a>
+    					    <ul>
+                					<li><a href="https://www.facebook.com/sharer/sharer.php?u={{ object.short_url }}"class="fa fa-facebook" target="_blank"></a></li>
+                					<li><a href="https://twitter.com/home?status=@bitnativo {{ object.title }}%20{{ object.short_url }}"class="fa fa-twitter"target="_blank"></a></li>
+                					<li><a href="https://www.linkedin.com/shareArticle?mini=true&url={{ object.short_url }}&title={{ object.title }}&summary={{ object.lead}}&source={{ object.get_absolute_url }}"class="fa fa-linkedin"target="_blank"></a></li>
+                					<li><a href="https://plus.google.com/share?url={{ object.short_url }}"class="fa fa-google"target="_blank"></a></li>
+                                                </ul>
+                                            </li>
+                       	</ul>
+      </div>
+
+
+
     {% endblock entry-content %}
 
     {% block continue-reading %}

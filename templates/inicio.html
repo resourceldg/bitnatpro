@@ -115,7 +115,7 @@ nav.navbar.navbar-default.navbar-fixed-top {
 
 }
 
-a.lah{
+.lah h1{
     font-size:25px;
     font-family:amarillo;
     color:#000;
@@ -539,7 +539,11 @@ a.lah{
 }
 @media screen and (max-width: 480px)and (orientation: landscape){
 	
-	.about-left h3 {
+.blog {
+	float:center;
+}	
+
+.about-left h3 {
 		font-size: 20px;
 		width: 17%;
 	}
@@ -549,10 +553,10 @@ a.lah{
 	.portfolio {
 		padding: 2em 0;
 	}
-        a.lah{
+        .lah h1 {
 
     margin-top:25px;
-    font-size:15px;
+    font-size:25px;
     font-family:amarillo;
     color:#000;
         }
@@ -589,9 +593,9 @@ a.lah{
 		
 		background-size: cover;
 	}
-	  a.lah{
+	  .lah h1{
 
-                font-size:13px;
+                font-size:18px;
          }
 	
 }
@@ -616,7 +620,7 @@ a.lah{
             justify-content:space-between;
             align-items:center;
             }
-	 a.lah{
+	 .lah h1{
 
                 font-size:11px;
          }
@@ -1438,6 +1442,38 @@ background-color:#f34cfe;
 
 /* Skin
 --------------------------*/
+.blog {
+
+ display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:center;
+    -webkit-box-shadow: 3px 4px 5px 3px rgba(0,0,0,0.53);
+    -moz-box-shadow: 3px 4px 5px 3px rgba(0,0,0,0.53);
+    box-shadow: 3px 4px 5px 3px rgba(0,0,0,0.53);	
+    
+}
+.blog h2 > i{
+	font-size:50px;
+}
+.blog h2{
+    text-decoration:none;
+    font-size:40px;
+
+    }
+.e_title{
+
+    font-size:30px;
+
+    }
+
+.e_lead{
+    font-size:20px;
+    }
+
+.link{
+    text-decoration:none;
+    }
 
 
 
@@ -1446,7 +1482,9 @@ background-color:#f34cfe;
 </head>
  <body>
  {% load static %}
+ {% load zinnia %}
 
+	
 
 
 <!-- banner -->
@@ -1493,22 +1531,34 @@ background-color:#f34cfe;
 
 
 <!--Nosotros-->
-<h1><a class="lah" href="{% url 'inicio' %}">Agencia de Marketing Digital</a></h1>
+<div class="lah">
+<h1>Agencia de Marketing Digital</h1>
+</div>
+  <div class="blog">
+	    
+       <h2> <i class="fa fa-bullhorn"></i>  Blog {% get_recent_entries %}</h2>
+            		
+ </div>
+
 
 <div class="nosotros" id="nosotros">
 
         <div class="col-md-6 about-left">
 
 		     <h2>¿Por qué somos Bit Nativo?</h2>
-                        <p> En este presente los consumidores se apropian cada vez mas de la información respecto a los productos y servicios
-                         que compran lo que favorece nuevas actividades de consumo, como el "consumo sustentable". Por otra parte, comienza
-                         a emerger un nuevo rol productivo que comienza abastecer dicho consumo. Bit Nativo nace como una
-                         solución en analítica de negocios y marketing digital aplicado principalmente a el desarrollo de
-                         empresas sustentables.
-                        <h4><br>Nos propusimos la meta de posicionar líderes en el mercado sustentable</h4>
-                        <p> Es por ello que con herramientas como el marketing digital y la analítica de negocios hacemos
-                            que tu proyecto mejore su calidad y tenga la visibilidad que se merece.
-                            No te olvides...estas cambiando el mundo, nosotros tambien.</p>
+<p> Hoy los consumidores incorporan gran cantidad de información respecto a
+    los productos y servicios que desean adquirir creando nuevas actividades
+    de consumo: "actividades inteligentes y responsables". Estas acciones se reflejan con
+    una clara tendencia de crecimiento.  El nuevo rol productivo y su mensaje
+    debe transformarse bajo nuevas pautas de calidad  si lo que desea es 
+    sostener competitividad en  estas nuevas necesidades de consumo.
+ Bit Nativo nace como una solución en analítica de negocios y marketing digital
+ aplicado principalmente a el desarrollo y transformación de empresas sustentables.
+ <h4><br>Nos propusimos la meta de posicionar líderes en el mercado sustentables</h4>
+  <p> Es por ello que con herramientas como el marketing digital y la analítica
+      de negocios hacemos que tu proyecto mejore su calidad y tenga la 
+      visibilidad que se merece.
+       No te olvides...estas cambiando el mundo, nosotros tambien.</p>
 
 
 		      <ul class="top-links">

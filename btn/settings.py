@@ -24,14 +24,14 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = SECRET_KEY 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['.bitnativo.com','168.181.185.152']
 
 ADMINS = ADMINS
 MANAGERS = ADMINS
 
-SITE_ID = 1
+SITE_ID = 2
 
 
 EMAIL_BACKEND = EMAIL_BACKEND
