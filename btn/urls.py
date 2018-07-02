@@ -59,6 +59,7 @@ urlpatterns = [
     url(r'^contact/$', views.Contact.as_view(), name='Contact'),
     url(r'^contact/gracias/', views.gracias, name='gracias'),
     url(r'^sitemap/$', views.sitemap, name='sitemap'),
+    url(r'^robots/$', views., name='robots'),
 
 
     #zinnia
