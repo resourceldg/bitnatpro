@@ -60,3 +60,7 @@ class Contact(View):
 
 def gracias(request):
     return render(request, 'gracias.html')
+
+def sitemap(request):
+    return render(request, 'sitemap.xml')
+
