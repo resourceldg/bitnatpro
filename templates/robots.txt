@@ -4,6 +4,7 @@ Disallow: /admin/
 Disallow: /accounts/
 Disallow: /search/
 Disallow: /feeds/
-Disallow: /#comment-form$
+Disallow: /comment-form$
+Allow: /
 
 Sitemap: http://bitnativo.com/sitemap.xml
