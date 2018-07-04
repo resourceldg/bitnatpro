@@ -179,7 +179,7 @@ nav.navbar.navbar-default.navbar-fixed-top {
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 2px;
-    color: #00ffff;
+    color:#00ff99;
 }
 	/*-- Tabs --*/
 	.tabs {
@@ -1419,6 +1419,18 @@ margin-left:5px;
     float: right;
 }
 
+.botonser {
+
+    color: #fff;
+    background: #33cc33;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius:30px 50px 15px;
+    padding: 10px 20px;
+    margin-bottom: 15px;
+    float: left;
+}
+
 .social-btns{
     margin-top:70px;
     display:flex;
@@ -1485,7 +1497,8 @@ margin-left:5px;
     align-content:stretch;
     width:250px;
     color:#fff;
-    box-shadow: 1px 1px 1px #00ffff;
+    box-shadow: 1px 1px 1px #00ff99;
+    border-radius:200px 20px 200px;
 
     }
 
@@ -1524,6 +1537,7 @@ margin-left:5px;
 
     text-align:left;
     font-size:16px;
+    color: #fff;
 
     }
 .do > .tre{
@@ -1535,7 +1549,7 @@ margin-left:5px;
 
 
 .portfolio{
-background:
+    background:
 linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
 linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
 linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
@@ -1544,6 +1558,7 @@ linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
 linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
 background-color: #131313;
 background-size: 20px 20px;
+
 
     }
 .col{
@@ -1562,15 +1577,16 @@ background-size: 20px 20px;
     flex-wrap:wrap;
     justify-content:center;
     align-content:center;
+    margin-bottom:30px;
     }
 
 .serv i{
-    color:#00ffff;
+    color:#00ff99;
     font-size:35px;
     }
 
 .serv a{
-    color:#00ffff;
+    color:#00ff99;
     font-size:18px;
     }
 
@@ -1666,6 +1682,7 @@ html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-t
  {% load zinnia %}
 
 <!--inicio amp analytics-->
+
 <amp-analytics type="googleanalytics">
 <script type="application/json">
 {
@@ -1681,6 +1698,7 @@ html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-t
 }
 </script>
 </amp-analytics>
+
 <!-- fin amp analytics -->
 	
 <!-- banner -->
@@ -1778,14 +1796,17 @@ html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-t
                                              <div class="tre"><p> Auditamos tu empresa para construir un proyecto de calidad digital,
                                              rentable y socialmente responsable.
                                               Tu empresa es un actor social que puede perdurar en el tiempo.</p>
+                                              <div class="botonser"> <a href= "{% url 'Contact' %}">+ info</a></div>
                                             </div>
                                         </div>
+
                                  </div>
 
                                  <div class="uno">
                                      <div class="do"><a><i class="fa fa-globe"></i><br> Posicionamiento Web</a>
                                          <div class="tre"><p> SEO y SEM. Posicionamos empresas líderes sustentables.
                                                   Estás cambiando el mundo... nosotros también.</p>
+                                                   <div class="botonser"> <a href= "{% url 'Contact' %}">+ info</a></div>
                                         </div>
                                     </div>
                                  </div>
@@ -1794,6 +1815,7 @@ html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-t
                                      <div class="do"><a><i class="fa fa-users"></i><br> Redes Sociales</a>
                                              <div class="tre"><p> La correcta gestión estratégica para tus redes sociales no solo aumentará tus ventas,
                                                 consolidará tu mensaje y presencia en la web.</p>
+                                                 <div class="botonser"> <a href= "{% url 'Contact' %}">+ info</a></div>
                                             </div>
                                      </div>
                                  </div>
@@ -1805,6 +1827,7 @@ html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-t
                                              <div class="tre"><p> ¿Sabes cuál es la @plicación más usada en el mundo?
                                              <br> El email es un medio digital muy rentable para hacer marketing digital ¿Cuánto?
                                                  3 veces mas que cualquier red social.</p>
+                                                  <div class="botonser"> <a href= "{% url 'Contact' %}">+ info</a></div>
                                              </div>
                                     </div>
 
@@ -1815,6 +1838,7 @@ html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-t
                                              <div class="tre"><p> En el universo web lo que no se puede medir no se puede
                                              resolver. Aplicamos herramientas líderes en analítica web. Creamos indicadores propios
                                              brindando soluciones a medida</p>
+                                              <div class="botonser"> <a href= "{% url 'Contact' %}">+ info</a></div>
                                              </div>
                                     </div>
                                 </div>
@@ -1823,6 +1847,7 @@ html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-t
                                      <div class="do"><a><i class="fa fa-leaf"></i><br> Marketing de Contenidos</a>
                                              <div class="tre"><p> Lo que dices, cómo lo dices a quién se lo dices es también vital en la web.
                                              Si quieres clientes sólidos tu mensaje debe ser sólido y acertado.</p>
+                                              <div class="botonser"> <a href= "{% url 'Contact' %}">+ info</a></div>
                                              </div>
                                     </div>
 
