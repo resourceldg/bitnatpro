@@ -40,14 +40,15 @@ html, body{
     font-size: 100%;
 	font-family: 'Open Sans', sans-serif;
 	background:#ffffff;
-	margin: 5;
-	padding-top: 5px;
+	margin: 0;
+	padding-top: 0px;
 }
 p,ul,li{
 	margin-right:5px;;
 	font-size:18px;
+	text-decoration:none;
 }
-h3,h4{
+h3{
 	margin-left:5px;
 	font-family: 'Cairo', sans-serif;
 }
@@ -59,7 +60,7 @@ ul{
 
     color:#000 ;
 
-    }
+
 }
 body a:hover{
 	text-decoration:none;
@@ -74,7 +75,7 @@ a{
 /*-- header --*/
 h2 {
     font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
+
     }
 nav.navbar.navbar-default.navbar-fixed-top {
     background:rgba(0, 0, 0, 0.35);
@@ -92,7 +93,10 @@ nav.navbar.navbar-default.navbar-fixed-top {
     padding-bottom:10px;
 }
 .lah h1{
+    margin-bottom:10px;
+    margin-top:10px;
     font-size:20px;
+    font-weight:bold;
     color:#000;
     }
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
@@ -142,17 +146,6 @@ nav.navbar.navbar-default.navbar-fixed-top {
 .about-right {
 	    padding-top:15px;
 	}
-.about-left h3 {
-    text-align: left;
-    font-size: 30px;
-    text-transform: uppercase;
-    margin-bottom: 3px;
-    width: 22%;
-	color: #146eb4;
-    margin-left: 2em;
-    font-weight: 700;
-    text-align: center;
-}
 /*-- hover-effect --*/
 /* agile-caption Common Style */
 /** agile-caption 6: Scale **/
@@ -161,9 +154,7 @@ nav.navbar.navbar-default.navbar-fixed-top {
 /* // hover effect */
 /*-- //about --*/
 /* Skills */
-.portfolio{
-	padding:3em 0;
-}
+
 	/*-- Progress-Bar --*/
 	/*-- //Progress-Bar --*/
 	
@@ -182,95 +173,12 @@ nav.navbar.navbar-default.navbar-fixed-top {
     color:#00ff99;
 }
 	/*-- Tabs --*/
-	.tabs {
-		position: relative;
-		overflow: hidden;
-		margin: 0 auto;
-		width: 90%;
-	}
-	.tabs nav {
-		text-align: center;
-		
-	}
-	.tabs nav ul {
-		position: relative;
-		display: -ms-flexbox;
-		display: -webkit-flex;
-		display: -moz-flex;
-		display: -ms-flex;
-		display: flex;
-		margin: 0 auto;
-		padding: 3;
-		max-width: 800px;
-		/*--w3layouts--*/
-		/*--agileits--*/
-		list-style: none;
-		-ms-box-orient: horizontal;
-		-ms-box-pack: center;
-		-webkit-flex-flow: row wrap;
-		-moz-flex-flow: row wrap;
-		-ms-flex-flow: row wrap;
-		flex-flow: row wrap;
-		-webkit-justify-content: center;
-		-moz-justify-content: center;
-		-ms-justify-content: center;
-		justify-content: center;
-	}
-	.tabs nav ul li {
-		position: relative;
-		z-index: 1;
-		display: block;
-		margin: 0;
-		text-align: center;
-		-webkit-flex: 1;
-		-moz-flex: 1;
-		-ms-flex: 1;
-		flex: 1;
-	}
-	.tabs nav a {
-		position: relative;
-		display: block;
-		overflow: hidden;
-		text-overflow: ellipsis;
-		white-space: nowrap;
-		line-height: 3;
-	}
-	.tabs nav a span {
-		vertical-align: middle;
-		font-size: 0.75em;
-	}
-	.tabs nav a:focus {
-		outline: none;
-		text-decoration: none;
-	}
 		/*-- Tabs-Content --*/
 		/*-- //Tabs-Content --*/
 		/*-- Fallback --*/
 		
 		/*-- //Fallback --*/
 		/*-- Tabs-Styling --*/
-		.tabs-style-bar nav ul {
-			border: 4px solid transparent;
-		}
-		.tabs-style-bar nav ul li a {
-			margin: 2px 2px;
-			
-			color: #fff;
-			transition: background-color 0.2s, color 0.2s;
-			transition-property: background-color, color;
-                        transition-duration: 0.2s, 0.2s;
-                        transition-timing-function: ease, ease;
-                        transition-delay: 0s, 0s;
-		}
-		.tabs-style-bar nav ul li a:hover, .tabs-style-bar nav ul li a:focus {
-			color: #fff;
-		}
-		.tabs-style-bar nav ul li a span {
-			letter-spacing: 1px;
-			/*--w3layouts--*/
-			/*--agileits--*/
-			font-size: 18px;
-		}
 		/*-- //Tabs-Styling --*/
 		/*-- Tab-Images --*/
 		/*-- //Tab-Images --*/
@@ -285,12 +193,6 @@ nav.navbar.navbar-default.navbar-fixed-top {
 /*-- to-top --*/
 /*-- //to-top --*/
 /* Responsive design */
-@media screen and (max-width: 1440px){
-	.about-left h3 {
-		width: 24%;
-	}
-	
-}
 @media screen and (max-width: 1366px){
 	nav.navbar.navbar-default.navbar-fixed-top {
 		
@@ -298,20 +200,12 @@ nav.navbar.navbar-default.navbar-fixed-top {
 	.banner {
 		min-height: 650px;
 	}
-	.about-left h3 {
-		width: 20%;
-		font-size: 40px;
-		margin-bottom: 5px;
-	}
 	
         .carousel{
-            padding-top:5px;
+            padding-top:0px;
             }
 }
 @media screen and (max-width: 1280px){
-	.about-left h3 {
-		font-size: 36px;
-	}
 	.portfolio {
 		padding: 2em 0;
 	}
@@ -319,9 +213,6 @@ nav.navbar.navbar-default.navbar-fixed-top {
 @media screen and (max-width: 1080px){
 	nav.navbar.navbar-default.navbar-fixed-top {
 		padding: .6em 5em;
-	}
-	.about-left h3 {
-		font-size: 30px;
 	}
 	.portfolio {
 		padding: 2em 0;
@@ -368,9 +259,6 @@ nav.navbar.navbar-default.navbar-fixed-top {
 	 .carousel{
     display:none;
       }
-    .travel-hero-discover{
-             font-size: 44px;
-            }
     .glob{
             display:flex;
             flex-direction:row;
@@ -379,6 +267,22 @@ nav.navbar.navbar-default.navbar-fixed-top {
             align-items:center;
 	}
 }
+
+@media screen and (min-width: 600px){
+    .lah h1{
+        font-size:30px;
+        font-weight:bold;
+
+        }
+
+    .portfolio > h2{
+    font-size:30px;
+
+    }
+
+
+   }
+
 @media screen and (max-width: 736px){
 	
 	
@@ -416,10 +320,6 @@ nav.navbar.navbar-default.navbar-fixed-top {
 	.banner {
 		min-height: 550px;
 	}
-	.about-left h3 {
-		font-size: 26px;
-		width: 16%;
-	}
 	.glob{
             display:flex;
             flex-direction:row;
@@ -427,6 +327,7 @@ nav.navbar.navbar-default.navbar-fixed-top {
             justify-content:space-between;
             align-items:center;
 	}
+	
 }
 @media screen and (max-width: 600px)and (orientation: landscape){
 	.banner {
@@ -458,15 +359,6 @@ nav.navbar.navbar-default.navbar-fixed-top {
 	
 }
 @media screen and (max-width: 480px)and (orientation: landscape){
-	
-.blog {
-	float:center;
-}	
-
-.about-left h3 {
-		font-size: 20px;
-		width: 17%;
-	}
 	.about-right {
 		width: 90%;
 	}
@@ -493,9 +385,6 @@ nav.navbar.navbar-default.navbar-fixed-top {
             justify-content:space-between;
             align-items:center;
             }
-	.about-left h3 {
-		width: 20%;
-	}
 	.about-left {
 		padding: 0 2em;
 	}
@@ -533,15 +422,8 @@ nav.navbar.navbar-default.navbar-fixed-top {
 	 .lah h1{
                 font-size:11px;
          }
-	
-	.about-left h3 {
-		width: 25%;
-	}
 	.about-left {
 		padding: 0 1em;
-	}
-	.tabs-style-bar nav ul li a {
-		margin: 0 4px;
 	}
 }
 html, body{
@@ -553,8 +435,9 @@ html, body{
 p,ul li{
 	margin:0;
 	font-size:15px;
+	text-decoration:none;
 }
-h3,h4{
+h3{
 	margin:0;
 	font-family: 'Cairo', sans-serif;
 }
@@ -619,42 +502,6 @@ a{
 	/*-- //Tabs --*/
 /*-- //Portfolio --*/
 /* contact */
-ul.top-links li {
-    display: inline-block;
-     text-align: center;
-    padding-top:3 px;
-}
-ul.top-links li a i.fa {
-    color: #fff;
-    font-size: 30px;
-    background: #656565;
-    width: 40px;
-    height: 40px;
-    text-align: center;
-    padding-top:5px;
-    transition: all 0.5s ease-in-out;
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-    -ms-transition: all 0.5s ease-in-out;
-}
-ul.top-links li a i.fa:hover {
-    background: #dedede;
-    color: #000;
-}
-.top-links i.fa.fa-facebook {
-    background: #3b5998;
-}
-.top-links i.fa.fa-twitter {
-    background: #0087da;
-}
-.top-links i.fa.fa-linkedin {
-    background: #0077b5;
-}
-ul.top-links {
-    margin-top: 3em;
-    text-align: center;
-}
 /* //contact */
 /* iframe */
 /* //iframe */
@@ -728,23 +575,13 @@ background-size: 20px 20px;
         .uno{
 	    width:100%;
 	    }
+
 }
 @media screen and (max-width: 480px){
 	
 	.uno{
 	    width:100%;
 	    }
-	ul.top-links {
-		margin-top: 2em;
-		margin-left:2em;
-	}
-	ul.top-links li a i.fa {
-		width: 36px;
-		height: 36px;
-		line-height: 18px;
-		font-size: 18px;
-		
-	}
 	.contact {
 		padding: 2em 0;
 		
@@ -776,9 +613,6 @@ a {
 a:active,
 a:hover {
   outline: 0;
-}
-svg:not(:root) {
-  overflow: hidden;
 }
 /*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
 @media print {
@@ -857,30 +691,20 @@ a:focus {
 h1 {
     text-align:center;
     }
-h3,
-h4 {
+h3 {
   font-family: inherit;
   font-weight: 500;
   line-height: 1.1;
   color: inherit;
 }
-h1,
+
 h3 {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-h4 {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-h1 {
-  font-size: 16px;
-}
+
 h3 {
   font-size: 24px;
-}
-h4 {
-  font-size: 18px;
 }
 p {
   margin: 0 0 10px;
@@ -889,7 +713,9 @@ ul {
   margin-top: 0;
   margin-bottom: 10px;
 }
-.top-links{
+
+li {
+    text-decoration:none;
     }
 .col-md-6 {
   position: relative;
@@ -899,9 +725,6 @@ ul {
   padding-top: 35px;
 }
 @media (min-width: 992px) {
-    .flecha a{
-        display:none;
-        }
   .col-md-6 {
     float: left;
   }
@@ -942,14 +765,14 @@ ul {
     border-radius: 4px;
   }
 
-
 }
 
 @media (min-width: 480px) {
 
-    .flecha{
+    .flecha {
         display:none;
         }
+
 
     }
 @media (min-width: 768px) {
@@ -967,6 +790,10 @@ ul {
           box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
 }
 @media (min-width: 768px) {
+    amp-img{
+    width:85%;
+    }
+
   .navbar-collapse {
     width: auto;
     border-top: 0;
@@ -999,18 +826,25 @@ ul {
     .globc h2 a{
          display:none;
         }
+    .portfolio > h2{
+        font-size:18px;
+        }
 }
 
 @media (max-width: 580px){
 
-     .about-right{
-         display:none;
+   amp-img{
+        width:100%;
+       }
+
+    .patitos{
+        margin-left:15px;
+        margin-right:15px;
+        padding-left:15px;
+        padding-right:15px;
+
         }
 
-
-   .cuak{
-     font-size:14px;
-       }
 
 }
 
@@ -1019,7 +853,7 @@ ul {
      .globc h2 a{
          display:none;
         }
-     .pdf h2, p{
+     p{
 
     font-size:11px;
   }
@@ -1118,28 +952,32 @@ ul {
 .hidden {
   display: none ;
 }
-@ ms-viewport {
+@ms-viewport {
   width: device-width;
 }
 .micro {
     padding-bottom:10px;
     padding-top:60px;
+
+
+
     }
 .micro h3{
         text-align: center;
-        font-size: 25px;
+        font-size: 33px;
         text-transform: uppercase;
         font-weight: bold;
 }
 .corp h3{
         text-align: center;
-        font-size: 25px;
+        font-size: 33px;
         text-transform: uppercase;
         font-weight: bold;
+        color: #006080;
 }
 .inf h3{
         text-align: center;
-        font-size: 25px;
+        font-size: 33px;
         text-transform: uppercase;
         font-weight: bold;
 }
@@ -1158,10 +996,11 @@ ul {
     }
 .micro h2{
    font-size: 28px;
+   text-align:center;
   color: #006080;
     }
 .micro p{
-color:#696464;
+color:#333;
     }
 
 .micro li{
@@ -1170,42 +1009,36 @@ color:#696464;
     }
 .corp h2{
    font-size: 28px;
-  color: #146eb4;
+   text-align:center;
+   color: #006080;
     }
 .corp p{
-color:#696464;
+color:#333;
     }
 .corp li{
-margin-left:5px;
+    margin-left:5px;
+     color: #006080;
     }
-.corp p a{
-   color: #696464;
-   ttext-decoration:none;
-   font-weight: bold;
-}
-.corp p a:hover{
-   color: #146eb4;
-   font-size: 25px;
-}
 .inf p{
-color:#696464;
+color:#333;
     }
 .inf h2{
-color:#0099cc;
- font-size: 28px;
+    color: #006080;
+    text-align:center;
+    font-size: 28px;
 }
 
 .inf h3{
-color:#0099cc;
-font-size: 30;
+    color: #006080;
+    font-size: 30;
 }
 .inf li{
-color:#0099cc;
-margin-left:5px;
+    color: #006080;
+    margin-left:5px;
 }
 
 .flecha h2{
-     margin-top:70px;
+     margin-top:3px;
     text-align:center
         }
 
@@ -1223,15 +1056,14 @@ margin-left:5px;
     }
 
 .globc h2 a:hover{
-    color:#0eabf5;
-    font-size:25px;
+    color:#33cc33;
+    font-size:20px;
     }
 
 
 .micro1{
 
-    background: #66d9ff;
-
+    background:;
     display:flex;
     flex-direction:row;
     flex-wrap:wrap;
@@ -1240,7 +1072,7 @@ margin-left:5px;
     }
 .micro2{
 
-    background:#99e6ff;
+    background:;
 
     display:flex;
     flex-direction:row;
@@ -1250,8 +1082,7 @@ margin-left:5px;
     }
 .micro3{
 
-    background:#ccf2ff;
-
+    background:;
     display:flex;
     flex-direction:row;
     flex-wrap:wrap;
@@ -1260,8 +1091,7 @@ margin-left:5px;
 }
 .corp1{
 
-    background:#4da6ff;
-
+    background:;
     display:flex;
     flex-direction:row;
     flex-wrap:wrap;
@@ -1270,8 +1100,7 @@ margin-left:5px;
 }
 .corp2{
 
-    background:#80bfff;
-
+    background:;
     display:flex;
     flex-direction:row;
     flex-wrap:wrap;
@@ -1280,8 +1109,7 @@ margin-left:5px;
 }
 .corp3{
 
-    background:#b3d9ff;
-
+    background:;
     display:flex;
     flex-direction:row;
     flex-wrap:wrap;
@@ -1290,7 +1118,7 @@ margin-left:5px;
 }
 .inf1{
 
-    background:#66ffff;
+    background:;
 
     display:flex;
     flex-direction:row;
@@ -1300,7 +1128,7 @@ margin-left:5px;
 }
 .inf2{
 
-    background:#99ffff;
+    background:;
 
     display:flex;
     flex-direction:row;
@@ -1310,7 +1138,7 @@ margin-left:5px;
 }
 .inf3{
 
-    background:#ccffff;
+    background:;
 
     display:flex;
     flex-direction:row;
@@ -1321,103 +1149,59 @@ margin-left:5px;
 /*# sourceMappingURL=bootstrap.css.map */
 /* Skin
 --------------------------*/
-.blog {
- display:flex;
-    flex-direction:row;
-    flex-wrap:wrap;
-    justify-content:center;
-    -webkit-box-shadow: 3px 4px 5px 3px rgba(0,0,0,0.53);
-    -moz-box-shadow: 3px 4px 5px 3px rgba(0,0,0,0.53);
-    box-shadow: 3px 4px 5px 3px rgba(0,0,0,0.53);	
-
-}
-.blog h2 > i{
-	font-size:50px;
-}
-.blog h2{
-    text-decoration:none;
-    font-size:40px;
-    }
-.e_title{
-    font-size:30px;
-    }
-.e_lead{
-    font-size:20px;
-    }
-.link{
-    text-decoration:none;
-    }
 .fuerte{
  font-weight: bold;
     }
-
-.boton:hover {
-
-    background: #021b31;
-     font-size: 14px;
-
-}
 .boton2:hover {
-    background:#0086b3;
-     font-size: 14px;
-}
 
-.boton3:hover {
-    background: #004d66;
-     font-size: 14px;
+
+    color: #33cc33;
+    border:2px solid #33cc33;
+    background: none;
 }
 
 .botond:hover {
-    background: #fff;
-    color:#000;
-     font-size: 14px;
+
+
+    font-size: 24px;
+    color: #fff;
+    border:2px solid #33cc33;
+    background: none;
 }
 .botond {
 
-    color: #fff;
-    box-shadow: 0 0.5rem 2.5rem 0 rgba(9, 9, 9, 0.8);
-    background: #0066ff;
+    background:#33cc33;
+    color:#fff;
     font-size: 20px;
-
-    padding: 20px 40px;
+    font-weight:bold;
+    padding: 15px 15px;
     margin-bottom: 15px;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
     float: right;
+     border-radius:200px 20px 200px;
 }
-.boton {
-
-    color: #fff;
-    box-shadow: 0 0.5rem 2.5rem 0 rgba(9, 9, 9, 0.8);
-    background: #399ff6;
-    font-size: 16px;
-    font-weight: bold;
-    padding: 10px 40px;
-    margin-bottom: 15px;
-    float: right;
-}
-
-.boton3 {
-
-    color: #fff;
-    box-shadow: 0 0.5rem 2.5rem 0 rgba(9, 9, 9, 0.8);
-    background:#007399;
-    font-size: 16px;
-    font-weight: bold;
-    padding: 10px 40px;
-    margin-bottom: 15px;
-    float: right;
-}
+.pfinal p, h2{
+     color:#33cc33;
+    }
 
 .boton2 {
 
     color: #fff;
-    box-shadow: 0 0.5rem 2.5rem 0 rgba(9, 9, 9, 0.8);
-    background:  #4dd2ff;
-    font-size: 16px;
-    font-weight: bold;
-    padding: 10px 40px;
+    background:#33cc33;
+    font-size: 18px;
+    padding: 15px 15px 15px 15px;
     margin-bottom: 15px;
     float: right;
+     border-radius:200px 20px 200px;
 }
+.tre > .botonser:hover{
+    color: #fff;
+    border:2px solid #33cc33;
+    background: none;
+
+    }
 
 .botonser {
 
@@ -1426,7 +1210,7 @@ margin-left:5px;
     font-size: 16px;
     font-weight: bold;
     border-radius:30px 50px 15px;
-    padding: 10px 20px;
+    padding:15px 15px;
     margin-bottom: 15px;
     float: left;
 }
@@ -1443,33 +1227,27 @@ margin-left:5px;
     }
 .social-btns a:hover{
 
-   color:#399ff6;
-   font-size:25px;
+    color:#33cc33;
+    font-size:25px;
  }
 
 .pdf{
 
-
-     display:flex;
+    background: #023380;
+    display:flex;
     flex-direction:row;
     flex-wrap:wrap;
     justify-content:space-around;
     align-items:center;
-    background:#000066;
-
     padding-top:20px;
     margin-bottom:50px;
-     margin-top:50px;
-
+    margin-top:50px;
 
     }
 
-.pdf h2{
-    color:#fff;
-    font-size:25px;
-    font-family: sans-serif;
-    text-align:center;
 
+.pdf span{
+        color:#00ff99;
     }
 
 .pdf p{
@@ -1494,7 +1272,7 @@ margin-left:5px;
     flex-direction:column;
     flex-wrap:wrap;
     justify-content:center;
-    align-content:stretch;
+    align-content:center;
     width:250px;
     color:#fff;
     box-shadow: 1px 1px 1px #00ff99;
@@ -1515,10 +1293,6 @@ margin-left:5px;
     padding-right:10px;
     padding-bottom:10px;
 }
-.do h3 {
-
-
-    }
 
 .do {
 
@@ -1536,10 +1310,14 @@ margin-left:5px;
 .tre p{
 
     text-align:left;
-    font-size:16px;
-    color: #fff;
+    font-size:18px;
+    color:#fff;
 
     }
+
+
+
+
 .do > .tre{
 
     display:none;
@@ -1559,14 +1337,27 @@ linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transpar
 background-color: #131313;
 background-size: 20px 20px;
 
+margin-top:20px;
 
     }
+
+.portfolio > h2{
+    text-align:center;
+    font-size:25px;
+    color:#33cc33;
+    font-weigth:bold;
+    margin-top:10px;
+    margin-left:10px;
+    margin-right:10px;
+    margin_bottom:10px;
+    }
+
 .col{
     display:flex;
     flex-direction:row;
     flex-wrap:wrap;
-    justify-content:space-around;
-    align-content:space-araund;
+    justify-content:center;
+    align-content:center;
 
 
     }
@@ -1601,18 +1392,6 @@ background-size: 20px 20px;
 }
 
 
-.cuak{
-     margin-top:15px;
-    margin-left:15px;
-    margin-right:15px;
-    margin-bottom:15px;
-
-    font-size:30px;
-     color:#fff;
-
-    }
-
-
 .icon-box{
 
     padding-top:10px;
@@ -1620,10 +1399,6 @@ background-size: 20px 20px;
     padding-right:10px;
     padding-bottom:10px;
     text-align:center;
-    box-shadow: 3px 3px 3px #333;
-    background-color:#00ccff;
-
-
 
 }
 
@@ -1631,8 +1406,8 @@ background-size: 20px 20px;
 .icon-box:hover{
 
     text-align:center;
-    font-size:25px;
-    background-color:#00ace6;
+    font-size:20px;
+
 }
 .icon-display{
     padding-top:10px;
@@ -1640,40 +1415,41 @@ background-size: 20px 20px;
     padding-right:10px;
     padding-bottom:10px;
     text-align:center;
-    box-shadow: 3px 3px 3px #333;
-    background-color: #0066ff;
 
     }
 
 .icon-display:hover{
 
     text-align:center;
-    font-size:25px;
-    background-color:#0052cc;
+    font-size:20px;
+
     }
 
 .icon-upload{
-    color:#fff;
     padding-top:10px;
     padding-left:10px;
     padding-right:10px;
     padding-bottom:10px;
     text-align:center;
-    box-shadow: 3px 3px 3px #333;
-    background-color: #00b3b3;
 
 }
 
 .icon-upload:hover{
 
     text-align:center;
-    font-size:25px;
-    background-color:#008080;
+    font-size:20px;
+
+
 }
 
+.carousel{
+    height:50%;
+    }
 
 
-html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}nav{display:block}h1{font-size:2em;margin:.47em 0}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}svg:not(:root){overflow:hidden}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}.center{text-align:center}.block{display:block}.mt1{margin-top:1rem}.mx-auto{margin-right:auto}.mx-auto{margin-left:auto}.relative{position:relative}@media (min-width:52.06rem) and (max-width:72rem){.md-hide{display:none}}@media (min-width:72.06rem){.lg-hide{display:none}}*{box-sizing:border-box}body{background:#fff;color:#1377e9;font-family:Source Sans Pro,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif;min-width:100%;overflow-x:hidden;font-smooth:always;-webkit-font-smoothing:antialiased}body{line-height:1.6;letter-spacing:normal}h1{font-size:2rem;line-height:3.5rem}h1{margin:0;padding:0;font-weight:400;letter-spacing:.06rem}a,a:active,a:visited{color:inherit}body{line-height:1.4}@-webkit-keyframes a{0%{opacity:0;-webkit-transform:translateY(2rem);transform:translateY(2rem)}to{opacity:1;-webkit-transform:none;transform:none}}@keyframes a{0%{opacity:0;-webkit-transform:translateY(2rem);transform:translateY(2rem)}to{opacity:1;-webkit-transform:none;transform:none}}.travel-icon{display:inline-block;vertical-align:-23%;height:1.2em;width:1.2em;background-position:50% 50%;background-repeat:no-repeat;background-size:auto 1.2em}.travel-hero-discover{color:#8f98a3;cursor:pointer;-webkit-animation:a .4s .45s ease-in-out both;animation:a .4s .45s ease-in-out both}.travel-hero-discover svg{display:block;margin:0 auto}</style>
+
+
+html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}nav{display:block}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}*{box-sizing:border-box}body{background:#fff;font-family:Source Sans Pro,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif;min-width:100%;overflow-x:hidden;font-smooth:always;-webkit-font-smoothing:antialiased}body{line-height:1.6;letter-spacing:normal}h1{margin:0;padding:0;font-weight:400;letter-spacing:.06rem}a,a:active,a:visited{color:inherit}body{line-height:1.4}</style>
 
 
 </head>
@@ -1737,13 +1513,17 @@ html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-t
      <div class="flecha">
      <h2>bitnativo.com</h2>
     <amp-img src="{% static 'images/corte2.png' %}" width="572" height="461" layout="responsive" ></amp-img>
-      <a class="travel-hero-discover block center mx-auto mt1 md-hide lg-hide" on="tap:travel-landing-content.scrollTo">
-       Servicios<svg class="travel-icon" viewbox="0 0 66 100"><path fill="currentColor" d="M33.5 56.172l-18.96-18.1c-1.497-1.43-3.922-1.43-5.418 0a3.539 3.539 0 0 0 0 5.17l21.67 20.687a3.914 3.914 0 0 0 2.708 1.07c.98 0 1.96-.357 2.71-1.07l21.668-20.687a3.541 3.541 0 0 0 0-5.172c-1.496-1.427-3.92-1.427-5.417 0L33.5 56.173z"></path></svg>
-      </a></div>
     </div>
 
     <div class="lah">
-    <h1>Agencia de Marketing Digital</h1>
+    <h1>Agencia de Marketing Digital Sustentable</h1>
+    </div>
+    <div class="pdf">
+
+
+		     <p>Obtené tu primera asesoría en marketing digital<span class="fuerte"> 100% gratuita</span></p>
+		     <div class="botond"> <a href= "{% url 'Contact' %}">Click Aquí</a></div>
+
     </div>
 </div>
 <!--Nosotros-->
@@ -1754,7 +1534,7 @@ html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-t
                         <p> Es por ello que con herramientas como el marketing digital y la analítica
                             de negocios hacemos que <span class="fuerte">tu proyecto mejore su calidad y tenga la
                             visibilidad que se merece</span>.
-                            no te olvides:Estás cambiando el mundo... nosotros también.</p>
+                            No te olvides: Estás cambiando el mundo... nosotros también.</p>
                         <h2>¿Por qué debes transformar tu compañía?</h2>
                         <p> Hoy los consumidores incorporan gran cantidad de información respecto a
                             los productos y servicios que desean adquirir creando nuevas actividades
@@ -1762,14 +1542,8 @@ html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-t
                             y experiencia de compra deseada.
                             <br>En este contexto, Bit Nativo nace como una solución en analítica de negocios y marketing digital
                             aplicado principalmente al desarrollo y transformación de empresas sustentables.</p>
-        <div class="social-btns">
-            <a class="btn facebook" href="https://www.facebook.com/Bitnativo-443137372789482/"><i class="fa fa-facebook"></i></a>
-            <a class="btn twitter" href="https://twitter.com/bitnativo"><i class="fa fa-twitter"></i></a>
-            <a class="btn google" href="https://plus.google.com/u/0/104787045732925536305"><i class="fa fa-google"></i></a>
-            <a class="btn instagram" href="https://www.instagram.com/bitnativo"><i class="fa fa-instagram"></i></a>
-        </div>
 		
-		</div>
+        </div>
 	
 	
 	<div data-aos="flip-right" class="col-md-6 about-right">
@@ -1778,11 +1552,7 @@ html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-t
     </div>
 	<div class="clearfix"></div>
  <!-- //Nosotros -->
-<div class="patitos">
-    	               <div class="cuak"><a href="#micro" class="icon-box">Pymes</a></div>
-                          <div class="cuak"><a href="#corp" class="icon-display">Corporaciones</a></div>
-                          <div class="cuak"><a href="#inf" class="icon-upload">Influyentes</a></div>	
-                      </div>
+
  <!-- Portfolio -->
 	<div class="portfolio" id="servicios">
 		<h3>Nuestros servicios...</h3>
@@ -1798,7 +1568,7 @@ html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-t
                                               Tu empresa es un actor social que puede perdurar en el tiempo.</p>
                                               <div class="botonser"> <a href= "{% url 'Contact' %}">+ info</a></div>
                                             </div>
-                                        </div>
+                                    </div>
 
                                  </div>
 
@@ -1824,7 +1594,7 @@ html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-t
                          <div class="col">
                                  <div class="uno">
                                     <div class="do"><a><i class="fa fa-at"></i><br> Email Marketing</a>
-                                             <div class="tre"><p> ¿Sabes cuál es la @plicación más usada en el mundo?
+                                             <div class="tre"><p>¿Sabes cuál es la @plicación más usada en el mundo?
                                              <br> El email es un medio digital muy rentable para hacer marketing digital ¿Cuánto?
                                                  3 veces mas que cualquier red social.</p>
                                                   <div class="botonser"> <a href= "{% url 'Contact' %}">+ info</a></div>
@@ -1853,6 +1623,12 @@ html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-t
 
                                 </div>
                     </div>
+                </div>
+                <h2>Conocé más sobre soluciones a la medida de tu compañía...</h2>
+                <div class="patitos">
+                  <div class="botond"><a href="#micro" class="icon-box">Pymes</a></div>
+                  <div class="botond"><a href="#corp" class="icon-display">Corporaciones</a></div>
+                  <div class="botond"><a href="#inf" class="icon-upload">Influyentes</a></div>	
                 </div>
         </div>
 <!-- //Portfolio -->
@@ -1907,7 +1683,7 @@ html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-t
 		<amp-img src="{% static 'images/socialmedia-min.jpeg' %}" width ="960" height="500" layout="responsive" > </amp-img>
 	</div>
 	<div class="col-md-6 about-left">
-                  <h2>Gestión y capacitación en redes sociales</h2>
+                  <h2>Gestión en redes sociales</h2>
 		<li>Cómo la autogestión puede ayudar en tu presupuesto</li>
 		<p>El mantenimiento de una <span class="fuerte">comunicación digital efectiva</span>
 		 que logre empatía e intención de compra debe ser tu principal objetivo, las soluciones de asesoría para autogestión de redes sociales que diseñamos son ideales para presupuestos
@@ -1945,7 +1721,7 @@ html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-t
                  anticipar tendencias, evaluar áreas de mayor impacto inter e intra empresarial. Decidir <span class="fuerte">cómo integrar servicios
                  de marketing digital </span> o resolver rápidamente decisiones de infraestructura de sistema.
                   <br>
-                  <div class="boton"> <a href= "{% url 'Contact' %}">Haz aquí tu pregunta</a></div>
+                  <div class="boton2"> <a href= "{% url 'Contact' %}">Haz aquí tu pregunta</a></div>
 		
 		
 	</div>
@@ -1965,7 +1741,7 @@ html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-t
 		   Son servicios que incorporamos para brindar a tu problemática <span class="fuerte">una resolución integral
 		   y real</span>.
 		    <br>
-                 <div class="boton"> <a href= "{% url 'Contact' %}">Click para saber más...</a></div>
+                 <div class="boton2"> <a href= "{% url 'Contact' %}">Click para saber más...</a></div>
 		
 		
 	</div>
@@ -1984,7 +1760,7 @@ html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-t
 		<br>Nos ponemos de tu lado para superar la incertidumbre digital, con nuestra
 		analítica vamos a la raíz del conflicto.
 		 <br>
-		<div class="boton"> <a href= "{% url 'Contact' %}">Revisar mis anuncios...</a></div>
+		<div class="boton2"> <a href= "{% url 'Contact' %}">Revisar mis anuncios...</a></div>
 	</div>
 	
 	<div class="clearfix"></div>
@@ -2006,7 +1782,7 @@ html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-t
 		y seguimiento de campañas personalizadas para aumentar tus seguidores.
 		<span class="fuerte">Aprende a rentabilizar tu presencia en la web</span> por medio de la generación de público específico.
 		<br>
-	        <div class="boton3"> <a href= "{% url 'Contact' %}">Mejorar mi imagen web</a></div>
+	        <div class="boton2"> <a href= "{% url 'Contact' %}">Mejorar mi imagen web</a></div>
 				
 		</p>
 		
@@ -2028,7 +1804,7 @@ html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-t
 		 <br>
 	        <a href= "{% url 'Contact'  %}">Asesoramiento para influencers profesionales</a></p>
 		  </p>	
-		 <div class="boton3"> <a href= "{% url 'Contact' %}">Un asesor te lo explica</a></div>
+		 <div class="boton2"> <a href= "{% url 'Contact' %}">Un asesor te lo explica</a></div>
 	</div>
 	
 	<div class="clearfix"></div>
@@ -2045,7 +1821,7 @@ html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-t
 		por ello que preparamos estrategias off line y on line para tu promoción ante anunciantes,
 		te acercamos a páginas que intermedien entre las marcas y vos. ¡Estamos para ayudarte!
 		 </p><br>
-		 <div class="boton3"> <a href= "{% url 'Contact' %}">Contactar a un analista...</a></div>
+		 <div class="boton2"> <a href= "{% url 'Contact' %}">Contactar a un analista...</a></div>
 		
 	</div>
 	<div class="clearfix"></div>
@@ -2072,7 +1848,7 @@ html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-t
 
      <div class="col-md-6 about-left">
 
-	<p>Compartimos información actualizada sobre marketing sustentable, analítica de negocios y mucho más por nuestras redes sociales.</p><h2>¡Seguinos!</h2>	
+	<div class="pfinal"><p>Compartimos información actualizada sobre marketing sustentable, analítica de negocios y mucho más por nuestras redes sociales.</p><h2>¡Seguinos!</h2></div>
 
            <div class="social-btns">
                 <a class="btn facebook" href="https://www.facebook.com/Bitnativo-443137372789482/"><i class="fa fa-facebook"></i></a>
