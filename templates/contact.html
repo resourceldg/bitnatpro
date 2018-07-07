@@ -209,25 +209,36 @@ p {
        form > textarea{
             min-width:250px;
         }
-    .inter h3{
+
+
+      .con p{
         font-size:20px;
-    }
-
-
+        }
 
 }
 
 @media screen and (max-width: 600px) {
 
+    .masarriba > .inter h3{
+        font-size:16px;
+      }
+
+       .masarriba h1{
+        font-size:18px;
+      }
 
     form > textarea{
             min-width:250px;
         }
 
+    .con p{
+        font-size:20px;
+        }
+
 
 }
 
-@ ms-viewport {
+@ms-viewport {
   width: device-width;
 }
 
@@ -249,7 +260,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#13f5a6', end
 
 
 .arriba{
-    background:#000;
+    background:
+linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+background-color: #131313;
+background-size: 20px 20px;
     width:100%;
      display:flex;
      flex-direction:row;
@@ -261,7 +280,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#13f5a6', end
     }
 
 .medio{
-    background:#333;
+     background:
+linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+background-color: #131313;
+background-size: 20px 20px;
 
     display:inline-block;
     width:100%;
@@ -277,6 +304,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#13f5a6', end
     flex-wrap:wrap;
     justify-content:space-between;
     align-content:center;
+    margin-right: 25px;
+    margin-left: 25px;
 
     }
 
@@ -300,14 +329,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#13f5a6', end
 .masarriba h1{
      font-weight:bold;
      font-size:25px;
-     color:#ff9900;
+     color:#33cc33;
+    margin-top:10px;
+    margin-left:10px;
+    margin-right:10px;
+    margin-bottom:10px;
+
+    text-align:center;
 
 }
 
 .medio h3{
     font-weight:bold;
     font-size:20px;
-    color:#ff9900;
+    color:#33cc33;
     margin-top:10px;
     margin-left:10px;
     margin-right:10px;
@@ -327,30 +362,20 @@ h3{
 
 .con p{
     margin-top:20px;
-    font-size:20px;
-    text-align:center;
-    color:#ff9900;
-    font-weight:bold;
-     width:100%;
-
-
-    }
-
-.con h3{
     font-size:25px;
-    color:#fff;
-
-    }
-
-.masarriba h1{
-    margin-top:10px;
-    margin-left:10px;
-    margin-right:10px;
-    margin-bottom:10px;
-    font-size:30px;
     text-align:center;
+    color:#33cc33;
+    font-weight:bold;
 
     }
+
+.con > h3{
+    font-size:25px;
+    color:#ffff00;
+
+    }
+
+
 
 .con > form{
     display:flex;
@@ -362,8 +387,22 @@ h3{
     margin-bottom:30px;
     box-shadow: 3px 3px 3px #000;
 
-
     }
+  .errorlist  li{
+  color: #cc0033;
+  font-size:16px;
+
+
+}
+.con > form: invalid{
+
+  border: 2px solid #cc0033;
+  outline: none;
+}
+
+
+
+
 
 .primera{
 
@@ -384,6 +423,7 @@ h3{
 
     }
 .inter{
+
     display:flex;
     flex-direction:row;
     flex-wrap:no-wrap;
@@ -392,7 +432,7 @@ h3{
     }
 
 .inter h3{
-    color: #808080;
+    color: #333;
     font-size:20px;
 
     }
@@ -407,7 +447,7 @@ h3{
 input[type="submit"] {
 
 
-    background:#ff9900;
+    background:#33cc33;
     font-size:18px;
     float:right;
     font-weight:bold;
@@ -457,7 +497,7 @@ textarea{
     }
 
 .uno i{
-    color:#ff9900;
+    color:#33cc33;
     }
 
 
@@ -466,7 +506,7 @@ textarea{
     margin-top:3px;
     margin-bottom:3px;
     font-size:20px;
-    color:#ff9900;
+    color:#ffff00;
 
     }
 
@@ -474,7 +514,7 @@ textarea{
 
     font-size:16px;
     font-family:sans-serif;
-    color:#ff9900;
+    color:#ffff00;
     font-weight:bold;
      margin-right:10px;
     }
@@ -526,7 +566,52 @@ h1 > span{
     text-decoration: underline;
     }
 
-html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}header,nav,section{display:block}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}svg:not(:root){overflow:hidden}button{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button{overflow:visible}button{text-transform:none}button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}.center{text-align:center}.block{display:block}.max-width-3{max-width:72rem}.mt1{margin-top:1rem}.mx-auto{margin-right:auto}.mx-auto{margin-left:auto}.px1{padding-left:1rem;padding-right:1rem}.col-12{width:100%}.flex{display:-webkit-box;display:-ms-flexbox;display:flex}.items-center{-webkit-box-align:center;-ms-flex-align:center;align-items:center}.self-end{-ms-flex-item-align:end;align-self:flex-end}.flex-auto{-webkit-box-flex:1;-ms-flex:1 1 auto;flex:1 1 auto;min-width:0;min-height:0}.relative{position:relative}.absolute{position:absolute}.top-0{top:0}.right-0{right:0}.left-0{left:0}.z2{z-index:2}@media (min-width:52.06rem) and (max-width:72rem){.md-hide{display:none}}@media (min-width:72.06rem){.lg-hide{display:none}}*{box-sizing:border-box}body{background:#fff;color:#1377e9;font-family:Source Sans Pro,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif;min-width:100%;overflow-x:hidden;font-smooth:always;-webkit-font-smoothing:antialiased}body{line-height:1.6;letter-spacing:normal},a:active,a:visited{color:inherit}@media (min-width:52.06rem){.md-px2{padding-left:1.5rem}.md-px2{padding-right:1.5rem}}body{line-height:1.4}@-webkit-keyframes a{0%{opacity:0;-webkit-transform:translateY(2rem);transform:translateY(2rem)}to{opacity:1;-webkit-transform:none;transform:none}}@keyframes a{0%{opacity:0;-webkit-transform:translateY(2rem);transform:translateY(2rem)}to{opacity:1;-webkit-transform:none;transform:none}}@-webkit-keyframes b{0%{opacity:0}to{opacity:1}}@keyframes b{0%{opacity:0}to{opacity:0}}.travel-icon{display:inline-block;vertical-align:-23%;height:1.2em;width:1.2em;background-position:50% 50%;background-repeat:no-repeat;background-size:auto 1.2em}@-webkit-keyframes g{0%{opacity:0;-webkit-transform:translate3d(5vmax,2vmax,0) scale(1.1);transform:translate3d(5vmax,2vmax,0) scale(1.1)}5%{opacity:1}33%{opacity:1}38%{opacity:0;-webkit-transform:translate3d(0,-2vmax,0) scale(1);transform:translate3d(0,-2vmax,0) scale(1)}}@keyframes g{0%{opacity:0;-webkit-transform:translate3d(5vmax,2vmax,0) scale(1.1);transform:translate3d(5vmax,2vmax,0) scale(1.1)}5%{opacity:1}33%{opacity:1}38%{opacity:0;-webkit-transform:translate3d(0,-2vmax,0) scale(1);transform:translate3d(0,-2vmax,0) scale(1)}}@-webkit-keyframes h{0%{opacity:0;-webkit-transform:translate3d(-2vmax,0,0) scale(1);transform:translate3d(-2vmax,0,0) scale(1)}5%{opacity:1}33%{opacity:1}38%{opacity:0;-webkit-transform:translate3d(2vmax,-2vmax,0) scale(1.1);transform:translate3d(2vmax,-2vmax,0) scale(1.1)}}@keyframes h{0%{opacity:0;-webkit-transform:translate3d(-2vmax,0,0) scale(1);transform:translate3d(-2vmax,0,0) scale(1)}5%{opacity:1}33%{opacity:1}38%{opacity:0;-webkit-transform:translate3d(2vmax,-2vmax,0) scale(1.1);transform:translate3d(2vmax,-2vmax,0) scale(1.1)}}@-webkit-keyframes i{0%{opacity:0;-webkit-transform:translate3d(0,2vmax,0) scale(1);transform:translate3d(0,2vmax,0) scale(1)}5%{opacity:1}33%{opacity:1}38%{opacity:0;-webkit-transform:translateY(-2vmax) scale(1.1);transform:translateY(-2vmax) scale(1.1)}}@keyframes i{0%{opacity:0;-webkit-transform:translate3d(0,2vmax,0) scale(1);transform:translate3d(0,2vmax,0) scale(1)}5%{opacity:1}33%{opacity:1}38%{opacity:0;-webkit-transform:translateY(-2vmax) scale(1.1);transform:translateY(-2vmax) scale(1.1)}}.travel-hero{height:100vmax}.travel-hero-bg{height:70vmax;-webkit-animation:b .8s ease-out both;animation:b .8s ease-out both}.travel-hero-bg:after{content:"";position:absolute;left:0;right:0;height:95vmax;top:calc(70vmax - 300px);background-image:-webkit-linear-gradient(top,transparent,#323a43 300px);background-image:linear-gradient(180deg,transparent,#323a43 300px)}.travel-hero-bg-img{top:-5vmax;right:-5vmax;bottom:-5vmax;left:-5vmax;opacity:0;background:#e3e5e8}.travel-hero-bg-img:nth-child(1){-webkit-animation:18s g linear infinite;animation:18s g linear infinite;background:url(images/prueba1.jpg) no-repeat 50% 50%;background-size:cover}.travel-hero-bg-img:nth-child(2){-webkit-animation:18s h linear 6s infinite;animation:18s h linear 6s infinite;background:url(images/hero-3.jpg) no-repeat 50% 50%;background-size:cover}.travel-hero-bg-img:nth-child(3){-webkit-animation:18s i linear 12s infinite;animation:18s i linear 12s infinite;background:url(images/hero-1.jpg) no-repeat 50% 50%;background-size:cover}.travel-hero-content{padding-top:86px;height:calc(100vmax - 70px)}.travel-hero-discover{color:#8f98a3;cursor:pointer;-webkit-animation:a .4s .45s ease-in-out both;animation:a .4s .45s ease-in-out both}.travel-hero-discover svg{display:block;margin:0 auto}@media (min-width:52.06rem){.travel-hero{z-index:1;height:auto}.travel-hero-bg,.travel-hero-content{position:relative;height:auto}.travel-hero-content{padding-top:calc(86px + 56px);padding-bottom:3rem}} </style>
+.botonser input {
+
+    color: #000;
+    background: #ffff00;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius:30px 50px 15px;
+    padding:15px 15px;
+    margin-bottom: 15px;
+
+}
+.botonser input:hover {
+    color: #000;
+    border:2px solid #ffff00;
+    background: none;
+
+    }
+
+.medio a{
+
+    color: #000;
+
+    font-size: 20px;
+    font-weight: bold;
+    border-radius:20px 50px 20px;
+    padding:10px 10px;
+    display:block;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+
+
+
+}
+.medio .sub {
+    color: #ffff00;
+    }
+.medio a:hover {
+    color: #ffff00;
+    border:2px solid #ffff00;
+    background: none;
+
+    }
+html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}*{box-sizing:border-box}body{background:#fff;font-family:Source Sans Pro,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif;min-width:100%;overflow-x:hidden;font-smooth:always;-webkit-font-smoothing:antialiased}body{line-height:1.6;letter-spacing:normal}a:active,a:visited{color:inherit}body{line-height:1.4} </style>
+
 
 </head>
  <body>
@@ -549,12 +634,37 @@ html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-t
 </script>
 </amp-analytics>
 <!-- fin amp analytics -->
+<amp-analytics>
+    <script type="application/json">
+        {
+            "requests": {
+                "event": "https://www.ampproject.org/static/img/logo-blue.svg?eid=${eventId}"
+            },
+            "triggers": {
+                "formSubmitSuccess": {
+                    "on": "amp-form-submit-success",
+                    "request": "event",
+                    "vars": {
+                        "eventId": "form-submit-success"
+                    }
+                },
+                "formSubmitError": {
+                    "on": "amp-form-submit-error",
+                    "request": "event",
+                    "vars": {
+                        "eventId": "form-submit-error"
+                    }
+                }
+            }
+        }
+    </script>
+</amp-analytics>
 
     <div class="primera">
 
 
                     <div class="arriba">
-                        <div><amp-img src="{% static 'images/logo1.png' %}" width ="60" height="44" > </amp-img></div>
+                        <div><a href= "{% url 'Contact' %}"><amp-img src="{% static 'images/logo1.png' %}" width ="60" height="44" ></a></amp-img></div>
                         <div class="dos"><i class="fa fa-send-o"></i><a> bitnativo@gmail.com</a></div>
 
                      </div>
@@ -592,8 +702,9 @@ html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-t
                                           {{form.fmensaje.errors}}
                                         <textarea name="fmensaje" placeholder="Algo que nos quieras decir..."></textarea>
 
-                                         <div class="bot"><input type="submit" value="Mi asesoría gratuita "></div>
+                                         <div class="botonser"><input type="submit" value="Mi asesoría gratuita "></div>
                                           <div class="doss"><i class="fa fa-unlock-alt"></i><a>Tus datos serán protegidos. ¡Es tu derecho!</a></div>
+
                             </form>
 
                          </div>
@@ -607,8 +718,8 @@ html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-t
                          <div>
                          <h1>Obtené <span class="sub">gratis</span> tu asesoría...</h1>
                          <p><span class="fuerte">¡No sólo mejorará tus ventas!</span> Con Marketing Digital Sustentable
-                            tu proyecto puede fidelizar "super clientes". Alcanzar niveles de calidad muy altos logrando una diferencia
-                            competitiva que <span class="fuerte">sólo los líderes de empresas responsables</span> pueden lograrlo.<br>
+                            tu proyecto puede fidelizar clientes comprometidos con tu marca.<br> Alcanza un alto nivel de calidad logrando una diferencia
+                            competitiva que <span class="fuerte">sólo los líderes de empresas responsables</span> pueden lograrlo.
                             Nuestro asesoramitento prepara tu compañía para un ecosistema digital exigente.</p>
                          </div>
 
@@ -637,7 +748,9 @@ html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-t
                    <div class="clearfix"> </div>
 
                   <div class="medio">
-                    <h3>Aprovechá esta <span class="sub">oportunidad única</span> de asesoramiento gratuito para iniciar o mejorar tu presencia digital... </h3>
+                    <a href=" "target="_top"><h3>¡Aprovechá la oportunidad de un asesoramiento <span class="sub">gratuito y exclusivo</span> para transformar tu empresa!</h3></a>
+
+
                  </div>
 
 
