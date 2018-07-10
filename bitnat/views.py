@@ -105,7 +105,7 @@ class Social_lp(View):
                     to=[settings.EMAIL_HOST_USER],
                 )
                 email_message.content_subtype = 'html'
-                #email_message.send()
+                email_message.send()
                 return HttpResponseRedirect('gracias', {'form': form})
 
         else:
@@ -148,7 +148,7 @@ class Negocio_lp(View):
                     to=[settings.EMAIL_HOST_USER],
                 )
                 email_message.content_subtype = 'html'
-                #email_message.send()
+                email_message.send()
                 return HttpResponseRedirect('gracias', {'form': form})
 
         else:
@@ -191,7 +191,7 @@ class Analytics_lp(View):
                     to=[settings.EMAIL_HOST_USER],
                 )
                 email_message.content_subtype = 'html'
-                #email_message.send()
+                email_message.send()
                 return HttpResponseRedirect('gracias', {'form': form})
 
         else:
@@ -235,7 +235,7 @@ class Contenido_lp(View):
                     to=[settings.EMAIL_HOST_USER],
                 )
                 email_message.content_subtype = 'html'
-                #email_message.send()
+                email_message.send()
                 return HttpResponseRedirect('gracias', {'form': form})
 
         else:
@@ -279,7 +279,7 @@ class Posicionamiento_lp(View):
                     to=[settings.EMAIL_HOST_USER],
                 )
                 email_message.content_subtype = 'html'
-                #email_message.send()
+                email_message.send()
                 return HttpResponseRedirect('gracias', {'form': form})
 
         else:
@@ -323,7 +323,7 @@ class Emailmkt_lp(View):
                     to=[settings.EMAIL_HOST_USER],
                 )
                 email_message.content_subtype = 'html'
-                #email_message.send()
+                email_message.send()
                 return HttpResponseRedirect('gracias', {'form': form})
 
         else:
@@ -367,7 +367,7 @@ class Ctalider_lp(View):
                     to=[settings.EMAIL_HOST_USER],
                 )
                 email_message.content_subtype = 'html'
-                #email_message.send()
+                email_message.send()
                 return HttpResponseRedirect('gracias', {'form': form})
 
         else:
