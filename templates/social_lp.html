@@ -1,6 +1,7 @@
 
 <!doctype html>
 
+
 <html ⚡="" lang ="es">
 
 <head>
@@ -246,12 +247,26 @@ p {
 
 
 .con > form{
-    background: #006080;
+   background-image: -moz-linear-gradient(90deg, #33cc33, #006080);
+   border-radius:15px;
+   margin-left:15px;
+   margin-right:15px;
+
 }
 
 
 .arriba{
-  background: #006080;
+
+  background:
+linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+background-color: #131313;
+background-size: 20px 20px;
+
     width:100%;
      display:flex;
      flex-direction:row;
@@ -264,7 +279,15 @@ p {
 
 .medio{
 
-    background: #006080;
+   background:
+linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+background-color: #131313;
+background-size: 20px 20px;
     display:inline-block;
     width:100%;
 
@@ -276,8 +299,6 @@ p {
     display:flex;
     flex-direction:row;
     flex-wrap:wrap;
-    justify-content:space-between;
-    align-content:center;
 
 
     }
@@ -303,7 +324,7 @@ p {
 .masarriba h1{
      font-weight:bold;
      font-size:20px;
-     color:#333;
+
     margin-top:10px;
     margin-left:10px;
     margin-right:10px;
@@ -316,7 +337,7 @@ p {
 .medio h3{
     font-weight:bold;
     font-size:20px;
-    color:#ffff00;
+    color:#33cc33;
     margin-top:10px;
     margin-left:10px;
     margin-right:10px;
@@ -381,17 +402,21 @@ h3{
 
 .primera{
 
-background:#fff;
+background: #33cc33;
+
+
+
 
 }
 
 .con{
-     background: #006080;
+     background: #33cc33;
      display:flex;
      flex-direction:column;
      flex-wrap:wrap;
      justify-content:center;
      align-content:center;
+     border-radius:15px;
 
     }
 .inter{
@@ -470,7 +495,7 @@ textarea{
     }
 
 .uno i{
-     color:#ffff00;
+     color:#33cc33;
      text-shadow: 3px 3px 3px #000;
     }
 
@@ -480,7 +505,7 @@ textarea{
     margin-top:3px;
     margin-bottom:3px;
     font-size:20px;
-    color:#ffff00;
+    color:#33cc33;
 
     }
 
@@ -488,7 +513,7 @@ textarea{
 
     font-size:16px;
     font-family:sans-serif;
-    color:#ffff00;
+    color:#33cc33;
     font-weight:bold;
      margin-right:10px;
     }
@@ -584,11 +609,17 @@ h1 > .fuerte{
     background: none;
 
     }
-.con {
+.primera {
 	background-image:url(../static/images/social.png);
 	
 }
 
+
+.con {
+	background-image:url(../static/images/social.png);
+	
+	
+}
 @keyframes con{
 	from { background-position: 300px 390px, 0px 0px, 0 0; }
 	to { background-position: -300px -390px, 0px 0px, 100% 0; }
@@ -601,11 +632,45 @@ h1 > .fuerte{
     color:#ffff00;
 }
 
+.ni h1, .ni span{
+    color:#ffff00;
+}
+
+.ni p{
+    color:#fff;
+}
+
 .masarriba{
+ margin-top:50px;
+ background:#fff;
+ border-radius:15px;
+ margin-left:20px;
+	margin-right:20px;
+ margin-bottom:20px;
 
+    }
+.ni{
 
+     background:
+linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+background-color: #131313;
+background-size: 20px 20px;
+    border-radius:15px 15px 0px 0px;
+    }
 
+.ni1{
+    background:#00ace6;
+    border-radius:15px 15px 0px 0px;
+    }
 
+.ni2{
+    background:#00ace6;
+    border-radius:15px 15px 0px 0px;
     }
 
 
@@ -711,13 +776,16 @@ html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-t
 
                     <div class="masarriba">
 
-                         <div>
+                         <div class="ni">
+                         <div class="ni1"></div>
+                         <div class="ni2"></div>
+
                          <h1><span class="fuerte">Estrategias efectivas en redes sociales </span></h1>
                          <p><span class="fuerte">¿Sabías que el valor de tu comunicación
                           es proporcional al valor de tus ingresos?</span> <br>
-                          Ahora que lo sabés. Obtené tu primera <span class="fuerte">asesoría gratuita en redes sociales </span>con nuestro equipo.
-                          <br>Conocer valor de tu mensaje y el contexto digital por el que fluye te brindará información privilegiada en la toma de decisiones.
-                            Hoy no hay excusas para la difusión de un proyecto innovador, nosotros nos ocupamos de ello.
+                          Ahora que lo sabés. Obtené tu primera <span class="fuerte">asesoría gratuita en redes sociales.</span>
+                          <br>Conocer el valor de tu mensaje y el contexto digital por el que transita te brindará información privilegiada en la toma de decisiones.
+                            Hoy no hay excusas para la difusión de una compañia innovadora, nosotros nos ocupamos de ello.
                           </p>
 
                          </div>
