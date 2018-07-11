@@ -9,7 +9,7 @@
   <title>bitnativo.com </title>
   <link rel="canonical" href="#">
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-  <meta name="robots" content="noindex, follow">
+
 
   <script async="" src="https://cdn.ampproject.org/v0.js"></script>
 
@@ -239,7 +239,7 @@ p {
 
 }
 
-@ms-viewport {
+@ ms-viewport {
   width: device-width;
 }
 
@@ -248,12 +248,21 @@ p {
 
 
 .con > form{
-    background: #006080;
+    background-color: #33cc33;
+ background: linear-gradient(to bottom right, #33cc33,#001a33,#001a33,#33cc33,#001a33,#001a33, #001a33,#33cc33,#001a33,#001a33);
+
+
+   border-radius:15px;
+   margin-left:15px;
+   margin-right:15px;
+
 }
 
 
 .arriba{
-  background: #006080;
+
+background-color: #090a0b;
+background-image: url("data:image/svg+xml,%3Csvg width='20' height='12' viewBox='0 0 20 12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 12c0-.622-.095-1.221-.27-1.785A5.982 5.982 0 0 0 10 12c1.67 0 3.182-.683 4.27-1.785A5.998 5.998 0 0 0 14 12h2a4 4 0 0 1 4-4V6c-1.67 0-3.182.683-4.27 1.785C15.905 7.22 16 6.622 16 6c0-.622-.095-1.221-.27-1.785A5.982 5.982 0 0 0 20 6V4a4 4 0 0 1-4-4h-2c0 .622.095 1.221.27 1.785A5.982 5.982 0 0 0 10 0C8.33 0 6.818.683 5.73 1.785 5.905 1.22 6 .622 6 0H4a4 4 0 0 1-4 4v2c1.67 0 3.182.683 4.27 1.785A5.998 5.998 0 0 1 4 6c0-.622.095-1.221.27-1.785A5.982 5.982 0 0 1 0 6v2a4 4 0 0 1 4 4h2zm-4 0a2 2 0 0 0-2-2v2h2zm16 0a2 2 0 0 1 2-2v2h-2zM0 2a2 2 0 0 0 2-2H0v2zm20 0a2 2 0 0 1-2-2h2v2zm-10 8a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm0-2a2 2 0 1 0 0-4 2 2 0 0 0 0 4z' fill='%23006080' fill-opacity='0.47' fill-rule='evenodd'/%3E%3C/svg%3E");
     width:100%;
      display:flex;
      flex-direction:row;
@@ -266,7 +275,15 @@ p {
 
 .medio{
 
-    background: #006080;
+   background:
+linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+background-color: #131313;
+background-size: 20px 20px;
     display:inline-block;
     width:100%;
 
@@ -274,12 +291,11 @@ p {
     }
 
 .masarriba{
+
     min-width:200px;
     display:flex;
     flex-direction:row;
     flex-wrap:wrap;
-    justify-content:space-between;
-    align-content:center;
 
 
     }
@@ -298,14 +314,14 @@ p {
 
 .masarriba p{
     font-size:16px;
-    text-align:justify;
+
 
 
     }
 .masarriba h1{
      font-weight:bold;
      font-size:20px;
-     color:#333;
+
     margin-top:10px;
     margin-left:10px;
     margin-right:10px;
@@ -318,7 +334,7 @@ p {
 .medio h3{
     font-weight:bold;
     font-size:20px;
-    color:#ffff00;
+    color:#33cc33;
     margin-top:10px;
     margin-left:10px;
     margin-right:10px;
@@ -342,12 +358,14 @@ h3{
     text-align:center;
     color:#33cc33;
     font-weight:bold;
+     text-shadow: 3px 3px 3px #000;
 
     }
 
 .con > h3{
     font-size:25px;
     color:#ffff00;
+     text-shadow: 3px 3px 3px #000;
 
     }
 
@@ -366,11 +384,11 @@ h3{
 
     }
   .errorlist  li{
-  color: #cc0033;
+  color: #ffff00;
+  font-weight:bold;
   font-size:16px;
-
-
 }
+	
 .con > form: invalid{
 
   border: 2px solid #cc0033;
@@ -383,17 +401,21 @@ h3{
 
 .primera{
 
-background:#fff;
+
+
+
+
 
 }
 
 .con{
-     background: #006080;
+     background: #fff;
      display:flex;
      flex-direction:column;
      flex-wrap:wrap;
      justify-content:center;
      align-content:center;
+     border-radius:15px;
 
     }
 .inter{
@@ -472,7 +494,7 @@ textarea{
     }
 
 .uno i{
-     color:#ffff00;
+     color:#33cc33;
      text-shadow: 3px 3px 3px #000;
     }
 
@@ -493,6 +515,7 @@ textarea{
     color:#ffff00;
     font-weight:bold;
      margin-right:10px;
+
     }
 
 .dos {
@@ -505,28 +528,24 @@ textarea{
 
     font-size:16px;
     font-family:sans-serif;
-    color: #1a1a1a;
-    margin-top:10px;
+    color:#ffff00;
     margin-left:10px;
-    margin-right:10px;
-    margin-bottom:10px;
-    padding-top:10px;
-    padding-left:10px;
-    padding-right:10px;
-    padding-bottom:10px;
+
 
     }
 
 .doss i{
 
     font-size:25px;
-    color: #000;
+    color:#ffff00;
+
 
     }
 .doss{
-
-text-align:center;
+    display:inline;
+    text-align:center;
     }
+
 h1 > .fuerte{
      font-size:30px;
 
@@ -554,7 +573,7 @@ h1 > .fuerte{
 
 }
 .botonser input:hover {
-    color: #000;
+    color: #ffff00;
     border:2px solid #ffff00;
     background: none;
 
@@ -586,10 +605,12 @@ h1 > .fuerte{
     background: none;
 
     }
-.con {
-	background-image:url(../static/images/social.png);
+.primera {
+	
 	
 }
+
+
 
 @keyframes con{
 	from { background-position: 300px 390px, 0px 0px, 0 0; }
@@ -603,11 +624,43 @@ h1 > .fuerte{
     color:#ffff00;
 }
 
+.masarriba h1 span{
+    color: #333;
+}
+
+.ni span{
+     color:#33cc33;
+
+}
+
+.ni p{
+    color:#333;
+}
+
 .masarriba{
+ margin-top:50px;
+background-color: #DFDBE5;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.4'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3Cpath d='M6 5V0H5v5H0v1h5v94h1V6h94V5H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+ border-radius:15px;
+ margin-left:20px;
+	margin-right:20px;
+ margin-bottom:20px;
 
+    }
+.ni{
 
+     background:#c2f0c2;
+     border-radius:15px 15px 0px 0px;
+    }
 
+.ni1{
+    background:#00ace6;
+    border-radius:15px 15px 0px 0px;
+    }
 
+.ni2{
+    background:#00ace6;
+    border-radius:15px 15px 0px 0px;
     }
 
 
@@ -678,7 +731,7 @@ html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-t
                             <form action-xhr="#contact" method="POST" target="_top">{% csrf_token %}
                                      <div class="ribbon">
                             <p>Asesoría Gratuita</p>
-                            <h3>En gestión de Redes sociales<br><span><i class="fa fa-chevron-down"></i></span></h3>
+                            <h3>En analítica de negocios<br><span><i class="fa fa-chevron-down"></i></span></h3>
                         </div>
 
 
@@ -701,8 +754,8 @@ html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-t
                                           {{form.fmensaje.errors}}
                                         <textarea name="fmensaje" placeholder="Algo que nos quieras decir..."></textarea>
 
-                                         <div class="botonser"><input type="submit" value="Mi asesoría gratuita "></div>
-                                          <div class="doss"><i class="fa fa-unlock-alt"></i><a>Tus datos serán protegidos. ¡Es tu derecho!</a></div>
+                                         <div class="botonser"><input type="submit" value="Voy por mi asesoría gratuita "></div>
+                                          <div class="doss"><i class="fa fa-unlock-alt"></i><a>Cuidamos tus datos: Están protegidos.</a></div>
 
                             </form>
 
@@ -713,13 +766,16 @@ html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-t
 
                     <div class="masarriba">
 
-                         <div>
-                         <h1><span class="fuerte">Estrategias efectivas en redes sociales </span></h1>
-                         <p><span class="fuerte">¿Sabías que el valor de tu comunicación
-                          es proporcional al valor de tus ingresos?</span> <br>
-                          Ahora que lo sabés. Obtené tu primera <span class="fuerte">asesoría gratuita en redes sociales </span>con nuestro equipo.
-                          <br>Conocer valor de tu mensaje y el contexto digital por el que fluye te brindará información privilegiada en la toma de decisiones.
-                            Hoy no hay excusas para la difusión de un proyecto innovador, nosotros nos ocupamos de ello.
+                         <div class="ni">
+
+                         <h1><span class="fuerte">Analítica de negocios digitales </span></h1>
+                         <p><span class="fuerte">El secreto es contratar soluciones digitales integrales.</span>
+                         Los servicios digitales aislados solo representan gastos.<br>
+                          Antes de sacar tu billetera, debes preparar tu compañía para enfrentar
+                           los desafíos por los que ha venido.
+                          Preparamos una<span class="fuerte"> asesoría completamente gratuita </span>para que
+                           puedas comprender <span class="fuerte">qué necesita tu negocio hoy.</span>
+
                           </p>
 
                          </div>
@@ -727,29 +783,29 @@ html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-t
 
                          <div class="inter">
                              <div class="uno"><i class="fa fa-check"></i></div>
-                             <h3>Aprendé como utilizar tus<span class="sub"> redes sociales para vender más y mejor</span>.</h3>
+                             <h3>Aprendrás cómo construir tu arquitectura digital desde cero con<span class="sub"> estrategia de negocios digitales</span>.</h3>
                          </div>
 
                          <div class="inter">
                              <div class="uno"><i class="fa fa-check"></i></div>
-                             <h3>Conocé soluciones de comunicación efectiva <span class="sub">100% a la medida</span> de tu empresa.</h3>
+                             <h3>Obtendrás información privilegiada de tus <span class="sub"> errores de gestión digital</span>.</h3>
                          </div>
 
                          <div class="inter">
                              <div class="uno"><i class="fa fa-check"></i></div>
-                             <h3><span class="sub">Mejorá tanto la rentabilidad como la calidad</span> de tu servicio o producto.</h3>
+                             <h3><span class="sub">Ganarás visión para mejorar en rentabilidad y calidad</span> tu servicio o producto.</h3>
                          </div>
 
                          <div class="inter">
                              <div class="uno"><i class="fa fa-check"></i></div>
-                             <h3>Generá clientes específicos optimizando tus redes sociales.</h3>
+                             <h3>Comprenderás cómo medirte y cuales son tus oportunidades hoy.</h3>
                          </div>
 
                   </div>
                    <div class="clearfix"> </div>
 
                   <div class="medio">
-                    <a href="#"target="_top"><h3>¡Aprovechá esta oportunidad de un asesoramiento <span class="sub">gratuito y exclusivo</span> para transformar tu empresa!</h3></a>
+                    <a href="#"target="_top"><h3>¡Esta oportunidad es única y<span class="sub"> gratuita</span>, transformará positivamente tu empresa!</h3></a>
 
 
                  </div>
