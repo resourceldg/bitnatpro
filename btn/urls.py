@@ -58,6 +58,8 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', views.inicio, name='inicio'),
     url(r'^contact/$', views.Contact.as_view(), name='Contact'),
+    url(r'^sitemap/$', views.sitemap, name='sitemap'),
+    url(r'^robots.txt/$', views.robots, name='robots'),
     url(r'^contact/gracias/$', views.gracias, name='gracias'),
     url(r'^social_lp/gracias/$', views.gracias, name='gracias'),#dry(dont repeat yourself): me estoy repitiendo (SOLUCION: APRENDER A USAR REGEX EN PATRONES URL)
     url(r'^negocio_lp/gracias/$', views.gracias, name='gracias'),#dry(dont repeat yourself): me estoy repitiendo (SOLUCION: APRENDER A USAR REGEX EN PATRONES URL)
