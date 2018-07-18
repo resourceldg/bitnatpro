@@ -957,7 +957,7 @@ li {
 .hidden {
   display: none ;
 }
-@ms-viewport {
+@ ms-viewport {
   width: device-width;
 }
 .micro {
@@ -1157,13 +1157,29 @@ color:#333;
 .fuerte{
  font-weight: bold;
     }
+.boton2 {
+
+    color: #fff;
+    background:#33cc33;
+    font-size: 18px;
+    padding: 15px 15px 15px 15px;
+    margin-bottom: 15px;
+    float: right;
+     border-radius:200px 20px 200px;
+    border:2px solid #33cc33;
+}
+
 .boton2:hover {
-
-
     color: #33cc33;
     border:2px solid #33cc33;
     background: none;
 }
+
+  a.boton2 {
+    text-decoration: none;
+    color: #fff;
+    }
+
 
 .botond:hover {
 
@@ -1193,16 +1209,7 @@ color:#333;
      color:#33cc33;
     }
 
-.boton2 {
 
-    color: #fff;
-    background:#33cc33;
-    font-size: 18px;
-    padding: 15px 15px 15px 15px;
-    margin-bottom: 15px;
-    float: right;
-     border-radius:200px 20px 200px;
-}
 .tre > .botonser:hover{
     color: #fff;
     border:2px solid #33cc33;
@@ -1510,8 +1517,8 @@ html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-t
         <div class="carousel" id="carousel">
             <amp-carousel layout="responsive" width="1900" height="700" type="slides"  autoplay delay="6000" loop>
             <amp-img src="{% static 'images/bsocial-min.png' %}" height="100vmax" alt="las redes sociales son importantes"></amp-img>
-            <amp-img src="{% static 'images/bpregunta-min.png' %}" height="100vmax"alt="Cómo medir tu empresa"></amp-img>
-            <amp-img src="{% static 'images/bestrategia-min.png' %}" height="100vmax"alt="Estrategia empresarial"></amp-img>
+            <amp-img src="{% static 'images/bpregunta-min.png' %}" height="100vmax" alt="Cómo medir tu empresa"></amp-img>
+            <amp-img src="{% static 'images/bestrategia-min.png' %}" height="100vmax" alt="Estrategia empresarial"></amp-img>
             </amp-carousel>
         </div>
      <div class="flecha">
@@ -1532,29 +1539,29 @@ html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-t
 </div>
 <!--Nosotros-->
 <div class="nosotros" id="nosotros">
-        <div class="col-md-6 about-left">
+                <div class="col-md-6 about-left">
 
-                        <h2><span class="fuerte">Nos pusimos la meta de crear líderes en mercados sustentables</span></h2>
-                        <p> Es por ello que con herramientas como el marketing digital y la analítica
-                            de negocios hacemos que <span class="fuerte">tu proyecto mejore su calidad y tenga la
-                            visibilidad que se merece</span>.
-                            No te olvides: Estás cambiando el mundo... nosotros también.</p>
-                        <h2>¿Por qué debes transformar tu compañía?</h2>
-                        <p> Hoy los consumidores incorporan gran cantidad de información respecto a
-                            los productos y servicios que desean adquirir creando nuevas actividades
-                            de consumo: "actividades inteligentes y responsables". Estas acciones de consumo están muy presentes en la decisión
-                            y experiencia de compra deseada.
-                            <br>En este contexto, Bit Nativo nace como una solución en analítica de negocios y marketing digital
-                            aplicado principalmente al desarrollo y transformación de empresas sustentables.</p>
-		
-        </div>
+                                <h2><span class="fuerte">Nos pusimos la meta de crear líderes en mercados sustentables</span></h2>
+                                <p> Es por ello que con herramientas como el marketing digital y la analítica
+                                    de negocios hacemos que <span class="fuerte">tu proyecto mejore su calidad y tenga la
+                                    visibilidad que se merece</span>.
+                                    No te olvides: Estás cambiando el mundo... nosotros también.</p>
+                                <h2>¿Por qué debes transformar tu compañía?</h2>
+                                <p> Hoy los consumidores incorporan gran cantidad de información respecto a
+                                    los productos y servicios que desean adquirir creando nuevas actividades
+                                    de consumo: "actividades inteligentes y responsables". Estas acciones de consumo están muy presentes en la decisión
+                                    y experiencia de compra deseada.
+                                    <br>En este contexto, Bit Nativo nace como una solución en analítica de negocios y marketing digital
+                                    aplicado principalmente al desarrollo y transformación de empresas sustentables.</p>
+        		
+                </div>
+        	
 	
+                <div data-aos="flip-right" class="col-md-6 about-right">
+            	    <amp-img src="{% static 'images/equipo-min.jpg' %}" width ="700" height="467" layout="responsive" alt="Trabajo en equipo"> </amp-img>
+                </div>
+</div>
 	
-	<div data-aos="flip-right" class="col-md-6 about-right">
-	    <amp-img src="{% static 'images/equipo-min.jpg' %}" width ="700" height="467" layout="responsive"alt="Trabajo en equipo"> </amp-img>
-        </div>
-    </div>
-	<div class="clearfix"></div>
  <!-- //Nosotros -->
 
  <!-- Portfolio -->
@@ -1570,7 +1577,7 @@ html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-t
                                              <div class="tre"><p> Auditamos tu empresa para construir un proyecto de calidad digital,
                                              rentable y socialmente responsable.
                                               Tu empresa es un actor social que puede perdurar en el tiempo.</p>
-                                              <div class="botonser"> <a href= "{% url 'Negocio_lp' %}">+ info</a></div>
+                                              <div> <a class="botonser" href= "{% url 'Negocio_lp' %}">+ info</a></div>
                                             </div>
                                     </div>
 
@@ -1580,7 +1587,7 @@ html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-t
                                      <div class="do"><a><i class="fa fa-globe"></i><br> Posicionamiento Web</a>
                                          <div class="tre"><p> SEO y SEM. Posicionamos empresas líderes sustentables.
                                                   Estás cambiando el mundo... nosotros también.</p>
-                                                   <div class="botonser"> <a href= "{% url 'Posicionamiento_lp' %}">+ info</a></div>
+                                                   <div> <a class="botonser" href= "{% url 'Posicionamiento_lp' %}">+ info</a></div>
                                         </div>
                                     </div>
                                  </div>
@@ -1589,7 +1596,7 @@ html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-t
                                      <div class="do"><a><i class="fa fa-users"></i><br> Redes Sociales</a>
                                              <div class="tre"><p> La correcta gestión estratégica para tus redes sociales no solo aumentará tus ventas,
                                                 consolidará tu mensaje y presencia en la web.</p>
-                                                 <div class="botonser"> <a href= "{% url 'Social_lp' %}">+ info</a></div>
+                                                 <div> <a class="botonser" href= "{% url 'Social_lp' %}">+ info</a></div>
                                             </div>
                                      </div>
                                  </div>
@@ -1601,7 +1608,7 @@ html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-t
                                              <div class="tre"><p>¿Sabes cuál es la @plicación más usada en el mundo?
                                              <br> El email es un medio digital muy rentable para hacer marketing digital ¿Cuánto?
                                                  3 veces mas que cualquier red social.</p>
-                                                  <div class="botonser"> <a href= "{% url 'Emailmkt_lp' %}">+ info</a></div>
+                                                  <div> <a class="botonser" href= "{% url 'Emailmkt_lp' %}">+ info</a></div>
                                              </div>
                                     </div>
 
@@ -1612,7 +1619,7 @@ html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-t
                                              <div class="tre"><p> En el universo web lo que no se puede medir no se puede
                                              resolver. Aplicamos herramientas líderes en analítica web. Creamos indicadores propios
                                              brindando soluciones a medida</p>
-                                              <div class="botonser"> <a href= "{% url 'Analytics_lp' %}">+ info</a></div>
+                                              <div> <a class="botonser" href= "{% url 'Analytics_lp' %}">+ info</a></div>
                                              </div>
                                     </div>
                                 </div>
@@ -1621,7 +1628,7 @@ html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-t
                                      <div class="do"><a><i class="fa fa-leaf"></i><br> Marketing de Contenidos</a>
                                              <div class="tre"><p> Lo que dices, cómo lo dices a quién se lo dices es también vital en la web.
                                              Si quieres clientes sólidos tu mensaje debe ser sólido y acertado.</p>
-                                              <div class="botonser"> <a href= "{% url 'Contenido_lp' %}">+ info</a></div>
+                                              <div> <a class="botonser" href= "{% url 'Contenido_lp' %}">+ info</a></div>
                                              </div>
                                     </div>
 
@@ -1636,7 +1643,6 @@ html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-t
                 </div>
         </div>
 <!-- //Portfolio -->
-<!-- ------------------------------------------------------------------------------------------------------------------------------------------- -->
 <!-- micro -->
 <div class="micro" id="micro">
  <h3>pymes</h3>
@@ -1651,7 +1657,7 @@ html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-t
 		<p>Nos interesa conocer y mejorar tu idea de negocio: hacerla crecer y sostenerla a traves de <span class="fuerte">sólidas estrategias
 		de marketing </span> online y offline. Éste es nuestro principal objetivo. Diseñamos auditorías con indicadores
 		personalizados que te brindarán información valiosa para tus próximas decisiones de negocio.<br>
-		<div class="boton2"> <a href= "{% url 'Negocio_lp' %}">Hablar con un auditor</a></div>
+		<div> <a class="boton2" href= "{% url 'Negocio_lp' %}">Hablar con un auditor</a></div>
 		
 	</div>
 	
@@ -1677,7 +1683,7 @@ html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-t
 		
 		 </p>
 		
-		<div class="boton2"> <a href= "{% url 'Negocio_lp' %}">¿Dudas? Escribinos...</a></div>
+		<div> <a class="boton2" href= "{% url 'Negocio_lp' %}">¿Dudas? Escribinos...</a></div>
 	</div>
 	
 	<div class="clearfix"></div>
@@ -1695,7 +1701,7 @@ html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-t
 		 <br>
 		 <p>Si la autogestión no es lo tuyo: Brindamos un servicio integral y alineado con tu Estrategia
 		  de marketing para la <span class="fuerte">gestión de redes sociales</span> con informes detallados para un seguimiento adecuado.</p>
-		<div class="boton2"> <a href= "{% url 'Social_lp' %}">Asesor para mis redes</a></div>
+		<div> <a class="boton2" href= "{% url 'Social_lp' %}">Asesor para mis redes</a></div>
 		
 	</div>
 	
@@ -1704,7 +1710,6 @@ html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-t
 	
 </div>
 <!-- //micro -->
-<!-- ------------------------------------------------------------------------------------------------------------------------------------------- -->
 <!-- corp -->
 <div class="corp" id="corp">
  <h3 data-aos="slide-up">corporaciones</h3>
@@ -1725,7 +1730,7 @@ html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-t
                  anticipar tendencias, evaluar áreas de mayor impacto inter e intra empresarial. Decidir <span class="fuerte">cómo integrar servicios
                  de marketing digital </span> o resolver rápidamente decisiones de infraestructura de sistema.
                   <br>
-                  <div class="boton2"> <a href= "{% url 'Negocio_lp' %}">Haz aquí tu pregunta</a></div>
+                  <div> <a class="boton2" href= "{% url 'Negocio_lp' %}">Haz aquí tu pregunta</a></div>
 		
 		
 	</div>
@@ -1743,9 +1748,9 @@ html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-t
 		   marketing de contenidos, herramientas de monitoreo y escucha social,
 		   gestión de eventos corporativos, analítica organizacional.
 		   Son servicios que incorporamos para brindar a tu problemática <span class="fuerte">una resolución integral
-		   y real</span>.
+		   y real</span>.</p>
 		    <br>
-                 <div class="boton2"> <a href= "{% url 'Contact' %}">Click para saber más...</a></div>
+                 <div> <a class="boton2" href= "{% url 'Contact' %}">Click para saber más...</a></div>
 		
 		
 	</div>
@@ -1763,8 +1768,8 @@ html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-t
                    Para ser efectivo no basta con publicitar. Es necesario saber <span class="fuerte">qué, cómo, cuándo y por qué publicitar.</span>
 		<br>Nos ponemos de tu lado para superar la incertidumbre digital, con nuestro
 		analítica vamos a la raíz del conflicto.
-		 <br>
-		<div class="boton2"> <a href= "{% url 'Analytics_lp' %}">Revisar mis anuncios...</a></div>
+		 </p><br>
+		<div> <a class="boton2" href= "{% url 'Analytics_lp' %}">Revisar mis anuncios...</a></div>
 	</div>
 	
 	<div class="clearfix"></div>
@@ -1785,10 +1790,8 @@ html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-t
 		<p>Brindamos gestión y curación de contenidos.
 		y seguimiento de campañas personalizadas para aumentar tus seguidores.
 		<span class="fuerte">Aprende a rentabilizar tu presencia en la web</span> por medio de la generación de público específico.
-		<br>
-	        <div class="boton2"> <a href= "{% url 'Contact' %}">Mejorar mi imagen web</a></div>
-				
-		</p>
+		</p><br>
+	        <div> <a class="boton2" href= "{% url 'Contact' %}">Mejorar mi imagen web</a></div>
 		
 		</div>
 	
@@ -1807,8 +1810,8 @@ html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-t
 		 Estrategia multitarget adecuada y toma las riendas del profesionalismo en tu negocio.
 		 <br>
 	        <a href= "{% url 'Contact'  %}">Asesoramiento para influencers profesionales</a></p>
-		  </p>	
-		 <div class="boton2"> <a href= "{% url 'Contenido_lp' %}">Un asesor te lo explica</a></div>
+		  	
+		 <div> <a class="boton2" href= "{% url 'Contenido_lp' %}">Un asesor te lo explica</a></div>
 	</div>
 	
 	<div class="clearfix"></div>
@@ -1825,7 +1828,7 @@ html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-t
 		por ello que preparamos estrategias off line y on line para tu promoción ante anunciantes,
 		te acercamos a páginas que intermedien entre las marcas y vos. ¡Estamos para ayudarte!
 		 </p><br>
-		 <div class="boton2"> <a href= "{% url 'Negocio_lp' %}">Contactar a un analista...</a></div>
+		 <div> <a class="boton2" href= "{% url 'Negocio_lp' %}">Contactar a un analista...</a></div>
 		
 	</div>
 	<div class="clearfix"></div>
