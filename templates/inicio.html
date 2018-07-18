@@ -106,7 +106,7 @@ nav.navbar.navbar-default.navbar-fixed-top {
 }
 .navbar-default .navbar-nav > li>a:hover {
     color:  #5713db;
-    background: #0000;
+    background: #000;
 }
 .navbar-nav > li > a {
     padding: 5px;
@@ -957,7 +957,7 @@ li {
 .hidden {
   display: none ;
 }
-@ ms-viewport {
+@ms-viewport {
   width: device-width;
 }
 .micro {
@@ -1492,50 +1492,46 @@ html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-t
 <div class="banner" id="inicio">
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="navbar-header page-scroll">
-    <!-- Collect the nav links, forms, and other content for toggling -->
             <div class= "glob">
-            <h2><a href="/blog"><i class="fa fa-bullhorn"></i></a></h2>
-            <h2><a href="#nosotros"><i class="fa fa-home"></i></a></h2>
-            <h2><a href="{% url 'Contact' %}"><i class="fa fa-envelope"></i></a></h2>
+                <h2><a href="/blog"><i class="fa fa-bullhorn"></i></a></h2>
+                <h2><a href="#nosotros"><i class="fa fa-home"></i></a></h2>
+                <h2><a href="{% url 'Contact' %}"><i class="fa fa-envelope"></i></a></h2>
             </div>
             <div class="collapse navbar-collapse navbar-ex1-collapse">
-            <ul class="nav navbar-nav navbar-right cl-effect-15">
-    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                <li class="hidden"><a class="page-scroll" href="#page-top"></a>	</li>
-                <li><a class="page-scroll scroll" href="#carousel">Inicio</a></li>
-                <li><a class="page-scroll scroll" href="#nosotros">Nosotros</a></li>
-                <li><a class="page-scroll scroll" href="#servicios">Servicios</a></li>
-                <li><a href="/blog">Blog</a></li>
-                <li><a href="{% url 'Contact' %}">Contacto</a></li>
-            </ul>
+                <ul class="nav navbar-nav navbar-right cl-effect-15">
+                    <li class="hidden"><a class="page-scroll" href="#page-top"></a>	</li>
+                    <li><a class="page-scroll scroll" href="#carousel">Inicio</a></li>
+                    <li><a class="page-scroll scroll" href="#nosotros">Nosotros</a></li>
+                    <li><a class="page-scroll scroll" href="#servicios">Servicios</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="{% url 'Contact' %}">Contacto</a></li>
+                </ul>
+           </div>
         </div>
-        <div class="clearfix"></div>
-    <!-- /.navbar-collapse -->
-    <!-- /.container -->
     </nav>
-    <div class="mkt" id="mkt">
-        <div class="carousel" id="carousel">
-            <amp-carousel layout="responsive" width="1900" height="700" type="slides"  autoplay delay="6000" loop>
-            <amp-img src="{% static 'images/bsocial-min.png' %}" height="100vmax" alt="las redes sociales son importantes"></amp-img>
-            <amp-img src="{% static 'images/bpregunta-min.png' %}" height="100vmax" alt="Cómo medir tu empresa"></amp-img>
-            <amp-img src="{% static 'images/bestrategia-min.png' %}" height="100vmax" alt="Estrategia empresarial"></amp-img>
-            </amp-carousel>
-        </div>
-     <div class="flecha">
-     <h2>bitnativo.com</h2>
-    <amp-img src="{% static 'images/corte2.png' %}" width="572" height="461" layout="responsive" alt="Bitnativo"></amp-img>
-    </div>
 
-    <div class="lah">
-    <h1>Agencia de Marketing Digital Sustentable</h1>
-    </div>
-    <div class="pdf">
+                <div class="carousel" id="carousel">
+                    <amp-carousel layout="responsive" width="1900" height="700" type="slides"  autoplay delay="6000" loop>
+                    <amp-img src="{% static 'images/bsocial-min.png' %}" height="100vmax" alt="las redes sociales son importantes"></amp-img>
+                    <amp-img src="{% static 'images/bpregunta-min.png' %}" height="100vmax" alt="Cómo medir tu empresa"></amp-img>
+                    <amp-img src="{% static 'images/bestrategia-min.png' %}" height="100vmax" alt="Estrategia empresarial"></amp-img>
+                    </amp-carousel>
+                </div>
+                <div class="flecha">
+                     <h2>bitnativo.com</h2>
+                     <amp-img src="{% static 'images/corte2.png' %}" width="572" height="461" layout="responsive" alt="Bitnativo"></amp-img>
+                </div>
 
+                <div class="lah">
+                    <h1>Agencia de Marketing Digital Sustentable</h1>
+                </div>
 
-		     <p>Obtené tu primera asesoría en marketing digital<span class="fuerte"> 100% gratuita</span></p>
-		     <div class="botond"> <a href= "{% url 'Ctalider_lp' %}">Click Aquí</a></div>
+                <div class="pdf">
 
-    </div>
+                     <p>Obtené tu primera asesoría en marketing digital<span class="fuerte"> 100% gratuita</span></p>
+                     <div class="botond"> <a href= "{% url 'Ctalider_lp' %}">Click Aquí</a></div>
+
+                </div>
 </div>
 <!--Nosotros-->
 <div class="nosotros" id="nosotros">
