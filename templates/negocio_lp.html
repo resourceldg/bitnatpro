@@ -250,7 +250,7 @@ p {
 
 
 .con > form{
-    background-color: #33cc33;
+
  background: linear-gradient(to bottom right, #33cc33,#001a33,#001a33,#33cc33,#001a33,#001a33, #001a33,#33cc33,#001a33,#001a33);
 
 
@@ -263,9 +263,16 @@ p {
 
 .arriba{
 
-background-color: #090a0b;
-background-image: url("data:image/svg+xml,%3Csvg width='20' height='12' viewBox='0 0 20 12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 12c0-.622-.095-1.221-.27-1.785A5.982 5.982 0 0 0 10 12c1.67 0 3.182-.683 4.27-1.785A5.998 5.998 0 0 0 14 12h2a4 4 0 0 1 4-4V6c-1.67 0-3.182.683-4.27 1.785C15.905 7.22 16 6.622 16 6c0-.622-.095-1.221-.27-1.785A5.982 5.982 0 0 0 20 6V4a4 4 0 0 1-4-4h-2c0 .622.095 1.221.27 1.785A5.982 5.982 0 0 0 10 0C8.33 0 6.818.683 5.73 1.785 5.905 1.22 6 .622 6 0H4a4 4 0 0 1-4 4v2c1.67 0 3.182.683 4.27 1.785A5.998 5.998 0 0 1 4 6c0-.622.095-1.221.27-1.785A5.982 5.982 0 0 1 0 6v2a4 4 0 0 1 4 4h2zm-4 0a2 2 0 0 0-2-2v2h2zm16 0a2 2 0 0 1 2-2v2h-2zM0 2a2 2 0 0 0 2-2H0v2zm20 0a2 2 0 0 1-2-2h2v2zm-10 8a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm0-2a2 2 0 1 0 0-4 2 2 0 0 0 0 4z' fill='%23006080' fill-opacity='0.47' fill-rule='evenodd'/%3E%3C/svg%3E");
-    width:100%;
+  background:
+linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+background-color: #131313;
+background-size: 20px 20px;
+ width:100%;
      display:flex;
      flex-direction:row;
      flex-wrap:wrap;
@@ -417,7 +424,7 @@ form h3{
 }
 
 .con{
-     background: #33cc33;
+
      display:flex;
      flex-direction:column;
      flex-wrap:wrap;
@@ -613,21 +620,9 @@ h1 > .fuerte{
     background: none;
 
     }
-.primera {
-	
-	
-}
 
 
 
-@keyframes con{
-	from { background-position: 300px 390px, 0px 0px, 0 0; }
-	to { background-position: -300px -390px, 0px 0px, 100% 0; }
-}
-		
-.con{
-	animation: con 50s linear infinite;
-}
 .ribbon p, h3{
     color:#ffff00;
 }
@@ -672,19 +667,8 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     }
 
 
-.con {
-	background-image:url(../static/images/analytics-min.png);
-	
-	
-}
-@keyframes con{
-	from { background-position: 300px 390px, 0px 0px, 0 0; }
-	to { background-position: -300px -390px, 0px 0px, 100% 0; }
-}
-		
-.con{
-	animation: con 30s linear infinite;
-}
+
+
 
 html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}*{box-sizing:border-box}body{font-family:Source Sans Pro,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif;min-width:100%;overflow-x:hidden;font-smooth:always;-webkit-font-smoothing:antialiased}body{line-height:1.6;letter-spacing:normal}a:active,a:visited{color:inherit}body{line-height:1.4} </style>
 
@@ -740,7 +724,8 @@ html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-t
 
                     <div class="arriba">
                         <div><a href= "{% url 'inicio' %}"><amp-img src="{% static 'images/logo1.png' %}" width ="60" height="44" alt="Logo bitnativo"></a></amp-img></div>
-                        <div class="dos"><i class="fa fa-send-o"></i><a> bitnativo@gmail.com</a></div>
+                        <div class="dos"><i class="fa fa-send-o"></i><a> ventas@bitnativo.com</a></div>
+                        <div class="dos"><i class="fa fa-whatsapp" ></i><a> +54-2236687453</a></div>
 
                      </div>
 
