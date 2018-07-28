@@ -29,214 +29,238 @@
     <script async custom-element="amp-facebook" src="https://cdn.ampproject.org/v0/amp-facebook-0.1.js"></script>
 <!--// social-->
 
-<script custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.1.js" async=""></script>
-<script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
-
-
+<script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:600" rel="stylesheet">
 
  <style amp-custom="">
 html, body{
-    font-size: 100%;
-	font-family: 'Open Sans', sans-serif;
-	background:#ffffff;
+  font-size: 100%;
+	background:#f9f9fa;
 	margin: 0;
 	padding-top: 0px;
 }
+
 p,ul,li{
-	margin-right:5px;;
-	font-size:18px;
-	text-decoration:none;
+	margin-left: 5px;
+	font-family: 'Open Sans', sans-serif;
+	font-size:16px;
+	line-height:26px;
 }
-h3{
-	margin-left:5px;
-	font-family: 'Cairo', sans-serif;
+
+
+h1, h2, h4{
+	font-family: 'Raleway', sans-serif;
+	
 }
-ul{
-	margin-right:5px;
-	padding:0;
+
+h1 {
+	margin: 0 5px;
+  color: #fff;
+  text-align: center;
 }
+
+h2{
+    margin: 0 5px;
+    font-size:1.6rem;
+    color:#00a6dd;
+    text-align: left;
+    /*text-transform: uppercase;*/
+  }
+
+h3 {
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+p {
+  margin: 1.1em;
+  line-height: 1.7;
+  text-align: justify;
+}
+
+h4{
+  font-size: 1.2em;
+  /*color: #fff;*/
+}
+
+.container1 {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container2 {
+  position: relative;
+}
+
 .contact h2 a{
-
-    color:#000;
-
-
+    color:#fff;
 }
+
 body a:hover{
 	text-decoration:none;
 }
-a{
-	-webkit-transition: 0.5s ease-in;
-    -moz-transition: 0.5s ease-in;
-    -ms-transition: 0.5s ease-in;
-    -o-transition: 0.5s ease-in;
-    transition:0.5s ease-in;
-    }
-/*-- header --*/
-h2 {
-    font-family: 'Open Sans', sans-serif;
 
-    }
+amp-img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*-- header --*/
+
 nav.navbar.navbar-default.navbar-fixed-top {
-    background:rgba(0, 0, 0, 0.35);
-    background: rgba(0, 0, 0, 0.1);
-    border: none;
-	-webkit-transition:.5s all;
-	-moz-transition:.5s all;
-	transition:.5s all;
+    background: #fefefe;
+    border-bottom: 2px solid #C9C9C9;
+  }
+
 }
 .navbar-default .navbar-nav > li > a {
-    color: #44f64c;
-    font-size: 1.5em;
-    font-weight: bold;
+    font-size: 18px;
     letter-spacing: 1px;
     padding-bottom:10px;
+    line-height: 26px;
 }
-.lah h1{
-    margin-bottom:10px;
-    margin-top:10px;
-    font-size:20px;
-    font-weight:bold;
-    color:#000;
-    }
+
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-    color: #11b563;
-    background-color: transparent;
 }
 .navbar-default .navbar-nav > li>a:hover {
-    color:  #5713db;
-    background: #000;
 }
 .navbar-nav > li > a {
     padding: 5px;
 }
-/*-- //header --*/
-/*-- banner --*/
-/*-- menu-navigation --*/
-/*** Hamburger ***/
-/*-- nav-effect --*/
-/*-- //nav-effect --*/
-/*-- button-effect --*/
-/*-- //button-effect --*/
-/*-- //banner --*/
-/*-- bootstrap-modal-pop-up --*/
-/* modal */
-/* //modal */
-/*-- //bootstrap-modal-pop-up --*/
-/*-- about --*/
-.about-left p {
-    letter-spacing: .7px;
-    font-size: 18px;
-    text-align: justify;
-    margin: 1em 0;
-    margin-right: 1em;
-     margin-left: 1em;
+
+
+.center-pdf {/***/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
 }
+
+  .centrado{
+    margin:auto;
+    /*border: 1px solid #000;*/
+    text-align:center; 
+  }
+
+
+.seccion-chica{
+  background: #023380;
+  position: relative;
+  min-height: 250px;
+  padding: 20px 15px 10px 15px;
+}
+
+h1.seccion-chica{
+  font-size: 16px;
+}
+
+.btn-medio{
+font-family: 'Open Sans', sans-serif;
+color: #fff;
+background: #33cc33;
+padding: 1em 2em;
+margin-bottom: 15px;
+border-radius: 200px 20px 200px;
+border: 2px solid #33cc33;
+text-transform: uppercase;
+line-height: 24px;
+  }
+  
+  
 .nosotros {
     display:flex;
     flex-direction:row;
     flex-wrap:wrap;
     justify-content:center;
     align-items:center;
-    }
-.about-left {
-    padding: 0 0 0 2em;
-    padding-top:15px;
 }
-.about-right {
-	    padding-top:15px;
-	}
-/*-- hover-effect --*/
-/* agile-caption Common Style */
-/** agile-caption 6: Scale **/
-/** Fade agile-caption :hover Behaviour **/
-/** Scale agile-caption :hover Behaviour **/
-/* // hover effect */
-/*-- //about --*/
-/* Skills */
 
-	/*-- Progress-Bar --*/
-	/*-- //Progress-Bar --*/
-	
-/* //Skills */
-/* education */
-/* //education */
-/*-- Portfolio --*/
-.portfolio h3 {
-    padding-top:20px;
-    padding-bottom:20px;
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 30px;
-    text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: 2px;
-    color:#fff;
-    box-shadow: 1px 1px 1px #00ff99;
-     text-shadow: 2px 2px 2px #000;
-
+.nosotros h2, .nosotros p{
+  color: #ffffff;
 }
-	/*-- Tabs --*/
-		/*-- Tabs-Content --*/
-		/*-- //Tabs-Content --*/
-		/*-- Fallback --*/
-		
-		/*-- //Fallback --*/
-		/*-- Tabs-Styling --*/
-		/*-- //Tabs-Styling --*/
-		/*-- Tab-Images --*/
-		/*-- //Tab-Images --*/
-	/*-- //Tabs --*/
-/*-- //Portfolio --*/
-/* contact */
-/* //contact */
-/* iframe */
-/* //iframe */
-/* copyright */
-/* //copyright */
-/*-- to-top --*/
-/*-- //to-top --*/
+
+/*** area de prueba ***/
+section.section-oblicua .masc-oblicua .masc-oblicua{
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: skewY(-3deg);
+    transform: skewY(-3deg);
+    -webkit-transform-origin: 100% 0;
+    transform-origin: 100% 0;
+}
+
+section.section-oblicua {
+    padding-bottom: 160px;
+}
+
+section {
+    position: relative;
+    background-color: #fff;
+    padding-top: 110px;
+    padding-bottom: 110px;
+    z-index: 10;
+}
+
+.titulo-z{
+  z-index: 10;
+  position: relative;
+}
+
+.opac{
+    opacity: 0.1;
+  filter: alpha(opacity=10); /* For IE8 and earlier */
+}
+
+
+/*** //area de prueba ***/
+
+
 /* Responsive design */
 @media screen and (max-width: 1366px){
 	nav.navbar.navbar-default.navbar-fixed-top {
 		
 	}
 	.banner {
-		min-height: 650px;
+		max-height: 733px;/***/
 	}
 	
-        .carousel{
-            padding-top:0px;
-            }
+  .carousel{
+      padding-top:0px;
+  }
 }
 @media screen and (max-width: 1280px){
-	.portfolio {
-		padding: 2em 0;
-	}
 }
 @media screen and (max-width: 1080px){
 	nav.navbar.navbar-default.navbar-fixed-top {
 		padding: .6em 5em;
 	}
-	.portfolio {
-		padding: 2em 0;
-	}
-	.portfolio h3 {
+font	.portfolio h3 {
 		font-size: 35px;
-	}
-	.banner {
-		min-height: 630px;
 	}
 }
 @media screen and (max-width: 1024px){
 	.banner {
-		min-height: 600px;
+	/***	min-height: 600px;***/
 	}
 }
 @media screen and (max-width: 991px){
 	.about-right {
-		width: 50%;	
-		margin: 0 auto;
 	}
 	
 }
@@ -257,13 +281,10 @@ nav.navbar.navbar-default.navbar-fixed-top {
 	.carousel{
             padding-top:0px;
             }
-        .lah{
-            padding-top:70px;
-            }
 	
 }
 @media screen and (max-width: 768px){
-    .carousel{
+    .carousel {
         display:none;
     }
 
@@ -275,20 +296,14 @@ nav.navbar.navbar-default.navbar-fixed-top {
             align-items:center;
 	}
 }
+@media screen and (min-width: 800px){
+  .seccion-chica{
+    display: none;
+  }
+}
+
 
 @media screen and (min-width: 600px){
-    .lah h1{
-        font-size:30px;
-        font-weight:bold;
-
-        }
-
-    .portfolio > h2{
-    font-size:30px;
-
-    }
-
-
    }
 
 @media screen and (max-width: 736px){
@@ -298,27 +313,17 @@ nav.navbar.navbar-default.navbar-fixed-top {
 		text-align: center;
 	}
 	nav.navbar.navbar-default.navbar-fixed-top {
-		padding: .3em 2em 0;
+		padding: .3em 2em;
 	}
 	.about-left {
 		padding: 0 3em;
 	}
 	.about-right {
-		width: 65%;
+		width: 100%;
 		
 	}		
-	.banner {
-		min-height: 570px;
-	}
-	
 }
 @media screen and (max-width: 667px){
-        .lah{
-            padding-top:70px;
-            }	
-	.banner {
-		min-height: 550px;
-	}
 	.glob{
             display:flex;
             flex-direction:row;
@@ -328,9 +333,6 @@ nav.navbar.navbar-default.navbar-fixed-top {
 	}	
 }
 @media screen and (max-width: 640px) and (orientation: landscape){
-	.banner {
-		min-height: 550px;
-	}
 	.glob{
             display:flex;
             flex-direction:row;
@@ -341,9 +343,7 @@ nav.navbar.navbar-default.navbar-fixed-top {
 	
 }
 @media screen and (max-width: 600px)and (orientation: landscape){
-	.banner {
-		min-height: 510px;
-		}
+
 	.glob{
             display:flex;
             flex-direction:row;
@@ -354,10 +354,7 @@ nav.navbar.navbar-default.navbar-fixed-top {
 	
 }
 @media screen and (max-width: 568px)and (orientation: landscape){
-	
-	.banner {
-		min-height: 500px;
-	}
+
 	.about-right {
 		width: 80%;
 	}
@@ -373,16 +370,9 @@ nav.navbar.navbar-default.navbar-fixed-top {
 	.about-right {
 		width: 90%;
 	}
-	.portfolio {
-		padding: 2em 0;
-	}
-.lah h1 {
-    margin-top:18px;
-    font-size:20px;
 
-}
-        .glob{
-            display:flex;
+    .glob{
+    display:flex;
     flex-wrap:wrap;
     justify-content:space-between;
     align-items:center;
@@ -406,13 +396,19 @@ nav.navbar.navbar-default.navbar-fixed-top {
 		
 		background-size: cover;
 	}
-	  .lah h1{
-                font-size:18px;
-         }
+	
+  .lah h1{
+    font-size:18px;
+  }
 	
 }
+/*mobile landcape*/
 @media screen and (max-width: 384px) and (orientation: landscape){
-	.glob{
+	  .seccion-chica{
+    visibility: visible;
+  }
+}
+  .glob{
             display:flex;
             flex-wrap:wrap;
             justify-content:space-between;
@@ -420,105 +416,25 @@ nav.navbar.navbar-default.navbar-fixed-top {
             }
 	
 	nav.navbar.navbar-default.navbar-fixed-top {
-		padding: .3em 1em 0;
-	}
+	padding: .6em 2em 0;
 }
+
+/** mobile pequeño landscape **/
 @media screen and (max-width: 320px) and (orientation: landscape){
-	 .glob{
+	   .seccion-chica{
+    visibility: visible;
+  }
+   .glob{
             display:flex;
             flex-wrap:wrap;
             justify-content:space-between;
             align-items:center;
             }
-	 .lah h1{
-                font-size:11px;
-         }
+
 	.about-left {
 		padding: 0 1em;
 	}
 }
-html, body{
-    font-size: 100%;
-	font-family: 'Open Sans', sans-serif;
-	background:#ffffff;
-	margin: 0;
-}
-p,ul li{
-	margin:0;
-	font-size:15px;
-	text-decoration:none;
-}
-h3{
-	margin:0;
-	font-family: 'Cairo', sans-serif;
-}
-ul{
-	margin:0;
-	padding:0;
-}
-body a:hover{
-	text-decoration:none;
-}
-a{
-	-webkit-transition: 0.5s ease-in;
-    -moz-transition: 0.5s ease-in;
-    -ms-transition: 0.5s ease-in;
-    -o-transition: 0.5s ease-in;
-    transition:0.5s ease-in;
-}
-/*-- header --*/
-/*-- //header --*/
-/*-- banner --*/
-/*-- menu-navigation --*/
-/*** Hamburger ***/
-/*-- nav-effect --*/
-/*-- //nav-effect --*/
-/*-- button-effect --*/
-/*-- //button-effect --*/
-/*-- //banner --*/
-/*-- bootstrap-modal-pop-up --*/
-/* modal */
-/* //modal */
-/*-- //bootstrap-modal-pop-up --*/
-/*-- about --*/
-/*-- hover-effect --*/
-/* agile-caption Common Style */
-/** agile-caption 6: Scale **/
-/** Fade agile-caption :hover Behaviour **/
-/** Scale agile-caption :hover Behaviour **/
-/* // hover effect */
-/*-- //about --*/
-/* Skills */
-
-	/*-- Progress-Bar --*/
-	/*-- //Progress-Bar --*/
-	
-/* //Skills */
-/* education */
-/* //education */
-/*-- Portfolio --*/
-	/*-- Tabs --*/
-		/*-- Tabs-Content --*/
-		/*-- //Tabs-Content --*/
-		/*-- Fallback --*/
-		
-		/*-- //Fallback --*/
-		/*-- Tabs-Styling --*/
-		/*-- //Tabs-Styling --*/
-		/*-- Tab-Images --*/
-		/*-- //Tab-Images --*/
-	/*-- //Tabs --*/
-/*-- //Portfolio --*/
-/* contact */
-/* //contact */
-/* iframe */
-/* //iframe */
-/* copyright */
-/* //copyright */
-/*-- to-top --*/
-/*-- //to-top --*/
-
-
 
 .contact h2{
     text-align:center;
@@ -528,7 +444,6 @@ a{
 
     }
 .contact{
-    font-family: sans-serif;
     text-decoration:none;
     display:flex;
     flex-direction:row;
@@ -545,6 +460,7 @@ linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transpar
 background-color: #131313;
 background-size: 20px 20px;
     }
+    
 .globc{
             display:flex;
             flex-direction:row;
@@ -552,15 +468,7 @@ background-size: 20px 20px;
             justify-content:space-around;
             align-items:center;
 	}
-	
-
-.contact p{
-    text-align:center;
-    font-size:20px;
-
-    color:#fff;
-
-    }
+    
 /* Responsive design */
 @media screen and (max-width: 1366px){
 	.contact {
@@ -580,11 +488,12 @@ background-size: 20px 20px;
 }	
 @media screen and (max-width: 600px){
 
-        .uno{
+      .uno{
 	    width:100%;
 	    }
 
 }
+/**mobile portrait**/
 @media screen and (max-width: 480px){
 	
 	.uno{
@@ -592,12 +501,9 @@ background-size: 20px 20px;
 	    }
 	.contact {
 		padding: 2em 0;
-		
 	}
-	h1{
-	    text-align:center;
-	    }
 }
+
 /*!
  * Bootstrap v3.3.4 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
@@ -655,11 +561,14 @@ a:hover {
     display: none;
   }
 }
+/*****
 @font-face {
   font-family: 'Glyphicons Halflings';
   src: url('../fonts/glyphicons-halflings-regular.eot');
   src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
+****/
+
 * {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
@@ -672,11 +581,11 @@ a:hover {
           box-sizing: border-box;
 }
 html {
-  font-size: 20px;
+  /***font-size: 20px;***/
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /****font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;****/
   font-size: 14px;
   line-height: 1.42857143;
   color: #333;
@@ -686,45 +595,13 @@ a {
   color: #fff;
   text-decoration: none;
 }
-a:hover,
-a:focus {
-  color: #fff;
-  text-decoration: underline;
-}
+
 a:focus {
   outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
-h1 {
-    text-align:center;
-    }
-h3 {
-  font-family: inherit;
-  font-weight: 500;
-  line-height: 1.1;
-  color: inherit;
-}
-
-h3 {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-h3 {
-  font-size: 24px;
-}
-p {
-  margin: 0 0 10px;
-}
-ul {
-  margin-top: 0;
-  margin-bottom: 10px;
-}
-
-li {
-    text-decoration:none;
-    }
+    
 .col-md-6 {
   position: relative;
   min-height: 1px;
@@ -732,6 +609,30 @@ li {
   padding-left: 15px;
   padding-top: 35px;
 }
+
+
+  a.logob{
+    font-weight:bold;
+    /*background-color: #0eabf5;*/
+    padding: 10px;
+    /*border-radius: 5px;*/
+    color: #000;
+  }
+    
+  a.logo{
+    text-transform: none;
+    font-family: 'Raleway', sans-serif;
+    background-color: #0eabf5;
+    padding: 10px;
+    border-radius: 5px;
+    color: #000;
+  }
+
+  /*
+    a.logo:active, a.logo:visited{
+    color:#ffffff;
+  }
+  */
 @media (min-width: 992px) {
   .col-md-6 {
     float: left;
@@ -759,14 +660,16 @@ li {
 }
 .nav > li > a:hover,
 .nav > li > a:focus {
+  /*
   text-decoration: none;
   background-color: #eee;
+  */
 }
 .navbar {
   position: relative;
   min-height: 50px;
-  margin-bottom: 20px;
-  border: 1px solid transparent;
+  /*******margin-bottom: 20px;
+  border: 1px solid transparent;*******/
 }
 @media (min-width: 768px) {
   .navbar {
@@ -776,16 +679,11 @@ li {
 }
 
 @media (min-width: 480px) {
-
-    .flecha {
-        display:none;
-        }
-
-
     }
+
 @media (min-width: 768px) {
   .navbar-header {
-    float: center;
+    float: right;
   }
 }
 .navbar-collapse {
@@ -798,9 +696,9 @@ li {
           box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
 }
 @media (min-width: 768px) {
-    amp-img{
+    /**amp-img{
     width:85%;
-    }
+    }**/
 
   .navbar-collapse {
     width: auto;
@@ -830,48 +728,42 @@ li {
   .carousel{
     display:none;
       }
-
     .globc h2 a{
          display:none;
         }
-    .portfolio > h2{
-        font-size:18px;
-        }
 }
-
 @media (max-width: 580px){
 
    amp-img{
         width:100%;
        }
-
+/*
     .patitos{
-        margin-left:15px;
-        margin-right:15px;
-        padding-left:15px;
-        padding-right:15px;
-
+        margin: 0 15px;
+        padding:0 15px;
         }
-
-
+        */
 }
-
 @media (max-width: 480px){
 
      .globc h2 a{
          display:none;
         }
+ 
+ /*
      p{
 
     font-size:11px;
-  }
+  }*********/
     }
 
 .navbar-fixed-top {
+  /**
   position: fixed;
   right: 0;
   left: 0;
   z-index: 1030;
+  ***/
 
 }
 @media (min-width: 768px) {
@@ -902,16 +794,19 @@ li {
   .navbar-nav > li > a {
     padding-top: 15px;
     padding-bottom: 15px;
-   margin-right: 10px;
+    margin-right: 10px;
   }
+
+  /*iconos encabezado mobile*/
 .glob h2{
     display:none;
+    text-transform: none;
     }
 
 }
 @media (min-width: 768px) {
   .navbar-right {
-    float: right ;
+    float: right ;/******/
     margin-right: -15px;
   }
   .corp{
@@ -922,17 +817,13 @@ li {
     }
 }
 .navbar-default {
-  background-color:  #3498db;
+  background-color: #3498db;
   border-color: #e7e7e7;
 }
 .navbar-default .navbar-nav > li > a {
-  color:#fff;
-  text-shadow: 5px 5px 5px #000;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color:#4d514e;
-  background-color: transparent;
 }
 .navbar-default .navbar-collapse {
   border-color: #e7e7e7;
@@ -960,173 +851,72 @@ li {
 .hidden {
   display: none ;
 }
+
+/****
 @ ms-viewport {
   width: device-width;
 }
-.micro {
-    padding-bottom:10px;
-    padding-top:60px;
+****/
+.micro h2, .micro p{
+  color: #ffffff;
+}
 
-
-
-    }
-.micro h3{
+.micro h3, .corp h3, .inf h3{
         text-align: center;
         font-size: 33px;
         text-transform: uppercase;
         font-weight: bold;
-}
-.corp h3{
-        text-align: center;
-        font-size: 33px;
-        text-transform: uppercase;
-        font-weight: bold;
-        color: #006080;
-}
-.inf h3{
-        text-align: center;
-        font-size: 33px;
-        text-transform: uppercase;
-        font-weight: bold;
-}
-.inf {
-    padding-bottom:10px;
-    padding-top:60px;
-    }
-.corp {
-    padding-bottom:10px;
-    padding-top:60px;
-}
-.micro h3{
-   text-align: center;
-   font-size: 30;
-   color: #006080;
-    }
-.micro h2{
-   font-size: 28px;
-   text-align:center;
-  color: #006080;
-    }
-.micro p{
-color:#333;
-    }
-
-.micro li{
-    margin-left:5px;
-    color:#006080;
-    }
-.corp h2{
-   font-size: 28px;
-   text-align:center;
-   color: #006080;
-    }
-.corp p{
-color:#333;
-    }
-.corp li{
-    margin-left:5px;
-     color: #006080;
-    }
-.inf p{
-color:#333;
-    }
-.inf h2{
-    color: #006080;
-    text-align:center;
-    font-size: 28px;
+        color: #006080; /*mm*/
 }
 
-.inf h3{
-    color: #006080;
-    font-size: 30;
-}
-.inf li{
-    color: #006080;
-    margin-left:5px;
+.micro, .inf , .corp, .nosotros{
 }
 
-.flecha h2{
-     margin-top:3px;
-    text-align:center
-        }
-
-.glob h2{
-    margin-right:5px;
-    font-size:30px;
-    color:#0eabf5;
-    text-shadow: 3px 3px 3px #000;
+.inf{
+ background:#ededed;
     }
+    
+
+.glob h2 a{
+  text-transform: none;
+}
 
 .globc h2 a{
 
     font-size:20px;
-    color:#fff;
+    text-transform: none;
+    font-weight: normal;
     }
 
 .globc h2 a:hover{
-    color:#33cc33;
-    font-size:20px;
+    /*color:#33cc33;*/
+    /**font-size:20px;****/
     }
 
 
-.micro1{
+.micro1, .micro2, .micro3 {
 
-    background:;
-    display:flex;
-    flex-direction:row;
-    flex-wrap:wrap;
-    justify-content:center;
-    align-items:center;
-    }
-.micro2{
-
-    background:;
-
+    /**background:;*****/
     display:flex;
     flex-direction:row;
     flex-wrap:wrap;
     justify-content:center;
     align-items:center;
     }
-.micro3{
 
-    background:;
+.corp1, .corp2, .corp3{
+
+    /****background:;***/
     display:flex;
     flex-direction:row;
     flex-wrap:wrap;
     justify-content:center;
     align-items:center;
 }
-.corp1{
 
-    background:;
-    display:flex;
-    flex-direction:row;
-    flex-wrap:wrap;
-    justify-content:center;
-    align-items:center;
-}
-.corp2{
+.inf1, .inf2, .inf3 {
 
-    background:;
-    display:flex;
-    flex-direction:row;
-    flex-wrap:wrap;
-    justify-content:center;
-    align-items:center;
-}
-.corp3{
-
-    background:;
-    display:flex;
-    flex-direction:row;
-    flex-wrap:wrap;
-    justify-content:center;
-    align-items:center;
-}
-.inf1{
-
-    background:;
+   /*** background:;***/
 
     display:flex;
     flex-direction:row;
@@ -1134,26 +924,7 @@ color:#333;
     justify-content:center;
     align-items:center;
 }
-.inf2{
 
-    background:;
-
-    display:flex;
-    flex-direction:row;
-    flex-wrap:wrap;
-    justify-content:center;
-    align-items:center;
-}
-.inf3{
-
-    background:;
-
-    display:flex;
-    flex-direction:row;
-    flex-wrap:wrap;
-    justify-content:center;
-    align-items:center;
-}
 /*# sourceMappingURL=bootstrap.css.map */
 /* Skin
 --------------------------*/
@@ -1161,15 +932,16 @@ color:#333;
  font-weight: bold;
     }
 .boton2 {
-
+    font-family: 'Open Sans', sans-serif;
     color: #fff;
     background:#33cc33;
-    font-size: 18px;
-    padding: 15px 15px 15px 15px;
+    padding: 1em 2em;/***/
     margin-bottom: 15px;
     float: right;
-     border-radius:200px 20px 200px;
+    border-radius:200px 20px 200px;
     border:2px solid #33cc33;
+    text-transform: uppercase;
+    line-height: 24px;
 }
 
 .boton2:hover {
@@ -1178,30 +950,54 @@ color:#333;
     background: none;
 }
 
-  a.boton2 {
-    text-decoration: none;
-    color: #fff;
-    }
-
-
 .botond:hover {
-    color:#fff;
-    background:none;
+    color:#fff;/****/
+    background:#33cc33;
 }
 
 .botond {
-    background:#33cc33;
-    color:#fff;
+
+    background: none;
+    color:#33cc33;
     font-size: 20px;
-    font-weight:bold;
     padding: 15px;
-    margin: 15px;
+    margin: 15px;/*mm*/
     float: right;
-    border:2px solid #33cc33;
+    border:2px solid #33cc33;/*mm*/
     border-radius:200px 20px 200px;
+    text-transform: uppercase;
 }
-.pfinal p, h2{
-     color:#33cc33;
+  .boton-cta {
+    color: #fff;
+    background: #33cc33;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 40px;
+    border-radius: 6px;
+    text-transform: uppercase;
+  }
+
+  .boton-cta:active, .boton-cta:visited{
+    color: #fff;
+  }
+
+  .boton-cta:hover{
+    background:#00ff99;
+    color: #fff;
+  }
+
+  .elct{
+    position: absolute;
+    left: 40%;
+  }
+
+  .cent-hz-vt {
+    padding: 2em 0;
+    text-align: center;
+  }
+  
+.pfinal{
+     color:#fff;
     }
 
 
@@ -1224,12 +1020,12 @@ color: #fff;
     font-size: 16px;
     font-weight: bold;
     border-radius:30px 50px 15px;
-    padding:15px 15px;
+    padding:15px;/****mm*/
     margin-bottom: 15px;
     float: left;
 }
 
-.social-btns{
+.social-btns {
     margin-top:70px;
     display:flex;
     flex-direction:row;
@@ -1240,119 +1036,92 @@ color: #fff;
 
     }
 .social-btns a:hover{
-
     color:#33cc33;
-    font-size:25px;
  }
 
 .pdf{
-
-    background: #023380;
     display:flex;
     flex-direction:row;
     flex-wrap:wrap;
     justify-content:space-around;
     align-items:center;
-    padding-top:20px;
-    margin-bottom:50px;
-    margin-top:50px;
-
+    padding: 20px 0;
     }
 
 
-.pdf span{
+.center-pdf span{
         color:#00ff99;
     }
 
-.pdf p{
+.center-pdf p{
     color:#fff;
     font-size:25px;
-    font-family: sans-serif;
     text-align:center;
+    text-shadow:2px 1px 4px  #333;
     }
-
-
+    
 .uno{
 
-    margin-top:10px;
-     margin-left:10px;
-     margin-right:10px;
-    margin-bottom:10px;
-    padding-top:10px;
-     padding-left:10px;
-     padding-right:10px;
-     padding-bottom:10px;
-    display:flex;
+    margin: 10px;
+    padding:10px;
     flex-direction:column;
     flex-wrap:wrap;
     justify-content:center;
     align-content:center;
     width:250px;
     color:#fff;
-    box-shadow: 1px 1px 1px #00ff99;
     border-radius:200px 20px 200px;
-
     }
 
 
 .do {
-
-
-    margin-top:10px;
-    margin-left:10px;
-    margin-right:10px;
-    margin-bottom:10px;
-    padding-top:10px;
-    padding-left:10px;
-    padding-right:10px;
-    padding-bottom:10px;
+    /*margin:10px;*/
+    /***padding:10px;****/
 }
 
-
-
 .do:hover > .tre{
-    display:block;
-
-
+   display:block;
     }
 
 .tre p{
 
     text-align:left;
-    font-size:18px;
-    color:#fff;
-    text-shadow: 2px 2px 2px #000;
-
+    font-size:14px;/*****/
+    color:#333;
+    margin: 0;
     }
 
 
 
-
+/****
 .do > .tre{
 
     display:none;
 
 
     }
-
-
+    ***/
+    
 .portfolio{
-   background: linear-gradient(to bottom right, #33cc33,#001a33,#001a33,#33cc33,#001a33,#001a33, #001a33,#33cc33,#001a33,#001a33);
-
-margin-top:20px;
+  /*
+   background: #eee; /* For browsers that do not support gradients 
+   background: linear-gradient(to bottom, rgba(238,238,238,0), rgba(238,238,238,1));
+   */
+   padding: 7% 0;/****/
 
     }
+    /****/
 
-.portfolio > h2{
+.portfolio > h2 {
     text-align:center;
-    font-size:25px;
-    color:#fff;
-    font-weigth:bold;
-    margin-top:10px;
-    margin-left:10px;
-    margin-right:10px;
-    margin_bottom:10px;
-    text-shadow: 2px 2px 2px #000;
+    /*text-transform: uppercase;*/
+    font-size:2rem;
+    /***color:#fff;****/
+    /*font-weight:bold; mm*/
+    margin-bottom:1em;/***m*/
+   padding-top: 1em;
+    font-family: 'Open Sans', sans-serif;
+   
     }
 
 .col{
@@ -1369,22 +1138,22 @@ margin-top:20px;
     display:flex;
     flex-direction:column;
     flex-wrap:wrap;
-    justify-content:center;
-    align-content:center;
-    margin-bottom:30px;
     }
 
+/** iconos de servicios **/
 .serv i{
-    color:#fff;
-    font-size:45px;
-    text-shadow: 2px 2px 2px #000;
+    color:#00a6dd;
+    font-size:35px;
+    position: relative;
+    left: 30%;
+    text-align: justify;
 
     }
 
 .serv a{
-    color:#fff;
+    color:#023380;/****/
     font-size:18px;
-    text-shadow: 2px 2px 2px #000;
+    /****text-shadow: 2px 2px 2px #000;****/
     }
 
 
@@ -1396,197 +1165,88 @@ margin-top:20px;
     align-content:center;
 
 }
-
-
-.icon-box{
-
-    padding-top:10px;
-    padding-left:10px;
-    padding-right:10px;
-    padding-bottom:10px;
+.icon-box, .icon-display, .icon-upload{
+    padding:10px;/**********/
     text-align:center;
-
 }
 
+html{/**/line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}nav{display:block}
 
-.icon-box:hover{
+/**
+a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}
+****/
 
-    text-align:center;
-    font-size:20px;
+*{box-sizing:border-box}body{background:#fff;/**font-family:Source Sans Pro,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif;**/
+min-width:100%;overflow-x:hidden;font-smooth:always;-webkit-font-smoothing:antialiased}body{line-height:1.6;letter-spacing:normal}
 
-}
-.icon-display{
-    padding-top:10px;
-    padding-left:10px;
-    padding-right:10px;
-    padding-bottom:10px;
-    text-align:center;
+h1{margin:0;padding:0;font-weight:400;letter-spacing:.06rem}a,a:active,a:visited{color:inherit}/**body{line-height:1.4}**/
 
-    }
-
-.icon-display:hover{
-
-    text-align:center;
-    font-size:20px;
-
-    }
-
-.icon-upload{
-    padding-top:10px;
-    padding-left:10px;
-    padding-right:10px;
-    padding-bottom:10px;
-    text-align:center;
-
-}
-
-.icon-upload:hover{
-
-    text-align:center;
-    font-size:20px;
-
-
-}
-
-
-
-
-
-
-html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}nav{display:block}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}*{box-sizing:border-box}body{background:#fff;font-family:Source Sans Pro,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif;min-width:100%;overflow-x:hidden;font-smooth:always;-webkit-font-smoothing:antialiased}body{line-height:1.6;letter-spacing:normal}h1{margin:0;padding:0;font-weight:400;letter-spacing:.06rem}a,a:active,a:visited{color:inherit}body{line-height:1.4}</style>
-
-
+</style>
 </head>
  <body>
- {% load static %}
- {% load zinnia %}
-
-<!--inicio amp analytics-->
-
-<amp-analytics type="googleanalytics">
-<script type="application/json">
-{
-  "vars": {
-    "account": "UA-119139710-1"
-  },
-  "triggers": {
-    "trackPageview": {
-      "on": "visible",
-      "request": "pageview"
-    }
-  }
-}
-</script>
-</amp-analytics>
-
-<!-- fin amp analytics -->
-	
-<!-- banner -->
+ <!-- banner -->
 <div class="banner" id="inicio">
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="navbar-header page-scroll">
+    <nav class=" navbar navbar-default navbar-fixed-top"> <!--  navbar-fixed-top  navbar-default navbar-->
+        <div class="page-scroll navbar-header"><!-- navbar-header -->
             <div class= "glob">
                 <h2><a href="/blog"><i class="fa fa-bullhorn"></i></a></h2>
-                <h2><a href="#nosotros"><i class="fa fa-home"></i></a></h2>
-                <h2><a href="{% url 'Contact' %}"><i class="fa fa-envelope"></i></a></h2>
+                <h2><a href="#inicio">Bitnativo</a></h2>
+                <h2><a href="/contact/"><i class="fa fa-envelope"></i></a></h2>
             </div>
             <div class="collapse navbar-collapse navbar-ex1-collapse">
-                <ul class="nav navbar-nav navbar-right cl-effect-15">
-                    <li class="hidden"><a class="page-scroll" href="#page-top"></a>	</li>
-                    <li><a class="page-scroll scroll" href="#carousel">Inicio</a></li>
-                    <li><a class="page-scroll scroll" href="#nosotros">Nosotros</a></li>
+                <ul class="nav navbar-nav cl-effect-15"> <!-- navbar-right navbar-nav -->
+                    <!--<li class="hidden"><a class="page-scroll" href="#page-top"></a>	</li>-->
+                    <li><a class="page-scroll scroll logob" href="#inicio">Bitnativo</a></li> <!-- mm class="navbar-left-logo-->
                     <li><a class="page-scroll scroll" href="#servicios">Servicios</a></li>
+                    <li><a class="page-scroll scroll" href="#nosotros">Nosotros</a></li>
+                    <li><a href="/contact/">Contacto</a></li>
 <!--
                     <li><a href="/blog">Blog</a></li>
--->
-                    <li><a href="{% url 'Contact' %}">Contacto</a></li>
+-->                  
                 </ul>
            </div>
         </div>
     </nav>
+         <div class="carousel container2">
+                  <amp-img layout="responsive" src="/static/images/imagen5-1920x733-min-min.png" width="1920" height="733" alt="asesoria gratuita en marketing digital"></amp-img>
+                  <div class="center-pdf">
+                      <h1>Obtené tu primera asesoría en marketing digital<span class="fuerte"> 100% gratuita</span><br></h1>
+                      <p></p>
 
-                <div class="carousel" id="carousel">
-                    <amp-carousel layout="responsive" width="900" height="300" type="slides"  autoplay delay="6000" loop>
-                    <amp-img src="{% static 'images/bsocial-min.png' %}" height="70vmax" alt="las redes sociales son importantes"></amp-img>
-                    <amp-img src="{% static 'images/bpregunta-min.png' %}" height="70vmax" alt="Cómo medir tu empresa"></amp-img>
-                    <amp-img src="{% static 'images/bestrategia-min.png' %}" height="70vmax" alt="Estrategia empresarial"></amp-img>
-                    </amp-carousel>
-                </div>
-                <div class="flecha">
-                     <h2>bitnativo.com</h2>
-                </div>
+                          <a class="boton-cta elct" href= "/ctalider_lp/">Solicitar</a>
 
-                <div class="lah">
-                    <h1>Agencia de Marketing Digital Sustentable</h1>
-                </div>
+                  </div>
+          </div>
 
-                <div class="pdf">
-
-                     <p>Obtené tu primera asesoría en marketing digital<span class="fuerte"> 100% gratuita</span></p>
-                  <a class="botond" href= "{% url 'Ctalider_lp' %}">Voy por ello...</a>
-
-                </div>
+          <div class="seccion-chica">
+            <div class="cent-hz-vt">
+          <h1>Obtené tu primera asesoría en marketing digital<span class="fuerte"> 100% gratuita</span><br></h1>
+        <br><a class="boton-cta" href= "/ctalider_lp/"> Solicitar </a>
+          </div>
+      </div>
 </div>
-<!--Nosotros-->
-<div class="nosotros" id="nosotros">
-                <div class="col-md-6 about-left">
-
-                                <h2><span class="fuerte">Nos pusimos la meta de crear líderes en mercados sustentables</span></h2>
-                                <p> Es por ello que con herramientas como el marketing digital y la analítica
-                                    de negocios hacemos que <span class="fuerte">tu proyecto mejore su calidad y tenga la
-                                    visibilidad que se merece</span>.
-                                    No te olvides: Estás cambiando el mundo... nosotros también.</p>
-                                <h2>¿Por qué debes transformar tu compañía?</h2>
-                                <p> Hoy los consumidores incorporan gran cantidad de información respecto a
-                                    los productos y servicios que desean adquirir creando nuevas actividades
-                                    de consumo: "actividades inteligentes y responsables". Estas acciones de consumo están muy presentes en la decisión
-                                    y experiencia de compra deseada.
-                                    <br>En este contexto, Bitnativo nace como una solución en analítica de negocios y marketing digital
-                                    aplicado principalmente al desarrollo y transformación de empresas sustentables.</p>
-        		
-                </div>
-        	
-	
-                <div data-aos="flip-right" class="col-md-6 about-right">
-            	    <amp-img src="{% static 'images/equipo-min.jpg' %}" width ="700" height="467" layout="responsive" alt="Trabajo en equipo"> </amp-img>
-                </div>
-</div>
-	
- <!-- //Nosotros -->
-
- <!-- Portfolio -->
-	<div class="portfolio" id="servicios">
-		<h3>Nuestros servicios...</h3>
-
-
-
+<!-- Portfolio -->
+  <div class="portfolio" id="servicios"><!-- portfolio mm -->
+    <h2>Servicios</h2> <!-- mmm-->
                      <div class="serv">
                          <div class="col">
                                  <div class="uno">
-                                         <div class="do"><a><i class="fa fa-key"></i><br> Analítica de negocios</a>
-                                             <div class="tre"><p> Auditamos tu empresa para construir un proyecto de calidad digital,
-                                             rentable y socialmente responsable.
-                                              Tu empresa es un actor social que puede perdurar en el tiempo.</p>
-                                              <div> <a class="botonser" href= "{% url 'Negocio_lp' %}">+ info</a></div>
-                                            </div>
+                                    <div class="do"><a><i class="fa fa-key"></i><br>Auditorias para negocios sustentables</a>
+                                       <div class="tre"><p>Analisis de proyectos orientados a economías sustentables.
+                                             </p>
+                                      </div>
                                     </div>
-
                                  </div>
-
                                  <div class="uno">
                                      <div class="do"><a><i class="fa fa-globe"></i><br> Posicionamiento Web</a>
-                                         <div class="tre"><p> SEO y SEM. Posicionamos empresas líderes sustentables.
-                                                  Estás cambiando el mundo... nosotros también.</p>
-                                                   <div> <a class="botonser" href= "{% url 'Posicionamiento_lp' %}">+ info</a></div>
+                                         <div class="tre"><p>Visibilidad de tu sitio web en las primeras posiciones de los resultados de búsqueda.</p>
                                         </div>
                                     </div>
                                  </div>
 
                                  <div class="uno">
                                      <div class="do"><a><i class="fa fa-users"></i><br> Redes Sociales</a>
-                                             <div class="tre"><p> La correcta gestión estratégica para tus redes sociales no solo aumentará tus ventas,
-                                                consolidará tu mensaje y presencia en la web.</p>
-                                                 <div> <a class="botonser" href= "{% url 'Social_lp' %}">+ info</a></div>
+                                             <div class="tre"><p>Gestión estratégica para tus redes sociales.</p>
                                             </div>
                                      </div>
                                  </div>
@@ -1595,10 +1255,7 @@ html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-t
                          <div class="col">
                                  <div class="uno">
                                     <div class="do"><a><i class="fa fa-at"></i><br> Email Marketing</a>
-                                             <div class="tre"><p>¿Sabes cuál es la @plicación más usada en el mundo?
-                                             <br> El email es un medio digital muy rentable para hacer marketing digital ¿Cuánto?
-                                                 3 veces mas que cualquier red social.</p>
-                                                  <div> <a class="botonser" href= "{% url 'Emailmkt_lp' %}">+ info</a></div>
+                                             <div class="tre"><p>Administramos tus campañas de email.</p>
                                              </div>
                                     </div>
 
@@ -1606,220 +1263,180 @@ html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-t
 
                                  <div class="uno">
                                      <div class="do"><a><i class="fa fa-bar-chart"></i><br> Web Analytics</a>
-                                             <div class="tre"><p> En el universo web lo que no se puede medir no se puede
-                                             resolver. Aplicamos herramientas líderes en analítica web. Creamos indicadores propios
-                                             brindando soluciones a medida</p>
-                                              <div> <a class="botonser" href= "{% url 'Analytics_lp' %}">+ info</a></div>
+                                             <div class="tre"><p>Lo que no se puede medir no se puede
+                                             resolver. Creamos indicadores de rendimiento brindandote soluciones a medida.</p>
                                              </div>
                                     </div>
                                 </div>
-
                                  <div class="uno">
                                      <div class="do"><a><i class="fa fa-leaf"></i><br> Marketing de Contenidos</a>
-                                             <div class="tre"><p> Lo que dices, cómo lo dices a quién se lo dices es también vital en la web.
-                                             Si quieres clientes sólidos tu mensaje debe ser sólido y acertado.</p>
-                                              <div> <a class="botonser" href= "{% url 'Contenido_lp' %}">+ info</a></div>
+                                             <div class="tre"><p> Lo que dices, cómo lo dices y a quién se lo dices.
+                                             Trabajamos juntos para que tu mensaje sea sólido y acertado.</p>
                                              </div>
                                     </div>
-
                                 </div>
                     </div>
                 </div>
-                <h2>Conocé más sobre soluciones a la medida de tu compañía...</h2>
-                <div class="patitos">
-                  <div class="botond"><a href="#micro" class="icon-box">Pymes</a></div>
-                  <div class="botond"><a href="#corp" class="icon-display">Corporaciones</a></div>
-                  <div class="botond"><a href="#inf" class="icon-upload">Influyentes</a></div>	
-                </div>
         </div>
-<!-- //Portfolio -->
-<!-- micro -->
-<div class="micro" id="micro">
- <h3>pymes</h3>
+<!-- //Portfolio -->   
+
+
+<!--Nosotros-->
+<section class="section-oblicua">
+<div class="masc-oblicua"><div class="masc-oblicua" style="background: rgb(0, 166, 221) none repeat scroll 0% 0%;"></div>
+<div class="container1">
+<div class="nosotros titulo-z" id="nosotros">
+
+                <div class="col-md-6 about-left">
+                              <h2>Somos Bitnativo</h2>
+<p>Bitnativo nace como una solución en marketing digital y analísis de proyectos de negocios en mercados sustentables.</p><p>Somos un equipo de profesionales de distintas disciplinas unidos con el propósito de  acompañar a las organizaciones en su crecimiento y optimización.</p>
+<p>Creemos firmemente que el avance tecnológico debe estar al servicio de las personas y que cada uno, empezando por las decisiones comerciales, puede aportar a un mundo mejor.</p>
+                </div>
+                <div data-aos="flip-right" class="col-md-6 about-right">
+            	    <amp-img src="/static/images/5.png" width ="392" height="351" layout="responsive" alt="Bitnativo"> </amp-img>
+                </div>
+</div>
+       </div>
+</div>
+</section>
+ <!-- //Nosotros -->
+
+<!-- corp -->
+<div class="corp portfolio" id="corp">
+ <!--<h3 data-aos="slide-up">corporaciones</h3>-->
+    <div class="corp2" id="corp2">
+  <div data-aos="flip-right" class="col-md-6 about-right">
+    <amp-img src="/static/images/equipo-min.jpg" width ="700" height="467" layout="responsive" alt="Análisis de negocios sustentables"> </amp-img>
+    
+  </div>
+  <div class="col-md-6 about-left">
+                  <h2>Analítica de negocios</h2>
+                      <ul style="text-align: left">
+                          <li>Auditorias de infraestructura de sistemas</li>
+                          <li>Desarrollo de empresas sustentables</li>
+                          <li>Soluciones de marketing digital y no digital</li>
+                          <li>Gestión de eventos corporativos</li>
+                      </ul>
+<br><br>
+  <h4>Brindamos servicios integrales para soluciones óptimas.</h4>
+                      <a class="boton-cta" href= "/negocio_lp/">¡Lo quiero!</a>
+
+
+
+<!--
+    <p>Posicionamiento SEO y SEM, Social Media Strategist, Community Manager,
+       marketing de contenidos, herramientas de monitoreo y escucha social,
+       gestión de eventos corporativos, analítica organizacional.-->
+       
+  </div>
+
+  <div class="clearfix"></div>
+    </div>
+   <div class="corp3" id="corp3">
+  <div data-aos="flip-right" class="col-md-6 about-right">  
+  </div>
+  <div class="col-md-6 about-left">
+  </div>
+  
+  <div class="clearfix"></div>
+    </div>
+</div>
+<!-- //corp -->
+
+
+<!-- Detalle servicios -->
+<section class="section-oblicua">
+<div class="masc-oblicua"><div class="masc-oblicua" style="background: rgb(84, 85, 99) none repeat scroll 0% 0%;"><amp-img class="opac" src="/static/images/social-media-400x50.jpg" width ="400" height="50" layout="responsive" alt="Análisis de negocios sustentables"> </amp-img></div>
+<div class="container1">
+<div class="micro titulo-z" id="micro">
+<!--
     <div class="micro1" id="micro1">
-	<div data-aos="flip-right" class="col-md-6 about-right">
-	
-		<amp-img src="{% static 'images/crecer-min.jpg' %}" width ="760" height="400" layout="responsive" alt="Marketing para crecer"> </amp-img>
+
+
+	<div data-aos="flip-right" class="col-md-6 about-right"></div>
+			<amp-img src="/static/images/crecer-min.jpg" width ="760" height="400" layout="responsive" alt="Marketing para crecer"> </amp-img>
 	</div>
+
+  
 	<div class="col-md-6 about-left">
-	        <h2>Marketing para crecer</h2>
-		<li>Auditar es el primer paso firme...</li>
-		<p>Nos interesa conocer y mejorar tu idea de negocio: hacerla crecer y sostenerla a traves de <span class="fuerte">sólidas estrategias
-		de marketing </span> online y offline. Éste es nuestro principal objetivo. Diseñamos auditorías con indicadores
-		personalizados que te brindarán información valiosa para tus próximas decisiones de negocio.<br>
-		<div> <a class="boton2" href= "{% url 'Negocio_lp' %}">Hablar con un auditor</a></div>
+<p>Diseñamos auditorías con indicadores
+		personalizados que te brindarán información valiosa para tus próximas decisiones de negocio.<br></p>
 		
 	</div>
-	
 	<div class="clearfix"></div>
     </div>
+
+    
     <div class="micro2" id="micro2">
 	<div data-aos="flip-right" class="col-md-6 about-right">
-    		<amp-img src="{% static 'images/graph-min.jpeg' %}" width ="960" height="640" layout="responsive" alt="Marketing estratégico"> </amp-img>
     	</div>
     	<div class="col-md-6 about-left" id="pyme1">
-                   <h2>¿Por qué marketing estratégico?</h2>
-		<li>...Sin Estrategia no hay éxito</li>
-		<p>Cada año se crean 70 mil empresas argentinas y lamentablemente se cierran otras 68 mil. Además la tendencia nos dice que
-		la tasa de generación de empresas se redujo sensiblemente mientras que la tasa de cierre se mantiene
-		constante.*
-		<br>
-		Te proponemos trabajar con estrategias a corto, mediano y largo plazo, trabajar por proyectos con
-		 objetivos bien definidos
-		para que tu compañía sea saludable en el tiempo. <br>
-				
-		*Fuente de datos del <a  href= "http://gpsemp.produccion.gob.ar/index.php/datos_demografia">
-		Ministerio de producción.</a>
-		
-		 </p>
-		
-		<div> <a class="boton2" href= "{% url 'Negocio_lp' %}">¿Dudas? Escribinos...</a></div>
+                   
 	</div>
 	
 	<div class="clearfix"></div>
     </div>
+-->
+
+
     <div class="micro3" id="micro3">
-	<div data-aos="flip-right" class="col-md-6 about-right">
-		<amp-img src="{% static 'images/socialmedia-min.jpeg' %}" width ="960" height="500" layout="responsive" alt="Gestión de redes sociales"> </amp-img>
-	</div>
-	<div class="col-md-6 about-left">
-                  <h2>Gestión en redes sociales</h2>
-		<li>Cómo la autogestión puede ayudar en tu presupuesto</li>
+	<div data-aos="flip-right" class="col-md-6">
+	<h2>Gestión de redes sociales</h2>
 		<p>El mantenimiento de una <span class="fuerte">comunicación digital efectiva</span>
 		 que logre empatía e intención de compra debe ser tu principal objetivo, las soluciones de asesoría para autogestión de redes sociales que diseñamos son ideales para presupuestos
 		 limitados.
 		 <br>
 		 <p>Si la autogestión no es lo tuyo: Brindamos un servicio integral y alineado con tu Estrategia
 		  de marketing para la <span class="fuerte">gestión de redes sociales</span> con informes detallados para un seguimiento adecuado.</p>
-		<div> <a class="boton2" href= "{% url 'Social_lp' %}">Asesor para mis redes</a></div>
-		
+		<div class=""> <a class="boton2" href= "/social_lp/">Asesor para mis redes</a></div>
+	</div>
+	<div class="col-md-6 about-left">
 	</div>
 	
 	<div class="clearfix"></div>
     </div>
 	
 </div>
-<!-- //micro -->
-<!-- corp -->
-<div class="corp" id="corp">
- <h3 data-aos="slide-up">corporaciones</h3>
-     <div class="corp1" id="corp1">
-	<div data-aos="flip-right" class="col-md-6 about-right">
-	
-		<amp-img src="{% static 'images/corp1-min.jpg' %}" width ="960" height="680" layout="responsive" alt="Estrategia digital corporativa"> </amp-img>
-	</div>
-	<div class="col-md-6 about-left">
-	         <h2>Estrategia digital corporativa</h2>
-		<li>¿Cuál es HOY la necesidad digital de la companía?</li>
-                <li>¿Dónde están mis clientes en digital?</li>
-		<li>¿SEO: Hasta dónde puedo llegar?</li>
-		
-		<p>Si te ha costado responder alguna de estas preguntas, estamos para ayudarte. Por medio de nuestras
-                 consultorías tu equipo podrá comprender el ecosistema digital
-                 en el que se desenvuelve, decidir una Estrategia de comunicación eficiente y cuándo ejecutarla,
-                 anticipar tendencias, evaluar áreas de mayor impacto inter e intra empresarial. Decidir <span class="fuerte">cómo integrar servicios
-                 de marketing digital </span> o resolver rápidamente decisiones de infraestructura de sistema.
-                  <br>
-                  <div> <a class="boton2" href= "{% url 'Negocio_lp' %}">Haz aquí tu pregunta</a></div>
-		
-		
-	</div>
-	
-	<div class="clearfix"></div>
-    </div>
-    <div class="corp2" id="corp2">
-	<div data-aos="flip-right" class="col-md-6 about-right">
-		<amp-img src="{% static 'images/digital-min.jpeg' %}" width ="860" height="409" layout="responsive" alt="Análisis de negocios"> </amp-img>
-	</div>
-	<div class="col-md-6 about-left">
-                  <h2>Analítica de negocios</h2>
-		<li>Soluciones de marketing digital y no digital</li>
-		<p>Posicionamiento SEO y SEM, Social Media Strategist, Community Manager,
-		   marketing de contenidos, herramientas de monitoreo y escucha social,
-		   gestión de eventos corporativos, analítica organizacional.
-		   Son servicios que incorporamos para brindar a tu problemática <span class="fuerte">una resolución integral
-		   y real</span>.</p>
-		    <br>
-                 <div> <a class="boton2" href= "{% url 'Contact' %}">Click para saber más...</a></div>
-		
-		
-	</div>
-	
-	<div class="clearfix"></div>
-    </div>
-   <div class="corp3" id="corp3">
-	<div data-aos="flip-right" class="col-md-6 about-right">
-		<amp-img src="{% static 'images/calcu-min.jpeg' %}" width ="660" height="320" layout="responsive" alt="Publicaciones efectivas"> </amp-img>
-	</div>
-	<div class="col-md-6 about-left">
-                  <h2>Publicaciones efectivas en la web</h2>
-		<li>¿Por qué tus anuncios fallan?</li>
-		<p>Actualmente las tecnologías son transversales a toda empresa, fomentando mercados dinámicos.
-                   Para ser efectivo no basta con publicitar. Es necesario saber <span class="fuerte">qué, cómo, cuándo y por qué publicitar.</span>
-		<br>Nos ponemos de tu lado para superar la incertidumbre digital, con nuestro
-		analítica vamos a la raíz del conflicto.
-		 </p><br>
-		<div> <a class="boton2" href= "{% url 'Analytics_lp' %}">Revisar mis anuncios...</a></div>
-	</div>
-	
-	<div class="clearfix"></div>
-    </div>
+       </div>
 </div>
-<!-- //corp -->
+</section>
+<!-- //Detalle servicios -->
+
 <!-- influencers -->
-<div class="inf" id="inf">
-<h3 data-aos="slide-up">influyentes</h3>
+<div class="inf portfolio" id="inf">
+<!--<h3 data-aos="slide-up">influyentes</h3>-->
     <div class="inf1" id="inf1">
-	<div data-aos="flip-right" class="col-md-6 about-right">
-	
-		<amp-img src="{% static 'images/lapiz-min.jpeg' %}" width ="400" height="200" layout="responsive" alt="Presencia web"> </amp-img>
+	<div data-aos="flip-right" class="col-md-6 about-right">	
+	<!--	<amp-img src="/static/images/red2.png" width ="110" height="115" layout="responsive" alt="Presencia web"> </amp-img> -->
 	</div>
 	<div class="col-md-6 about-left">
-                  <h2>¿Cómo ganar visibilidad en la web?</h2>
-		<li>Trabajamos para construir tu imagen</li>
-		<p>Brindamos gestión y curación de contenidos.
-		y seguimiento de campañas personalizadas para aumentar tus seguidores.
-		<span class="fuerte">Aprende a rentabilizar tu presencia en la web</span> por medio de la generación de público específico.
-		<br></p>
-	        <div> <a class="boton2" href= "{% url 'Contact' %}">Mejorar mi imagen web</a></div>
-		
+                  <h2>Posicionamiento en buscadores</h2>	
+			<span class="fuerte"><p>Estrategías SEO para que tus clientes habituales y potenciales te encuentran en Google.</p></span>
+        <div> <a class="boton-cta" href= "/posicionamiento_lp/">Comenzar</a></div>
+
 		</div>
-	
-	
     </div>
     <div class="inf2" id="inf2">
 	<div data-aos="flip-right" class="col-md-6 about-right">
-	<amp-img src="{% static 'images/analy-min.jpeg' %}" width ="960" height="350" layout="responsive" alt=" Estrategia digital para influencers"> </amp-img>
+<!--	<amp-img src="/static/images/analy-min.jpeg" width ="960" height="350" layout="responsive" alt=" Estrategia digital para influencers"> </amp-img>-->
 	</div>
 	<div class="col-md-6 about-left">
-	         <h2>Social Media Manager para influencers</h2>
-		<li>Administrar profesionalmente tus redes sociales</li>
-		<p>Trabajamos con estrategias escalonadas para mejorar tanto tus contenidos
-		como tu reputación en la web. Llevamos <span class="fuerte">seguimiento, monitoreo y análisis
-		 de todas tus redes sociales</span>. Construye una legión de segidores con la
-		 Estrategia multitarget adecuada y toma las riendas del profesionalismo en tu negocio.
-		 <br>
-	          Asesoramiento para influencers profesionales</p>
-		  	
-		 <div> <a class="boton2" href= "{% url 'Contenido_lp' %}">Un asesor te lo explica</a></div>
+  <br><br>
+	         <h2>Analitica Digital</h2>
+		<ul>
+            <li>Mejora y evalua las conversiones de tu web</li>
+            <li>Conecta con tu verdadera audiencia</li>
+            <li>Optimizá tu estrategia en internet</li>
+    </ul>
+		<div> <a class="boton-cta" href= "/analytics_lp/">Comenzar</a></div>
 	</div>
-	
-	
-	
-    </div>
+	</div>
+    
     <div class="inf3" id="inf3">
 	<div data-aos="flip-right" class="col-md-6 about-right">
-	<amp-img src="{% static 'images/human-min.jpeg' %}" width ="460" height="195" layout="responsive" alt="Administrar correctamente tus seguidores"> </amp-img>
+<!--mm	<amp-img src="/static/images/human-min.jpeg" width ="460" height="195" layout="responsive" alt="Administrar correctamente tus seguidores"> </amp-img>-->
 	</div>
 	<div class="col-md-6 about-left">
-	         <h2>¿Tienes muchos seguidores?</h2>
-		<li>Monetiza tus followers</li>
-		<p>Como ya te contamos:<span class="fuerte">Tu contenido y reputación en la web determinan sensiblemente tus ingresos</span> es
-		por ello que preparamos estrategias off line y on line para tu promoción ante anunciantes,
-		te acercamos a páginas que intermedien entre las marcas y vos. ¡Estamos para ayudarte!
-		 </p><br>
-		 <div> <a class="boton2" href= "{% url 'Negocio_lp' %}">Contactar a un analista...</a></div>
-		
 	</div>
 	<div class="clearfix"></div>
     </div>
@@ -1827,36 +1444,28 @@ html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-t
 </div>
 <!-- //influencers -->
     <div class="contact" id="contact">
-
         <div data-aos="flip-right" class="col-md-6 about-right">
              <div class= "globc">
-                <h2><a href="/blog"><i class="fa fa-bullhorn"></i> <br>Blog</a></h2>
-                <h2><a href="#nosotros"><i class="fa fa-home"></i> <br> Inicio</a></h2>
-                <h2><a href="{% url 'Contact' %}"><i class="fa fa-envelope"></i> <br>¡Comunicate!</a></h2>
-             </div>
-             	
+                <h2><a href="/blog"><i class="fa fa-bullhorn"></i> Blog</a></h2><!-- mmm-->
+                <h2><a href="#inicio"><i class="fa fa-caret-square-o-up"></i> Ir arriba</a></h2><!-- mm-->
+                <h2><a href="/contact/"><i class="fa fa-envelope"></i>  Hablemos</a></h2>
+             </div>   	
             <amp-twitter width="390"
                       height="330"
                       layout="responsive"
                       data-tweetid="1010566990833029121">
-            </amp-twitter>
+            </amp-twitter>      
        </div>
-
        <div class="col-md-6 about-left">
-
     	<div class="pfinal"><p>Compartimos información actualizada sobre marketing sustentable, analítica de negocios y mucho más por nuestras redes sociales.</p><h2>¡Seguinos!</h2></div>
-
-               <div class="social-btns">
-                    <a class="btn facebook" href="https://www.facebook.com/Bitnativo-443137372789482/"><i class="fa fa-facebook"></i></a>
-                    <a class="btn twitter" href="https://twitter.com/bitnativo"><i class="fa fa-twitter"></i></a>
-                    <a class="btn google" href="https://plus.google.com/u/0/104787045732925536305"><i class="fa fa-google"></i></a>
-                    <a class="btn instagram" href="https://www.instagram.com/bitnativo"><i class="fa fa-instagram"></i></a>
-                </div>
-
+             <div class="social-btns">
+                  <a class="btn facebook" href="https://www.facebook.com/bitnativo/"><i class="fa fa-facebook"></i></a>
+                  <a class="btn twitter" href="https://twitter.com/bitnativo"><i class="fa fa-twitter"></i></a>
+                  <a class="btn google" href="https://plus.google.com/u/0/104787045732925536305"><i class="fa fa-google"></i></a>
+                  <a class="btn instagram" href="https://www.instagram.com/bitnativo"><i class="fa fa-instagram"></i></a>
+              </div>
         </div>
-
     </div>
-
 
 </body>
 </html>
