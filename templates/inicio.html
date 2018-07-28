@@ -30,7 +30,7 @@
 <!--// social-->
 
 <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"></script>
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet"> 
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:600" rel="stylesheet">
 
  <style amp-custom="">
@@ -148,7 +148,7 @@ nav.navbar.navbar-default.navbar-fixed-top {
   .centrado{
     margin:auto;
     /*border: 1px solid #000;*/
-    text-align:center; 
+    text-align:center;
   }
 
 
@@ -174,8 +174,8 @@ border: 2px solid #33cc33;
 text-transform: uppercase;
 line-height: 24px;
   }
-  
-  
+
+
 .nosotros {
     display:flex;
     flex-direction:row;
@@ -460,7 +460,7 @@ linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transpar
 background-color: #131313;
 background-size: 20px 20px;
     }
-    
+
 .globc{
             display:flex;
             flex-direction:row;
@@ -468,7 +468,7 @@ background-size: 20px 20px;
             justify-content:space-around;
             align-items:center;
 	}
-    
+
 /* Responsive design */
 @media screen and (max-width: 1366px){
 	.contact {
@@ -601,7 +601,7 @@ a:focus {
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
-    
+
 .col-md-6 {
   position: relative;
   min-height: 1px;
@@ -618,7 +618,7 @@ a:focus {
     /*border-radius: 5px;*/
     color: #000;
   }
-    
+
   a.logo{
     text-transform: none;
     font-family: 'Raleway', sans-serif;
@@ -749,7 +749,7 @@ a:focus {
      .globc h2 a{
          display:none;
         }
- 
+
  /*
      p{
 
@@ -875,7 +875,7 @@ a:focus {
 .inf{
  background:#ededed;
     }
-    
+
 
 .glob h2 a{
   text-transform: none;
@@ -995,7 +995,7 @@ a:focus {
     padding: 2em 0;
     text-align: center;
   }
-  
+
 .pfinal{
      color:#fff;
     }
@@ -1059,7 +1059,7 @@ color: #fff;
     text-align:center;
     text-shadow:2px 1px 4px  #333;
     }
-    
+
 .uno{
 
     margin: 10px;
@@ -1101,10 +1101,10 @@ color: #fff;
 
     }
     ***/
-    
+
 .portfolio{
   /*
-   background: #eee; /* For browsers that do not support gradients 
+   background: #eee; /* For browsers that do not support gradients
    background: linear-gradient(to bottom, rgba(238,238,238,0), rgba(238,238,238,1));
    */
    padding: 7% 0;/****/
@@ -1121,7 +1121,7 @@ color: #fff;
     margin-bottom:1em;/***m*/
    padding-top: 1em;
     font-family: 'Open Sans', sans-serif;
-   
+
     }
 
 .col{
@@ -1202,7 +1202,7 @@ h1{margin:0;padding:0;font-weight:400;letter-spacing:.06rem}a,a:active,a:visited
                     <li><a href="/contact/">Contacto</a></li>
 <!--
                     <li><a href="/blog">Blog</a></li>
--->                  
+-->
                 </ul>
            </div>
         </div>
@@ -1213,7 +1213,7 @@ h1{margin:0;padding:0;font-weight:400;letter-spacing:.06rem}a,a:active,a:visited
                       <h1>Obtené tu primera asesoría en marketing digital<span class="fuerte"> 100% gratuita</span><br></h1>
                       <p></p>
 
-                          <a class="boton-cta elct" href= "/ctalider_lp/">Solicitar</a>
+                          <a class="boton-cta elct" href= "{% url 'Ctalider_lp' %}">Solicitar</a>
 
                   </div>
           </div>
@@ -1221,7 +1221,7 @@ h1{margin:0;padding:0;font-weight:400;letter-spacing:.06rem}a,a:active,a:visited
           <div class="seccion-chica">
             <div class="cent-hz-vt">
           <h1>Obtené tu primera asesoría en marketing digital<span class="fuerte"> 100% gratuita</span><br></h1>
-        <br><a class="boton-cta" href= "/ctalider_lp/"> Solicitar </a>
+        <br><a class="boton-cta" href= "{% url 'Ctalider_lp' %}"> Solicitar </a>
           </div>
       </div>
 </div>
@@ -1278,7 +1278,7 @@ h1{margin:0;padding:0;font-weight:400;letter-spacing:.06rem}a,a:active,a:visited
                     </div>
                 </div>
         </div>
-<!-- //Portfolio -->   
+<!-- //Portfolio -->
 
 
 <!--Nosotros-->
@@ -1307,7 +1307,7 @@ h1{margin:0;padding:0;font-weight:400;letter-spacing:.06rem}a,a:active,a:visited
     <div class="corp2" id="corp2">
   <div data-aos="flip-right" class="col-md-6 about-right">
     <amp-img src="/static/images/equipo-min.jpg" width ="700" height="467" layout="responsive" alt="Análisis de negocios sustentables"> </amp-img>
-    
+
   </div>
   <div class="col-md-6 about-left">
                   <h2>Analítica de negocios</h2>
@@ -1319,7 +1319,7 @@ h1{margin:0;padding:0;font-weight:400;letter-spacing:.06rem}a,a:active,a:visited
                       </ul>
 <br><br>
   <h4>Brindamos servicios integrales para soluciones óptimas.</h4>
-                      <a class="boton-cta" href= "/negocio_lp/">¡Lo quiero!</a>
+                      <a class="boton-cta" href= "{% url 'Negocio_lp' %}">¡Lo quiero!</a>
 
 
 
@@ -1327,17 +1327,17 @@ h1{margin:0;padding:0;font-weight:400;letter-spacing:.06rem}a,a:active,a:visited
     <p>Posicionamiento SEO y SEM, Social Media Strategist, Community Manager,
        marketing de contenidos, herramientas de monitoreo y escucha social,
        gestión de eventos corporativos, analítica organizacional.-->
-       
+
   </div>
 
   <div class="clearfix"></div>
     </div>
    <div class="corp3" id="corp3">
-  <div data-aos="flip-right" class="col-md-6 about-right">  
+  <div data-aos="flip-right" class="col-md-6 about-right">
   </div>
   <div class="col-md-6 about-left">
   </div>
-  
+
   <div class="clearfix"></div>
     </div>
 </div>
@@ -1346,7 +1346,7 @@ h1{margin:0;padding:0;font-weight:400;letter-spacing:.06rem}a,a:active,a:visited
 
 <!-- Detalle servicios -->
 <section class="section-oblicua">
-<div class="masc-oblicua"><div class="masc-oblicua" style="background: rgb(84, 85, 99) none repeat scroll 0% 0%;"><amp-img class="opac" src="/static/images/social-media-400x50.jpg" width ="400" height="50" layout="responsive" alt="Análisis de negocios sustentables"> </amp-img></div>
+<div class="masc-oblicua"><div class="masc-oblicua" style="background: rgb(84, 85, 99) none repeat scroll 0% 0%;"><amp-img class="opac" src="/static/images/img2.jpg" width ="400" height="50" layout="responsive" alt="Análisis de negocios sustentables"> </amp-img></div>
 <div class="container1">
 <div class="micro titulo-z" id="micro">
 <!--
@@ -1357,7 +1357,7 @@ h1{margin:0;padding:0;font-weight:400;letter-spacing:.06rem}a,a:active,a:visited
 			<amp-img src="/static/images/crecer-min.jpg" width ="760" height="400" layout="responsive" alt="Marketing para crecer"> </amp-img>
 	</div>
 
-  
+
 	<div class="col-md-6 about-left">
 <p>Diseñamos auditorías con indicadores
 		personalizados que te brindarán información valiosa para tus próximas decisiones de negocio.<br></p>
@@ -1366,12 +1366,12 @@ h1{margin:0;padding:0;font-weight:400;letter-spacing:.06rem}a,a:active,a:visited
 	<div class="clearfix"></div>
     </div>
 
-    
+
     <div class="micro2" id="micro2">
 	<div data-aos="flip-right" class="col-md-6 about-right">
     	</div>
     	<div class="col-md-6 about-left" id="pyme1">
-                   
+
 	</div>
 	
 	<div class="clearfix"></div>
@@ -1388,7 +1388,7 @@ h1{margin:0;padding:0;font-weight:400;letter-spacing:.06rem}a,a:active,a:visited
 		 <br>
 		 <p>Si la autogestión no es lo tuyo: Brindamos un servicio integral y alineado con tu Estrategia
 		  de marketing para la <span class="fuerte">gestión de redes sociales</span> con informes detallados para un seguimiento adecuado.</p>
-		<div class=""> <a class="boton2" href= "/social_lp/">Asesor para mis redes</a></div>
+		<div class=""> <a class="boton2" href= "{% url 'Social_lp' %}">Asesor para mis redes</a></div>
 	</div>
 	<div class="col-md-6 about-left">
 	</div>
@@ -1412,7 +1412,7 @@ h1{margin:0;padding:0;font-weight:400;letter-spacing:.06rem}a,a:active,a:visited
 	<div class="col-md-6 about-left">
                   <h2>Posicionamiento en buscadores</h2>	
 			<span class="fuerte"><p>Estrategías SEO para que tus clientes habituales y potenciales te encuentran en Google.</p></span>
-        <div> <a class="boton-cta" href= "/posicionamiento_lp/">Comenzar</a></div>
+        <div> <a class="boton-cta" href= "{% url 'Posicionamiento_lp' %}">Comenzar</a></div>
 
 		</div>
     </div>
@@ -1428,10 +1428,10 @@ h1{margin:0;padding:0;font-weight:400;letter-spacing:.06rem}a,a:active,a:visited
             <li>Conecta con tu verdadera audiencia</li>
             <li>Optimizá tu estrategia en internet</li>
     </ul>
-		<div> <a class="boton-cta" href= "/analytics_lp/">Comenzar</a></div>
+		<div> <a class="boton-cta" href= "{% url 'Analytics_lp' %}">Comenzar</a></div>
 	</div>
 	</div>
-    
+
     <div class="inf3" id="inf3">
 	<div data-aos="flip-right" class="col-md-6 about-right">
 <!--mm	<amp-img src="/static/images/human-min.jpeg" width ="460" height="195" layout="responsive" alt="Administrar correctamente tus seguidores"> </amp-img>-->
@@ -1454,7 +1454,7 @@ h1{margin:0;padding:0;font-weight:400;letter-spacing:.06rem}a,a:active,a:visited
                       height="330"
                       layout="responsive"
                       data-tweetid="1010566990833029121">
-            </amp-twitter>      
+            </amp-twitter>
        </div>
        <div class="col-md-6 about-left">
     	<div class="pfinal"><p>Compartimos información actualizada sobre marketing sustentable, analítica de negocios y mucho más por nuestras redes sociales.</p><h2>¡Seguinos!</h2></div>
