@@ -998,6 +998,7 @@ a:focus {
 
 .pfinal{
      color:#fff;
+     font-size:25px;
     }
 
 
@@ -1073,10 +1074,20 @@ color: #fff;
     border-radius:200px 20px 200px;
     }
 
+.do{
+    height:250px;
+    width:auto;
+     padding-top:10px;
+     padding-bottom:10px;
+     padding-left:10px;
+     padding-right:10px;
+    }
 
-.do {
-    /*margin:10px;*/
-    /***padding:10px;****/
+
+.do:hover{
+    background:#FAFAFA;
+    box-shadow: 1px 5px .5px .5px #00a6dd;
+
 }
 
 .do:hover > .tre{
@@ -1170,6 +1181,9 @@ color: #fff;
     text-align:center;
 }
 
+about-left p{
+    font-size:20px;
+    }
 html{/**/line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}nav{display:block}
 
 /**
@@ -1183,6 +1197,27 @@ h1{margin:0;padding:0;font-weight:400;letter-spacing:.06rem}a,a:active,a:visited
 
 </style>
 </head>
+
+{% load static %}
+ {% load zinnia %}
+
+<!--inicio amp analytics-->
+<amp-analytics type="googleanalytics">
+<script type="application/json">
+{
+  "vars": {
+    "account": "UA-119139710-1"
+  },
+  "triggers": {
+    "trackPageview": {
+      "on": "visible",
+      "request": "pageview"
+    }
+  }
+}
+</script>
+</amp-analytics>
+<!-- fin amp analytics -->
  <body>
  <!-- banner -->
 <div class="banner" id="inicio">
@@ -1231,30 +1266,30 @@ h1{margin:0;padding:0;font-weight:400;letter-spacing:.06rem}a,a:active,a:visited
                      <div class="serv">
                          <div class="col">
                                  <div class="uno">
-                                    <div class="do"><a><i class="fa fa-key"></i><br>Auditorias para negocios sustentables</a>
+                                    <div class="do"><a href= "{% url 'Ctalider_lp' %}"><i class="fa fa-key"></i><br>Auditorias para negocios sustentables</a>
                                        <div class="tre"><p>Analisis de proyectos orientados a economías sustentables.
                                              </p>
+
                                       </div>
                                     </div>
                                  </div>
                                  <div class="uno">
-                                     <div class="do"><a><i class="fa fa-globe"></i><br> Posicionamiento Web</a>
+                                     <div class="do"><a href= "{% url 'Ctalider_lp' %}"><i class="fa fa-globe"></i><br> Posicionamiento Web</a>
                                          <div class="tre"><p>Visibilidad de tu sitio web en las primeras posiciones de los resultados de búsqueda.</p>
                                         </div>
                                     </div>
                                  </div>
-
-                                 <div class="uno">
-                                     <div class="do"><a><i class="fa fa-users"></i><br> Redes Sociales</a>
-                                             <div class="tre"><p>Gestión estratégica para tus redes sociales.</p>
-                                            </div>
-                                     </div>
+                                <div class="uno">
+                                     <div class="do"><a href= "{% url 'Ctalider_lp' %}"><i class="fa fa-users"></i><br> Redes Sociales</a>
+                                         <div class="tre"><p>Gestión estratégica para tus redes sociales.</p>
+                                        </div>
+                                    </div>
                                  </div>
-                             </div>
+
 
                          <div class="col">
                                  <div class="uno">
-                                    <div class="do"><a><i class="fa fa-at"></i><br> Email Marketing</a>
+                                    <div class="do"><a href= "{% url 'Emailmkt_lp' %}"><i class="fa fa-at"></i><br> Email Marketing</a>
                                              <div class="tre"><p>Administramos tus campañas de email.</p>
                                              </div>
                                     </div>
@@ -1262,14 +1297,14 @@ h1{margin:0;padding:0;font-weight:400;letter-spacing:.06rem}a,a:active,a:visited
                                  </div>
 
                                  <div class="uno">
-                                     <div class="do"><a><i class="fa fa-bar-chart"></i><br> Web Analytics</a>
+                                     <div class="do"><a href= "{% url 'Analytics_lp' %}"><i class="fa fa-bar-chart"></i><br> Web Analytics</a>
                                              <div class="tre"><p>Lo que no se puede medir no se puede
                                              resolver. Creamos indicadores de rendimiento brindandote soluciones a medida.</p>
                                              </div>
                                     </div>
                                 </div>
                                  <div class="uno">
-                                     <div class="do"><a><i class="fa fa-leaf"></i><br> Marketing de Contenidos</a>
+                                     <div class="do"><a href= "{% url 'Contenido_lp' %}"><i class="fa fa-leaf"></i><br> Marketing de Contenidos</a>
                                              <div class="tre"><p> Lo que dices, cómo lo dices y a quién se lo dices.
                                              Trabajamos juntos para que tu mensaje sea sólido y acertado.</p>
                                              </div>
@@ -1318,7 +1353,7 @@ h1{margin:0;padding:0;font-weight:400;letter-spacing:.06rem}a,a:active,a:visited
                           <li>Gestión de eventos corporativos</li>
                       </ul>
 <br><br>
-  <h4>Brindamos servicios integrales para soluciones óptimas.</h4>
+  <h4>Brindamos servicios óptimos para soluciones integrales.</h4>
                       <a class="boton-cta" href= "{% url 'Negocio_lp' %}">¡Lo quiero!</a>
 
 
