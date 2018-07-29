@@ -11,7 +11,7 @@
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
   <meta name="robots" content="noindex, follow">
 
-  
+
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700" rel="stylesheet">
 
@@ -25,7 +25,7 @@
     </script>
 
 
-<style>
+<style >
 
 html, body{
     font-size: 100%;
@@ -237,25 +237,34 @@ p {
 
 
 .con > form{
-    background: #006080;
+   background:linear-gradient(90deg, #023380,#00a6dd);
+   border-radius:15px;
+   margin-left:15px;
+   margin-right:15px;
+
+   text-shadow:2px 2px 2px #000;
+
 }
 
 
 .arriba{
-  background: #006080;
+
+ background:#FAFAFA;
+ box-shadow: 1px 5px 3px #00a6dd;
+
     width:100%;
      display:flex;
      flex-direction:row;
      flex-wrap:wrap;
-     justify-content:space-between;
-     align-content:stretch;
+     justify-content:space-around;
+     align-content:space-around;
      margin-top:0px;
 
     }
 
 .medio{
 
-    background: #006080;
+   background:rgb(84, 85, 99);
     display:inline-block;
     width:100%;
 
@@ -267,8 +276,6 @@ p {
     display:flex;
     flex-direction:row;
     flex-wrap:wrap;
-    justify-content:space-between;
-    align-content:center;
 
 
     }
@@ -294,7 +301,7 @@ p {
 .masarriba h1{
      font-weight:bold;
      font-size:20px;
-     color:#333;
+
     margin-top:10px;
     margin-left:10px;
     margin-right:10px;
@@ -307,7 +314,7 @@ p {
 .medio h3{
     font-weight:bold;
     font-size:20px;
-    color:#ffff00;
+    color:#fff;
     margin-top:10px;
     margin-left:10px;
     margin-right:10px;
@@ -329,7 +336,7 @@ h3{
     margin-top:20px;
     font-size:25px;
     text-align:center;
-    color:#33cc33;
+    color:#333;
     font-weight:bold;
 
     }
@@ -355,11 +362,11 @@ h3{
 
     }
   .errorlist  li{
-  color: #cc0033;
+  color: #ffff00;
+  font-weight:bold;
   font-size:16px;
-
-
 }
+	
 .con > form: invalid{
 
   border: 2px solid #cc0033;
@@ -372,17 +379,21 @@ h3{
 
 .primera{
 
-background:#fff;
+background: #fff;
+
+
+
 
 }
 
 .con{
-     background: #006080;
+     background: #fff;
      display:flex;
      flex-direction:column;
      flex-wrap:wrap;
      justify-content:center;
      align-content:center;
+     border-radius:15px;
 
     }
 .inter{
@@ -414,9 +425,6 @@ input[type="submit"] {
     background:#33cc33;
     font-size:18px;
     float:right;
-    font-weight:bold;
-    box-shadow: 3px 3px 3px #000;
-
 
 
     }
@@ -461,7 +469,7 @@ textarea{
     }
 
 .uno i{
-     color:#ffff00;
+     color:#00a6dd;
      text-shadow: 3px 3px 3px #000;
     }
 
@@ -471,7 +479,7 @@ textarea{
     margin-top:3px;
     margin-bottom:3px;
     font-size:20px;
-    color:#ffff00;
+    color:rgb(84, 85, 99);
 
     }
 
@@ -479,7 +487,7 @@ textarea{
 
     font-size:16px;
     font-family:sans-serif;
-    color:#ffff00;
+    color:rgb(84, 85, 99);
     font-weight:bold;
      margin-right:10px;
     }
@@ -494,28 +502,24 @@ textarea{
 
     font-size:16px;
     font-family:sans-serif;
-    color: #1a1a1a;
-    margin-top:10px;
+    color:#fff;
     margin-left:10px;
-    margin-right:10px;
-    margin-bottom:10px;
-    padding-top:10px;
-    padding-left:10px;
-    padding-right:10px;
-    padding-bottom:10px;
+
 
     }
 
 .doss i{
 
     font-size:25px;
-    color: #000;
+    color:#33cc33;
+
 
     }
 .doss{
-
-text-align:center;
+    display:inline;
+    text-align:center;
     }
+
 h1 > .fuerte{
      font-size:30px;
 
@@ -533,18 +537,18 @@ h1 > .fuerte{
 
 .botonser input {
 
-    color: #000;
-    background: #ffff00;
+    color: #fff;
+    background:#33cc33;
     font-size: 16px;
     font-weight: bold;
-    border-radius:30px 50px 15px;
+    border-radius: 6px;
     padding:15px 15px;
     margin-bottom: 5px;
 
 }
 .botonser input:hover {
-    color: #000;
-    border:2px solid #ffff00;
+    color: #fff;
+    border:2px solid #33cc33;
     background: none;
 
     }
@@ -567,35 +571,78 @@ h1 > .fuerte{
 
 }
 .medio .sub {
-    color: #ffff00;
+    color: #33cc33;
     }
 .medio a:hover {
-    color: #ffff00;
-    border:2px solid #ffff00;
+    color: #fff;
+    border:2px solid #33cc33;
     background: none;
 
     }
-.con {
-	background-image:url(../static/images/social.png);
+.primera {
+	
 	
 }
 
-@keyframes con{
-	from { background-position: 300px 390px, 0px 0px, 0 0; }
-	to { background-position: -300px -390px, 0px 0px, 100% 0; }
+
+.con {
+	
+	margin-top:10px;
+	
+	
 }
-		
-.con{
-	animation: con 50s linear infinite;
-}
+
 .ribbon p, h3{
-    color:#ffff00;
+    color:#fff;
+}
+
+
+.boton-cta {
+    color: #fff;
+    background: #33cc33;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 40px;
+    border-radius: 6px;
+    text-transform: uppercase;
+  }
+
+  .boton-cta:active, .boton-cta:visited{
+    color: #fff;
+  }
+
+  .boton-cta:hover{
+    background:#00ff99;
+    color: #fff;
+  }
+
+  .elct{
+    position: absolute;
+    left: 40%;
+  }
+
+
+
+h1{
+    color:#023380;
+
+    }
+
+.ni p{
+    color:rgb(84, 85, 99);
 }
 
 .masarriba{
+ margin-top:50px;
 
 
+ margin-left:20px;
+	margin-right:20px;
+ margin-bottom:20px;
 
+
+.ni{
+    background:#fff;
 
     }
 
@@ -610,8 +657,9 @@ html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-t
     <div class="primera">
 
                     <div class="arriba">
-                        <div><a href= "{% url 'inicio' %}"><amp-img src="{% static 'images/logo1.png' %}" width ="60" height="44" ></a></amp-img></div>
-                        <div class="dos"><i class="fa fa-send-o"></i><a> bitnativo@gmail.com</a></div>
+                        <div><a href= "{% url 'inicio' %}"><img src="{% static 'images/logo1.png' %}" width ="60" height="44" alt="Logo bitnativo"></a></img></div>
+                        <div class="dos"><i class="fa fa-send-o"></i><a> ventas@bitnativo.com</a></div>
+                        <div class="dos"><i class="fa fa-whatsapp" ></i><a> 54-2236687453</a></div>
 
                      </div>
 
