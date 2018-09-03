@@ -29,47 +29,53 @@
     <!--[if lt IE 8]>
         <link rel="stylesheet" type="text/css" media="screen, projection" href="{% static "zinnia/theme/css/ie.css" %}" />
     <![endif]-->
-    {% block link %}{% endblock link %}
+      {% block link %}{% endblock link %}
     {% block script %}{% endblock script %}
   </head>
   <body class="zinnia {% block theme-class %}default{% endblock theme-class %} {% block color-class %}blue{% endblock color-class %} {% block sidebar-class %}right-sidebar{% endblock sidebar-class %} {% block body-class %}{% endblock body-class %}">
     <div class="container">
       <header id="header" role="banner">
-        <nav>
+        <div class="fondo">
 
           <ul class="top-navigation">
+<!--
             <li>
               <a href="{% url 'zinnia:sitemap' %}" title="{% trans "Sitemap" %}" class="sitemap" rel="sitemap">
                 {% trans "Sitemap" %}
               </a>
             </li>
+-->
             <li>
               <a href="{% url 'zinnia:entry_feed' %}" title="{% trans "RSS" %}" class="feeds">
-                {% trans "RSS" %}
+               <i class="fa fa-rss"></i>
               </a>
             </li>
           </ul>
-        </nav>
-        <form method="get" action="{% url 'zinnia:entry_search' %}">
-          <p>
-            <input type="text" name="pattern" placeholder="{% trans "Buscar..." %}" {% if pattern %}value="{{ pattern }}"{% endif %} />
-            <input type="submit" class="submitbutton" value="OK" />
-          </p>
-        </form>
+        </div>
+        <div>
+        <ul class="buscar">
+            <li><a><i class="fa fa-search"></i></a>
+                <ul class="bus">
+                    <li>
+                        <form method="get" action="{% url 'zinnia:entry_search' %}">
+                          <p>
+                              <input type="text" name="pattern"  placeholder="Buscar entradas..."{% if pattern %}value="{{ pattern }}"{% endif %} />
+                              <input type="submit" class="submitbutton" value="OK" />
+                          </p>
+                        </form>
+                    </li>
+                </ul>
+           </li>
+        </ul>
+        </div>
+        <div class="te">
         <h1>
           <a href="{% url 'zinnia:entry_archive_index' %}" title="Zinnia's Weblog" rel="home">
-          BlogNativo
+          BlogNativo | Marketing en tiempos digitales
           </a>
         </h1>
-         <blockquote>
-          <div class="social-btns">
-            <a class="btn facebook" href="https://www.facebook.com/Bitnativo-443137372789482/"><i class="fa fa-facebook"></i></a>
-            <a class="btn twitter" href="https://twitter.com/bitnativo"><i class="fa fa-twitter"></i></a>
-            <a href="https://www.linkedin.com/company/bitnativo"><i class="fa fa-linkedin"></i></a>
-            <a class="btn google" href="https://plus.google.com/u/0/104787045732925536305"><i class="fa fa-google"></i></a>
-            <a href="https://www.instagram.com/bitnativo"><i class="fa fa-instagram"></i></a>
-	<blockquote>
         </div>
+
         {% block breadcrumbs %}{% endblock breadcrumbs %}
       </header>
       {% block slider %}{% endblock slider %}
@@ -101,8 +107,8 @@
         {% endblock sidebar %}
       </div>
       <footer id="footer" role="contentinfo">
-        <p>{% blocktrans %}Construido en <a href="http://www.djangoproject.com">Django</a> y <a href="https://github.com/Fantomas42/django-blog-zinnia">Zinnia {{ ZINNIA_VERSION }}</a>.{% endblocktrans %}</p>
       </footer>
     </div>
   </body>
 </html>
+
