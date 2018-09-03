@@ -1,7 +1,6 @@
 {% extends "zinnia/skeleton.html" %}
 {% load i18n %}
 {% load zinnia %}
-{% load staticfiles %}
 
 {% block meta-keywords %}{% get_tags as entry_tags %}{{ entry_tags|join:", "}}{% endblock meta-keywords %}
 
@@ -18,8 +17,7 @@
     <link rel="alternate" type="application/rss+xml" title="{% trans "RSS feed de las últimas entradas" %}" href="{% url 'zinnia:entry_feed' %}" />
     <link rel="alternate" type="application/rss+xml" title="{% trans "RSS feed de las últimas discusiones" %}" href="{% url 'zinnia:discussion_feed' %}" />
     {% get_archives_entries "zinnia/tags/entries_archives_link.html" %}
-    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" media="screen, projection" href="{% static "css/screen.css" %}" />
+    <link rel="stylesheet prefetch" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
 {% endblock link %}
 
@@ -30,33 +28,39 @@
 
 {% block sidebar %}
 <aside id="widget-welcome" class="widget">
-  <h3 class="hola">{% trans "Bienvenido!" %}</h3>
-  <p>
-    {% trans "Esperamos que este blog sea una potente herramienta de consulta para tu empresa" %}
-  </p>
-  <p>
-    {% trans "Si quieres contactarte con nosotros y saber mas de nuestros servicios: " %} <a href= "{% url 'inicio' %}"> <strong>"bitnativo.com"</strong> </a>.
-  </p>
-				<ul class="navi">
-					<li><a href="#" class="fa fa-rss"> Seguir</a>
-    					    <ul><li><a href="https://www.facebook.com/Bitnativo-443137372789482/info" class="fa fa-facebook" target="_blank"></a></li>
-                					<li><a href="https://twitter.com/bitnativo" class="fa fa-twitter"target="_blank"></a></li>
-                					<li><a href="https://www.instagram.com/bitnativo/" class="fa fa-instagram"target="_blank"></a></li>
-                					<li><a href="https://ar.linkedin.com/company/bitnativo" class="fa fa-linkedin"target="_blank"></a></li>
-                					<li><a href="https://plus.google.com/u/0/104787045732925536305" class="fa fa-google"target="_blank"></a></li>
-                					
-                                                </ul>
-                                         </li>
-			       </ul>		
+  <h3 class="hola">{% trans "Cómo vender en la web..." %}</h3>
+  <div class="con">
+
+    <form method="POST" target="_top">{% csrf_token %}
+        <div class="ribbon">
+            <p>Superá la incertidumbre digital !! <br><span class="ase">Asesoría Gratuita</span>
+            <br><span><i class="fa fa-chevron-down"></i></span></p>
+        </div>
+            {{form.fnombre.errors}}
+            <input type="text" name="fnombre" placeholder="Nombre" ><br>
+
+            <input type="text" name="ftelefono" placeholder="Whatsapp (OPCIONAL)"><br>
+
+            {{form.femail.errors}}
+            <input type="email" name="femail" placeholder="E-mail"><br>
+
+            <div class="botonser"><input type="submit" value="Mi asesoría gratuita "></div>
+            <div class="doss"><i class="fa fa-lock"></i><a>Tus datos están protegidos.</a></div>
+    </form>
+
+  </div>
 </aside>
+<!--
 <aside id="widget-populars" class="widget">
   <h3 class="visto">{% trans "Mas vistos" %}</h3>
   {% get_popular_entries %}
 </aside>
+-->
 <aside id="widget-categories" class="widget">
   <h3 class="cat"><a href="{% url 'zinnia:category_list' %}">{% trans "Categorías" %}</a></h3>
   {% get_categories %}
 </aside>
+<!--
 <aside id="widget-authors" class="widget">
   <h3 class="aut">
     <a href="{% url 'zinnia:author_list' %}">{% trans "Autores" %}</a>
@@ -67,6 +71,7 @@
   <h3 class="cal">{% trans "Calendario" %}</h3>
   {% get_calendar_entries %}
 </aside>
+-->
 <aside id="widget-tags" class="widget">
   <h3 class="eti">
     <a href="{% url 'zinnia:tag_list' %}">{% trans "Etiquetas" %}</a>
@@ -77,10 +82,13 @@
   <h3 class="ent">{% trans "Entradas recientes" %}</h3>
   {% get_recent_entries %}
 </aside>
+<!--
 <aside id="widget-comments" class="widget">
   <h3 class="ult">{% trans "Últimos commentarios" %}</h3>
   {% get_recent_comments %}
 </aside>
+-->
+<!--
 <aside id="widget-linkbacks" class="widget">
   <h3 class="rec">{% trans "Enlaces recientes" %}</h3>
   {% get_recent_linkbacks %}
@@ -93,6 +101,7 @@
   <h3 class="arch">{% trans "Archivos" %}</h3>
   {% get_archives_entries_tree %}
 </aside>
+-->
 {% if user.is_authenticated %}
 <aside id="widget-tools" class="widget">
   <h3 class="herr">{% trans "Herramientas" %}</h3>
