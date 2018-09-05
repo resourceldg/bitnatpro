@@ -66,7 +66,7 @@ urlpatterns = [
     url(r'^negocio_lp/gracias/$', views.gracias, name='gracias'),#dry(dont repeat yourself): me estoy repitiendo (SOLUCION: APRENDER A USAR REGEX EN PATRONES URL)
     url(r'^analytics_lp/gracias/$', views.gracias, name='gracias'),#dry(dont repeat yourself): me estoy repitiendo (SOLUCION: APRENDER A USAR REGEX EN PATRONES URL)
     url(r'^contenido_lp/gracias/$', views.gracias, name='gracias'),#dry(dont repeat yourself): me estoy repitiendo (SOLUCION: APRENDER A USAR REGEX EN PATRONES URL)
-    url(r'^posicionamiento_web/gracias/$', views.gracias, name='gracias'),#dry(dont repeat yourself): me estoy repitiendo (SOLUCION: APRENDER A USAR REGEX EN PATRONES URL)
+    url(r'^posicionamiento-web/gracias/$', views.gracias, name='gracias'),#dry(dont repeat yourself): me estoy repitiendo (SOLUCION: APRENDER A USAR REGEX EN PATRONES URL)
     url(r'^emailmkt_lp/gracias/$', views.gracias, name='gracias'),#dry(dont repeat yourself): me estoy repitiendo (SOLUCION: APRENDER A USAR REGEX EN PATRONES URL)
     url(r'^ctalider_lp/gracias/$', views.gracias, name='gracias'),#dry(dont repeat yourself): me estoy repitiendo (SOLUCION: APRENDER A USAR REGEX EN PATRONES URL)
 #LANDING PAGES
@@ -74,7 +74,7 @@ urlpatterns = [
     url(r'^negocio_lp/$', views.Negocio_lp.as_view(), name='Negocio_lp'),
     url(r'^analytics_lp/$', views.Analytics_lp.as_view(), name='Analytics_lp'),
     url(r'^contenido_lp/$', views.Contenido_lp.as_view(), name='Contenido_lp'),
-    url(r'^posicionamiento_web/$', views.Posicionamiento_web.as_view(), name='Posicionamiento_web'),
+    url(r'^posicionamiento-web/$', views.Posicionamiento_web.as_view(), name='Posicionamiento_web'),
     url(r'^emailmkt_lp/$', views.Emailmkt_lp.as_view(), name='Emailmkt_lp'),
     url(r'^ctalider_lp/$', views.Ctalider_lp.as_view(), name='Ctalider_lp'),
 #FIN LANDING PAGES
