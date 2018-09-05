@@ -321,7 +321,7 @@ class Emailmkt_lp(View):
 class Ctalider_lp(View):
     form_class = Formulario_Contacto
     initial = {'key': 'value'}
-    template_name = 'ctalider_lp.html'
+    template_name = 'asesoria-gratuita-en-marketing-digital.html'
 
     def get(self, request, *args, **kwargs):
         form = self.form_class(initial=self.initial)
