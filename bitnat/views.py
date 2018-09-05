@@ -37,21 +37,6 @@ class Contact(View):
                 fmensaje = datos.get("fmensaje")
                 db_register = Contacto(nombre=fnombre, email=femail,telefono=ftelefono,empresa=fempresa,mensaje=fmensaje)
                 db_register.save()
-                body = render_to_string(
-                       'email_content.html', {
-                            'fnombre': fnombre,
-                            'fmensaje': fmensaje,
-                            'femail': femail,
-                            },
-                        )
-                email_message = EmailMessage(
-                    subject='mensaje de usuario',
-                    body=body,
-                    from_email=settings.EMAIL_HOST_USER,
-                    to=[settings.EMAIL_HOST_USER],
-                )
-                email_message.content_subtype = 'html'
-                email_message.send()
                 return HttpResponseRedirect('gracias', {'form': form})
 
         else:
