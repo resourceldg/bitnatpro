@@ -63,7 +63,7 @@ urlpatterns = [
     url(r'^robots.txt/$', views.robots, name='robots'),
     url(r'^contact/gracias/$', views.gracias, name='gracias'),
     url(r'^ventas-en-redes-sociales/gracias/$', views.gracias, name='gracias'),#dry(dont repeat yourself): me estoy repitiendo (SOLUCION: APRENDER A USAR REGEX EN PATRONES URL)
-    url(r'^negocio_lp/gracias/$', views.gracias, name='gracias'),#dry(dont repeat yourself): me estoy repitiendo (SOLUCION: APRENDER A USAR REGEX EN PATRONES URL)
+    url(r'^negocios-digitales/gracias/$', views.gracias, name='gracias'),#dry(dont repeat yourself): me estoy repitiendo (SOLUCION: APRENDER A USAR REGEX EN PATRONES URL)
     url(r'^analytics_lp/gracias/$', views.gracias, name='gracias'),#dry(dont repeat yourself): me estoy repitiendo (SOLUCION: APRENDER A USAR REGEX EN PATRONES URL)
     url(r'^contenido_lp/gracias/$', views.gracias, name='gracias'),#dry(dont repeat yourself): me estoy repitiendo (SOLUCION: APRENDER A USAR REGEX EN PATRONES URL)
     url(r'^posicionamiento-web/gracias/$', views.gracias, name='gracias'),#dry(dont repeat yourself): me estoy repitiendo (SOLUCION: APRENDER A USAR REGEX EN PATRONES URL)
@@ -71,7 +71,7 @@ urlpatterns = [
     url(r'^ctalider_lp/gracias/$', views.gracias, name='gracias'),#dry(dont repeat yourself): me estoy repitiendo (SOLUCION: APRENDER A USAR REGEX EN PATRONES URL)
 #LANDING PAGES
     url(r'^ventas-en-redes-sociales/$', views.Social_lp.as_view(), name='ventas-en-redes-sociales'),
-    url(r'^negocio_lp/$', views.Negocio_lp.as_view(), name='Negocio_lp'),
+    url(r'^negocios-digitales/$', views.Negocio_lp.as_view(), name='negocios-digitales'),
     url(r'^analytics_lp/$', views.Analytics_lp.as_view(), name='Analytics_lp'),
     url(r'^contenido_lp/$', views.Contenido_lp.as_view(), name='Contenido_lp'),
     url(r'^posicionamiento-web/$', views.Posicionamiento_web.as_view(), name='posicionamiento-web'),
