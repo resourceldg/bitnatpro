@@ -230,7 +230,7 @@ class Contenido_lp(View):
 
 
 
-class Posicionamiento-web(View):
+class Posicionamiento_web(View):
     form_class = Formulario_Contacto
     initial = {'key': 'value'}
     template_name = 'posicionamiento-web.html'
