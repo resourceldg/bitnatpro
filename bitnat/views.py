@@ -145,7 +145,7 @@ class Negocio_lp(View):
 class Analytics_lp(View):
     form_class = Formulario_Contacto
     initial = {'key': 'value'}
-    template_name = 'analytics_lp.html'
+    template_name = 'analitica-web.html'
 
     def get(self, request, *args, **kwargs):
         form = self.form_class(initial=self.initial)
