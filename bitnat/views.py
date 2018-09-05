@@ -189,7 +189,7 @@ class Analytics_lp(View):
 class Contenido_lp(View):
     form_class = Formulario_Contacto
     initial = {'key': 'value'}
-    template_name = 'contenido_lp.html'
+    template_name = 'marketing-de-contenidos.html'
 
     def get(self, request, *args, **kwargs):
         form = self.form_class(initial=self.initial)
