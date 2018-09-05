@@ -277,7 +277,7 @@ class Posicionamiento_web(View):
 class Emailmkt_lp(View):
     form_class = Formulario_Contacto
     initial = {'key': 'value'}
-    template_name = 'emailmkt_lp.html'
+    template_name = 'email-marketing.html'
 
     def get(self, request, *args, **kwargs):
         form = self.form_class(initial=self.initial)
