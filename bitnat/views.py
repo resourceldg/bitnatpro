@@ -230,10 +230,10 @@ class Contenido_lp(View):
 
 
 
-class Posicionamiento_lp(View):
+class Posicionamiento-web(View):
     form_class = Formulario_Contacto
     initial = {'key': 'value'}
-    template_name = 'posicionamiento_lp.html'
+    template_name = 'posicionamiento-web.html'
 
     def get(self, request, *args, **kwargs):
         form = self.form_class(initial=self.initial)
