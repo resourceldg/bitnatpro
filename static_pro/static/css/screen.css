@@ -113,6 +113,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0c74d4', end
   .zinnia p {
     margin: 0 1.5em 1.5em; }
   .zinnia a {
+      color:#000;
     text-decoration: none; }
     .zinnia a:hover { }
   .zinnia blockquote {
@@ -248,7 +249,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0c74d4', end
 
 .zinnia #header {
 
-  margin-bottom: 2em; }
+  margin-bottom: 4em; }
   .zinnia #header h1 {
     margin-top: 0.5em;
     margin-bottom: 0; }
@@ -315,7 +316,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0c74d4', end
   @media (min-width: 300px) {
     .zinnia #header h1{
      font-size: 1.2em;
-     padding-left: 1.5em;
+
 
      margin-top: 1em;
      } }
@@ -370,16 +371,33 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0c74d4', end
   right: 0;
   bottom: 0;
   position: absolute;
-  padding: 1em 2em; }
-  .zinnia .slide-content h2, .zinnia .slide-content p {
+  padding: 1em 2em;
+  }
+
+
+.zinnia .slide-content h2 {
     text-shadow: 1px 1px 0 #000000;
-    background-color: rgba(0, 0, 0, 0.7); }
+    background-color: rgba(0, 0, 0, 0.7);
+    font-size:2em;
+
+
+    }
   .zinnia .slide-content h2 {
     padding: 0.25em;
     font-weight: bold;
     display: inline-block; }
   .zinnia .slide-content p {
     color: #fff;
+
+background: rgba(73,155,234,1);
+background: -moz-linear-gradient(left, rgba(73,155,234,1) 0%, rgba(32,124,229,0.71) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(73,155,234,1)), color-stop(100%, rgba(32,124,229,0.71)));
+background: -webkit-linear-gradient(left, rgba(73,155,234,1) 0%, rgba(32,124,229,0.71) 100%);
+background: -o-linear-gradient(left, rgba(73,155,234,1) 0%, rgba(32,124,229,0.71) 100%);
+background: -ms-linear-gradient(left, rgba(73,155,234,1) 0%, rgba(32,124,229,0.71) 100%);
+background: linear-gradient(to right, rgba(73,155,234,1) 0%, rgba(32,124,229,0.71) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', endColorstr='#207ce5', GradientType=1 );
+
     padding: 1em;
     display: none; }
 
@@ -537,7 +555,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0c74d4', end
   .zinnia .entry-content .highlight {
     background: yellow; }
 .zinnia .continue-reading a{
-    color:#fff;
+    color:#333;
     }
 
 .zinnia .continue-reading a:hover{
@@ -653,7 +671,7 @@ width:40%;
   padding: 0.5em; }
 
 .zinnia #sidebar p {
-  padding-left: 1em; }
+  }
 
 .zinnia #sidebar ul, .zinnia #sidebar ol {
   margin-left: 1em; }
@@ -682,7 +700,18 @@ width:40%;
 
 .zinnia .entries-popular a {
   display: block; }
+.zinnia .entries-recent li{
+     border:2px solid #33cc33;
+      border-radius: 15px 50px 30px 5px;
+      padding-left:5px;
+      padding-right:5px;
+      padding-top:5px;
+      padding-bottom:5px;
 
+
+      margin-top:15px;
+      margin-bottom:15px;
+    }
 .zinnia [class*='entries-calendar'] {
   table-layout: fixed; }
   .zinnia [class*='entries-calendar'] caption, .zinnia [class*='entries-calendar'] td, .zinnia [class*='entries-calendar'] th {
@@ -701,18 +730,12 @@ width:40%;
   color: #333;
   background-color: #fff;
    }
-  .zinnia.default h1, .zinnia.default h2, .zinnia.default h3, .zinnia.default h4, .zinnia.default h5, .zinnia.default h6 {
-    color: #000; }
-  .zinnia.default a {
-    color: #000; }
-    .zinnia.default a:visited {
-      color: #000; }
-    .zinnia.default a:focus {
-      color: #000; }
-    .zinnia.default a:hover {
-      color: ; }
-    .zinnia.default a:active {
-      color: #000; }
+  .zinnia.default h1, .zinnia.default h3, .zinnia.default h4, .zinnia.default h5, .zinnia.default h6 {
+    color: #000;
+    text-align:center;
+     }
+
+
   .zinnia.default blockquote, .zinnia.default pre {
     background-color: #eee;
     color: #333; }
@@ -725,6 +748,7 @@ width:40%;
     border-bottom: 1px dotted #ccc; }
   .zinnia.default h2.entry-title {
     border-bottom: 1px solid #ddd;
+    text-align:center;
     text-shadow: 1px 1px 0 #ddd; }
   .zinnia.default .entry-info {
     color: #666; }
@@ -746,8 +770,7 @@ width:40%;
     background-color: #ddd; }
 
   .zinnia.default #header {
-      background: transparent url("../images/tiempo.png") no-repeat scroll center;;
-    filter: hue-rotate(120deg);
+      background: transparent url("../images/beach-min.jpg") no-repeat scroll center;;
 
       }
 
@@ -1088,13 +1111,17 @@ width:40%;
     }
 
 .zinnia.blue h1, .zinnia.blue h3, .zinnia.blue h4, .zinnia.blue h5, .zinnia.blue h6 {
- padding-left:1em;
+
 
   }
 
-.zinnia.blue a {
+.zinnia.blue {
   padding-left:1em;
   color:#000; }
+
+.slide-content a{
+    color:#fff;
+    }
 
 
 
@@ -1229,20 +1256,27 @@ width:40%;
 
 .navi li a i{
     font-size:30px;
-     color:#33cc33;
+     color:#333;
 
 
 }
 
+.navi li a i:hover{
+    font-size:30px;
+     color:#33cc33;
+}
+
+
+
 .navi li a{
     font-size:30px;
-    color:#85c1e9;
+    color:#333;
     padding:10px 10px;
     display:block;
 }
 
 .navi ul > li a{
-   color:#33cc33;
+   color:#333;
     }
 
 .navi ul > li a:hover{
@@ -1268,6 +1302,7 @@ width:40%;
 .navi li:hover >ul{
     display:flex;
     flex-direction:row;
+
     }
 
 .buscar {
@@ -1341,7 +1376,7 @@ width:40%;
     text-align:center;
     }
 
-.botonser input {
+.botonser a {
 
     color: #000;
     background:#ffff00;
@@ -1349,20 +1384,28 @@ width:40%;
     font-weight: bold;
     border-radius: 6px;
     padding:15px 15px;
-    margin-bottom: 5px;
+
     margin-top: 20px;
 
 }
-.botonser input:hover {
-    color: #000;
+.botonser a:hover {
+    color: #fff;
+    font-size:20px;
     border:2px solid #ffff00;
     background: none;
 
     }
 
+.botonser {
+
+    text-align:center;
+     margin-bottom: 35px;
+
+
+}
 .con p{
     margin-top:10px;
-    font-size:20px;
+    font-size:25px;
     text-align:center;
     color:#fff;
     font-weight:bold;
@@ -1419,6 +1462,13 @@ width:40%;
 font-weight:bold;
 font-size:35px;
 color:;
+    }
+
+.widget{
+    font-family:helvetica, sans-serif;
+
+
+margin-bottom:40px;
     }
 
 /*#- /*fin*/ redes sociales  post--*/
