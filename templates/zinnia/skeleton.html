@@ -37,45 +37,49 @@
     <div class="container">
       <header id="header" role="banner">
         <div class="fondo">
+ </head>
+  <body class="zinnia {% block theme-class %}default{% endblock theme-class %} {% block color-class %}blue{% endblock color-class %} {% block sidebar-class %}right-sidebar{% endblock sidebar-class %} {% block body-class %}{% endblock body-class %}">
+    <div class="container">
+      <header id="header" role="banner">
+        <div class="fondo">
 
-          <ul class="top-navigation">
-<!--
-            <li>
-              <a href="{% url 'zinnia:sitemap' %}" title="{% trans "Sitemap" %}" class="sitemap" rel="sitemap">
-                {% trans "Sitemap" %}
-              </a>
-            </li>
--->
-            <li>
-              <a href="{% url 'zinnia:entry_feed' %}" title="{% trans "RSS" %}" class="feeds">
-               <i class="fa fa-rss"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div>
-        <ul class="buscar">
-            <li><a><i class="fa fa-search"></i></a>
-                <ul class="bus">
-                    <li>
-                        <form method="get" action="{% url 'zinnia:entry_search' %}">
-                          <p>
-                              <input type="text" name="pattern"  placeholder="Buscar entradas..."{% if pattern %}value="{{ pattern }}"{% endif %} />
-                              <input type="submit" class="submitbutton" value="OK" />
-                          </p>
-                        </form>
-                    </li>
-                </ul>
-           </li>
-        </ul>
-        </div>
-        <div class="te">
-        <h1>
-          <a href="{% url 'zinnia:entry_archive_index' %}" title="Zinnia's Weblog" rel="home">
-          BlogNativo | Marketing en tiempos digitales
-          </a>
-        </h1>
-        </div>
+            <ul class="buscar">
+                <li><a><i class="fa fa-search"></i></a>
+                    <ul class="bus">
+                        <li>
+                            <form method="get" action="{% url 'zinnia:entry_search' %}">
+                              <p>
+                                  <input type="text" name="pattern"  placeholder="Buscar entradas..."{% if pattern %}value="{{ pattern }}"{% endif %} />
+                                  <input type="submit" class="submitbutton" value="OK" />
+                              </p>
+                            </form>
+                        </li>
+                    </ul>
+               </li>
+            </ul>
+            </div>
+            <div class="marca">
+                <h2><a href="{% url 'zinnia:entry_archive_index' %}" title="Zinnia's Weblog" rel="home">BlogNativo</a></h2>
+            </div>
+             <ul class="top-navigation">
+    <!--
+                <li>
+                  <a href="{% url 'zinnia:sitemap' %}" title="{% trans "Sitemap" %}" class="sitemap" rel="sitemap">
+                    {% trans "Sitemap" %}
+                  </a>
+                </li>
+    -->
+                <li>
+                  <a href="{% url 'zinnia:entry_feed' %}" title="{% trans "RSS" %}" class="feeds">
+                   <i class="fa fa-rss"></i>
+                  </a>
+                </li>
+              </ul>
+            <div>
+    </div>
+    <div class="te">
+        <h1>Marketing | Negocios Digitales</h1>
+    </div>
 
         {% block breadcrumbs %}{% endblock breadcrumbs %}
       </header>
@@ -112,5 +116,4 @@
     </div>
   </body>
 </html>
-
 
