@@ -148,7 +148,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0c74d4', end
   .zinnia ol {
     list-style-type: decimal; }
   .zinnia li {
-    list-style:none; }
+    list-style:none;
+
+     }
   .zinnia dl {
     margin: 0 0 1.5em 0; }
     .zinnia dl dt {
@@ -204,7 +206,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0c74d4', end
 
 .zinnia .container {
   *zoom: 1;
-  max-width: 60em;
+  max-width: 85%;
   padding-left: 1em;
   padding-right: 1em;
   margin-left: auto;
@@ -270,7 +272,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0c74d4', end
       background-repeat: no-repeat;
 
 
-      border-radius: 5px;}
+     }
 
 
     .zinnia #header form input[type=submit] {
@@ -412,7 +414,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', end
       overflow: hidden;
       padding-top: 8px;
       display: inline-block;
-      border-radius: 10px;
+
       -moz-border-radius: 10px; }
 
 .zinnia .flex-direction-nav a {
@@ -552,6 +554,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', end
     background: yellow; }
 .zinnia .continue-reading a{
     color:#333;
+    border-radius:5px;
     }
 
 .zinnia .continue-reading a:hover{
@@ -561,7 +564,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', end
     padding-left:10px;
     padding-right:10px;
     border:2px solid #33cc33;
-    border-radius:5px;
+
 }
 
 .zinnia .continue-reading a {
@@ -571,7 +574,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', end
     padding-left:10px;
     padding-right:10px;
     border:2px solid #000;
-    border-radius:5px;
+
     clear: both;
     font-size: 20px;
 }
@@ -699,11 +702,14 @@ width:40%;
 .zinnia .entries-popular a {
   display: block; }
 .zinnia .entries-recent li{
+      color:#333;
       padding-left:5px;
       padding-right:5px;
       padding-top:5px;
       padding-bottom:5px;
       list-style: disclosure-closed;
+      border-bottom: solid 1px #e6e6e6;
+
 
 }
 
@@ -1179,7 +1185,7 @@ width:40%;
   border: 2px solid rgba(0, 0, 0, 0.1);
   border-color: #4fbada;
   text-shadow: 0 -1px rgba(0, 0, 0, 0.3);
-  border-radius: 3px;
+
   padding: 0.5em;
   margin-bottom: 1em; }
   .zinnia .info a {
@@ -1200,7 +1206,7 @@ width:40%;
   border: 2px solid rgba(0, 0, 0, 0.1);
   border-color: #ff0e0e;
   text-shadow: 0 -1px rgba(0, 0, 0, 0.3);
-  border-radius: 3px;
+
   padding: 0.5em;
   margin-bottom: 1em; }
   .zinnia .error a {
@@ -1221,7 +1227,7 @@ width:40%;
   border: 2px solid rgba(0, 0, 0, 0.1);
   border-color: #a4e100;
   text-shadow: 0 -1px rgba(0, 0, 0, 0.3);
-  border-radius: 3px;
+
   padding: 0.5em;
   margin-bottom: 1em; }
   .zinnia .success a {
@@ -1247,7 +1253,7 @@ width:40%;
      margin-right:10px;
      display:flex;
      justify-content:center;
-     border-radius:15px;
+
 
   }
 
@@ -1330,22 +1336,32 @@ width:40%;
     padding-left:10px;
     padding-right:10px;
     padding-bottom:10px;
-    border-radius: 5px;
+     border-radius:5px;
+
     opacity:0.9;
+    }
+
+.top-navigation i:hover{
+    color:#fff;
+    background:#ff6600;
     }
 
 .buscar i{
     font-size:30px;
-
     background:#fff;
+    color:#09d2fc;
     margin-top:5px;
     padding-top:5px;
     padding-left:10px;
     padding-right:10px;
     padding-bottom:10px;
-    border-radius: 5px;
+    border-radius:5px;
     opacity:0.9;
 
+    }
+.buscar i:hover{
+     background:#09d2fc;
+     color:#fff;
     }
 
 .doss  a{
@@ -1377,7 +1393,7 @@ width:40%;
     background:#ffff00;
     font-size: 16px;
     font-weight: bold;
-    border-radius: 6px;
+
     padding:15px 15px;
 
     margin-top: 20px;
@@ -1444,7 +1460,7 @@ width:40%;
      flex-wrap:wrap;
      justify-content:center;
      align-content:center;
-     border-radius:15px;
+
 
     }
 
@@ -1469,10 +1485,11 @@ margin-bottom:40px;
 .marca h2 a{
     text-align:center;
     font-size:40px;
-    font-weight:bold;
+    font-weight:900;
     color:#fff;
     background:transparent;
     text-shadow:2px 2px #000;
+    text-transform: uppercase;
 
 
 
