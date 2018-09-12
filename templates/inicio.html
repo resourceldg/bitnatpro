@@ -7,6 +7,7 @@
 <head>
   <meta charset="utf-8">
   <link rel="canonical" href="https://bitnativo.com">
+
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
   <title>Agencia de marketing digital | Bitnativo </title>
   <meta name="description" content= "Agencia de marketing digital y analítica de negocios online. Posicionamiento web. Gestión de redes sociales. Marketing de contenidos.">
@@ -58,13 +59,14 @@ h1 {
 	margin: 0 5px;
   color: #fff;
   text-align: center;
-}
+ }
 
 h2{
     margin: 0 5px;
     font-size:1.6rem;
     color:#00a6dd;
     text-align: left;
+    /*text-transform: uppercase;*/
   }
 
 h3 {
@@ -136,12 +138,14 @@ nav.navbar.navbar-default.navbar-fixed-top {
 }
 
 
-.center-pdf {/***/
+.center-pdf {
+
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
+
 }
 
   .centrado{
@@ -968,12 +972,13 @@ a:focus {
 }
   .boton-cta {
     color: #fff;
-    background: #33cc33;
+    background: #0f22f2;
     font-size: 16px;
     font-weight: bold;
     padding: 10px 40px;
     border-radius: 6px;
     text-transform: uppercase;
+    margin-top:30px;
   }
 
   .boton-cta:active, .boton-cta:visited{
@@ -981,8 +986,9 @@ a:focus {
   }
 
   .boton-cta:hover{
-    background:#00ff99;
-    color: #fff;
+    background:#fff;
+    color: #0f22f2;
+    border:2px solid #0f22f2;
   }
 
   .elct{
@@ -1039,15 +1045,18 @@ color: #fff;
     color:#33cc33;
  }
 
-.pdf{
-    display:flex;
-    flex-direction:row;
-    flex-wrap:wrap;
-    justify-content:space-around;
-    align-items:center;
-    padding: 20px 0;
-    }
 
+.center-pdf{
+background: rgba(8,8,8,1);
+    background: -moz-linear-gradient(left, rgba(8,8,8,1) 0%, rgba(3,3,3,0.95) 24%, rgba(8,8,8,0.92) 44%, rgba(3,3,3,0.89) 60%, rgba(3,3,3,0.85) 77%, rgba(3,3,3,0.81) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(8,8,8,1)), color-stop(24%, rgba(3,3,3,0.95)), color-stop(44%, rgba(8,8,8,0.92)), color-stop(60%, rgba(3,3,3,0.89)), color-stop(77%, rgba(3,3,3,0.85)), color-stop(100%, rgba(3,3,3,0.81)));
+    background: -webkit-linear-gradient(left, rgba(8,8,8,1) 0%, rgba(3,3,3,0.95) 24%, rgba(8,8,8,0.92) 44%, rgba(3,3,3,0.89) 60%, rgba(3,3,3,0.85) 77%, rgba(3,3,3,0.81) 100%);
+    background: -o-linear-gradient(left, rgba(8,8,8,1) 0%, rgba(3,3,3,0.95) 24%, rgba(8,8,8,0.92) 44%, rgba(3,3,3,0.89) 60%, rgba(3,3,3,0.85) 77%, rgba(3,3,3,0.81) 100%);
+    background: -ms-linear-gradient(left, rgba(8,8,8,1) 0%, rgba(3,3,3,0.95) 24%, rgba(8,8,8,0.92) 44%, rgba(3,3,3,0.89) 60%, rgba(3,3,3,0.85) 77%, rgba(3,3,3,0.81) 100%);
+    background: linear-gradient(to right, rgba(8,8,8,1) 0%, rgba(3,3,3,0.95) 24%, rgba(8,8,8,0.92) 44%, rgba(3,3,3,0.89) 60%, rgba(3,3,3,0.85) 77%, rgba(3,3,3,0.81) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#080808', endColorstr='#030303', GradientType=1 );
+
+    }
 
 .center-pdf span{
         color:#00ff99;
@@ -1080,6 +1089,7 @@ color: #fff;
      padding-bottom:10px;
      padding-left:10px;
      padding-right:10px;
+
     }
 
 
@@ -1192,16 +1202,17 @@ a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:h
 *{box-sizing:border-box}body{background:#fff;/**font-family:Source Sans Pro,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif;**/
 min-width:100%;overflow-x:hidden;font-smooth:always;-webkit-font-smoothing:antialiased}body{line-height:1.6;letter-spacing:normal}
 
-h1{margin:0;padding:0;font-weight:400;letter-spacing:.06rem}a,a:active,a:visited{color:inherit}/**body{line-height:1.4}**/
+h1{margin:0;padding:20px;font-weight:400;letter-spacing:.06rem}a,a:active,a:visited{color:inherit}/**body{line-height:1.4}**/
 
 </style>
 </head>
 
- <body>
-{% load static %}
- {% load zinnia %}
 
-<!--inicio amp analytics-->
+ <body>
+
+ {% load static %}
+ {% load zinnia %}
+ <!--inicio amp analytics-->
 <amp-analytics type="googleanalytics">
 <script type="application/json">
 {
@@ -1233,8 +1244,7 @@ h1{margin:0;padding:0;font-weight:400;letter-spacing:.06rem}a,a:active,a:visited
                     <li><a class="page-scroll scroll logob" href="#inicio">Bitnativo</a></li> <!-- mm class="navbar-left-logo-->
                     <li><a class="page-scroll scroll" href="#servicios">Servicios</a></li>
                     <li><a class="page-scroll scroll" href="#nosotros">Nosotros</a></li>
-                    <li><a href="/blog/">Blog</a></li>
-		    <li><a href="/contact/">Contacto</a></li>
+                    <li><a href="/contact/">Contacto</a></li>
 <!--
                     <li><a href="/blog">Blog</a></li>
 -->
@@ -1243,22 +1253,16 @@ h1{margin:0;padding:0;font-weight:400;letter-spacing:.06rem}a,a:active,a:visited
         </div>
     </nav>
          <div class="carousel container2">
-                  <amp-img layout="responsive" src="/static/images/imagen5-1920x733-min-min.png" width="1920" height="733" alt="asesoria gratuita en marketing digital"></amp-img>
-                  <div class="center-pdf">
-                      <h1>Obtené tu primera asesoría en marketing digital<span class="fuerte"> 100% gratuita</span><br></h1>
-                      <p></p>
+                  <amp-img layout="responsive" src="/static/images/rse1-mi.png" width="5000" height="2813" alt="asesoria gratuita en marketing digital"></amp-img>
 
-                          <a class="boton-cta elct" href= "{% url 'asesoria-gratuita-en-marketing-digital' %}">Solicitar</a>
+                      <div class="center-pdf">
+                          <h1>Obtené tu primera asesoría en marketing digital<span class="fuerte"> 100% gratuita</span></h1><br>
+                          <a class="boton-cta elct" href= "{% url 'Ctalider_lp' %}">Solicitar</a>
 
-                  </div>
+                      </div>
           </div>
 
-          <div class="seccion-chica">
-            <div class="cent-hz-vt">
-          <h1>Obtené tu primera asesoría en marketing digital<span class="fuerte"> 100% gratuita</span><br></h1>
-        <br><a class="boton-cta" href= "{% url 'asesoria-gratuita-en-marketing-digital' %}"> Solicitar </a>
-          </div>
-      </div>
+
 </div>
 <!-- Portfolio -->
   <div class="portfolio" id="servicios"><!-- portfolio mm -->
@@ -1266,7 +1270,7 @@ h1{margin:0;padding:0;font-weight:400;letter-spacing:.06rem}a,a:active,a:visited
                      <div class="serv">
                          <div class="col">
                                  <div class="uno">
-                                    <div class="do"><a href= "{% url 'negocios-digitales' %}"><i class="fa fa-key"></i><br>Auditorias para negocios sustentables</a>
+                                    <div class="do"><a href= "{% url 'Negocio_lp' %}"><i class="fa fa-key"></i><br>Auditorias para negocios sustentables</a>
                                        <div class="tre"><p>Analisis de proyectos orientados a economías sustentables.
                                              </p>
 
@@ -1274,13 +1278,13 @@ h1{margin:0;padding:0;font-weight:400;letter-spacing:.06rem}a,a:active,a:visited
                                     </div>
                                  </div>
                                  <div class="uno">
-                                     <div class="do"><a href= "{% url 'posicionamiento-web' %}"><i class="fa fa-globe"></i><br> Posicionamiento Web</a>
+                                     <div class="do"><a href= "{% url 'Posicionamiento_lp' %}"><i class="fa fa-globe"></i><br> Posicionamiento Web</a>
                                          <div class="tre"><p>Visibilidad de tu sitio web en las primeras posiciones de los resultados de búsqueda.</p>
                                         </div>
                                     </div>
                                  </div>
                                 <div class="uno">
-                                     <div class="do"><a href= "{% url 'ventas-en-redes-sociales' %}"><i class="fa fa-users"></i><br> Redes Sociales</a>
+                                     <div class="do"><a href= "{% url 'Social_lp' %}"><i class="fa fa-users"></i><br> Redes Sociales</a>
                                          <div class="tre"><p>Gestión estratégica para tus redes sociales.</p>
                                         </div>
                                     </div>
@@ -1289,7 +1293,7 @@ h1{margin:0;padding:0;font-weight:400;letter-spacing:.06rem}a,a:active,a:visited
 
                          <div class="col">
                                  <div class="uno">
-                                    <div class="do"><a href= "{% url 'email-marketing' %}"><i class="fa fa-at"></i><br> Email Marketing</a>
+                                    <div class="do"><a href= "{% url 'Emailmkt_lp' %}"><i class="fa fa-at"></i><br> Email Marketing</a>
                                              <div class="tre"><p>Administramos tus campañas de email.</p>
                                              </div>
                                     </div>
@@ -1297,14 +1301,14 @@ h1{margin:0;padding:0;font-weight:400;letter-spacing:.06rem}a,a:active,a:visited
                                  </div>
 
                                  <div class="uno">
-                                     <div class="do"><a href= "{% url 'analitica-web' %}"><i class="fa fa-bar-chart"></i><br> Web Analytics</a>
+                                     <div class="do"><a href= "{% url 'Analytics_lp' %}"><i class="fa fa-bar-chart"></i><br> Web Analytics</a>
                                              <div class="tre"><p>Lo que no se puede medir no se puede
                                              resolver. Creamos indicadores de rendimiento brindandote soluciones a medida.</p>
                                              </div>
                                     </div>
                                 </div>
                                  <div class="uno">
-                                     <div class="do"><a href= "{% url 'marketing-de-contenidos' %}"><i class="fa fa-leaf"></i><br> Marketing de Contenidos</a>
+                                     <div class="do"><a href= "{% url 'Contenido_lp' %}"><i class="fa fa-leaf"></i><br> Marketing de Contenidos</a>
                                              <div class="tre"><p> Lo que dices, cómo lo dices y a quién se lo dices.
                                              Trabajamos juntos para que tu mensaje sea sólido y acertado.</p>
                                              </div>
@@ -1324,8 +1328,7 @@ h1{margin:0;padding:0;font-weight:400;letter-spacing:.06rem}a,a:active,a:visited
 
                 <div class="col-md-6 about-left">
                               <h2>Somos Bitnativo</h2>
-<p>Somos una cooperativa de servicios digitales que brinda soluciones de marketing digital y analítica de negocios orientada principalmente a empresas que deseen proyectar e implementar un potencial en Responsabilidad Social Empresarial (RSE) y sustentabilidad.
-	</p><p>Somos un equipo de profesionales de distintas disciplinas unidos con el propósito de  acompañar a las organizaciones en su crecimiento y optimización.</p>
+<p>Bitnativo nace como una solución en marketing digital y analísis de proyectos de negocios en mercados sustentables.</p><p>Somos un equipo de profesionales de distintas disciplinas unidos con el propósito de  acompañar a las organizaciones en su crecimiento y optimización.</p>
 <p>Creemos firmemente que el avance tecnológico debe estar al servicio de las personas y que cada uno, empezando por las decisiones comerciales, puede aportar a un mundo mejor.</p>
                 </div>
                 <div data-aos="flip-right" class="col-md-6 about-right">
@@ -1355,7 +1358,14 @@ h1{margin:0;padding:0;font-weight:400;letter-spacing:.06rem}a,a:active,a:visited
                       </ul>
 <br><br>
   <h4>Brindamos servicios óptimos para soluciones integrales.</h4>
-                      <a class="boton-cta" href= "{% url 'negocios-digitales' %}">¡Lo quiero!</a>
+                      <a class="boton-cta" href= "{% url 'Negocio_lp' %}">¡Lo quiero!</a>
+
+
+
+<!--
+    <p>Posicionamiento SEO y SEM, Social Media Strategist, Community Manager,
+       marketing de contenidos, herramientas de monitoreo y escucha social,
+       gestión de eventos corporativos, analítica organizacional.-->
 
   </div>
 
@@ -1378,6 +1388,35 @@ h1{margin:0;padding:0;font-weight:400;letter-spacing:.06rem}a,a:active,a:visited
 <div class="masc-oblicua"><div class="masc-oblicua" style="background: rgb(84, 85, 99) none repeat scroll 0% 0%;"><amp-img class="opac" src="/static/images/socialn.png" width ="527" height="202" layout="responsive" alt="Análisis de negocios sustentables"> </amp-img></div>
 <div class="container1">
 <div class="micro titulo-z" id="micro">
+<!--
+    <div class="micro1" id="micro1">
+
+
+	<div data-aos="flip-right" class="col-md-6 about-right"></div>
+			<amp-img src="/static/images/crecer-min.jpg" width ="760" height="400" layout="responsive" alt="Marketing para crecer"> </amp-img>
+	</div>
+
+
+	<div class="col-md-6 about-left">
+<p>Diseñamos auditorías con indicadores
+		personalizados que te brindarán información valiosa para tus próximas decisiones de negocio.<br></p>
+		
+	</div>
+	<div class="clearfix"></div>
+    </div>
+
+
+    <div class="micro2" id="micro2">
+	<div data-aos="flip-right" class="col-md-6 about-right">
+    	</div>
+    	<div class="col-md-6 about-left" id="pyme1">
+
+	</div>
+	
+	<div class="clearfix"></div>
+    </div>
+-->
+
 
     <div class="micro3" id="micro3">
 	<div data-aos="flip-right" class="col-md-6">
@@ -1388,7 +1427,7 @@ h1{margin:0;padding:0;font-weight:400;letter-spacing:.06rem}a,a:active,a:visited
 		 <br>
 		 <p>Si la autogestión no es lo tuyo: Brindamos un servicio integral y alineado con tu Estrategia
 		  de marketing para la <span class="fuerte">gestión de redes sociales</span> con informes detallados para un seguimiento adecuado.</p>
-		<div class=""> <a class="boton2" href= "{% url 'ventas-en-redes-sociales' %}">Asesor para mis redes</a></div>
+		<div class=""> <a class="boton2" href= "{% url 'Social_lp' %}">Asesor para mis redes</a></div>
 	</div>
 	<div class="col-md-6 about-left">
 	</div>
@@ -1411,8 +1450,8 @@ h1{margin:0;padding:0;font-weight:400;letter-spacing:.06rem}a,a:active,a:visited
 	</div>
 	<div class="col-md-6 about-left">
                   <h2>Posicionamiento en buscadores</h2>	
-			<span class="fuerte"><p>Estrategias SEO para que tus clientes habituales y potenciales te encuentran en Google.</p></span>
-        <div> <a class="boton-cta" href= "{% url 'posicionamiento-web' %}">Comenzar</a></div>
+			<span class="fuerte"><p>Estrategías SEO para que tus clientes habituales y potenciales te encuentran en Google.</p></span>
+        <div> <a class="boton-cta" href= "{% url 'Posicionamiento_lp' %}">Comenzar</a></div>
 
 		</div>
     </div>
@@ -1422,13 +1461,13 @@ h1{margin:0;padding:0;font-weight:400;letter-spacing:.06rem}a,a:active,a:visited
 	</div>
 	<div class="col-md-6 about-left">
   <br><br>
-	         <h2>Analítica Digital</h2>
+	         <h2>Analitica Digital</h2>
 		<ul>
-            <li>Mejorá las conversiones de tu web</li>
-            <li>Conectá con tu verdadera audiencia</li>
+            <li>Mejora y evalua las conversiones de tu web</li>
+            <li>Conecta con tu verdadera audiencia</li>
             <li>Optimizá tu estrategia en internet</li>
     </ul>
-		<div> <a class="boton-cta" href= "{% url 'analitica-web' %}">Comenzar</a></div>
+		<div> <a class="boton-cta" href= "{% url 'Analytics_lp' %}">Comenzar</a></div>
 	</div>
 	</div>
 
