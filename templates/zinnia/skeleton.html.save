@@ -1,0 +1,102 @@
+{% load i18n %}
+{% load staticfiles %}
+<!doctype html>
+<html lang="{{ LANGUAGE_CODE }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="robots" content="follow, all" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Estás cambiando el mundo...nosotros tambien." />
+    <meta name="keywords" content="" />
+    
+    {% block meta %}{% endblock meta %}
+    <link rel="pingback" href="/xmlrpc/" />
+    <link rel="shortcut icon" href="{% static "images/icon.ico" %}" />
+    <link rel="home" href="{% url 'zinnia:entry_archive_index' %}" />
+    <link rel="stylesheet" type="text/css" media="screen, projection" href="{% static "css/screen.css" %}" />
+    <link rel="stylesheet" type="text/css" media="print" href="{% static "css/print.css" %}" />
+
+
+    <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" media="screen, projection" href="{% static "zinnia/theme/css/ie.css" %}" />
+    <![endif]-->
+    {% block link %}{% endblock link %}
+    {% block script %}{% endblock script %}
+  </head>
+  <body class="zinnia {% block theme-class %}default{% endblock theme-class %} {% block color-class %}blue{% endblock color-class %} {% block sidebar-class %}right-sidebar{% endblock sidebar-class %} {% block body-class %}{% endblock body-class %}">
+    <div class="container">
+      <header id="header" role="banner">
+        <nav>
+
+          <ul class="top-navigation">
+            <li>
+              <a href="{% url 'zinnia:sitemap' %}" title="{% trans "Sitemap" %}" class="sitemap" rel="sitemap">
+                {% trans "Sitemap" %}
+              </a>
+            </li>
+            <li>
+              <a href="{% url 'zinnia:entry_feed' %}" title="{% trans "RSS" %}" class="feeds">
+                {% trans "RSS" %}
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <form method="get" action="{% url 'zinnia:entry_search' %}">
+          <p>
+            <input type="text" name="pattern" placeholder="{% trans "Buscar..." %}" {% if pattern %}value="{{ pattern }}"{% endif %} />
+            <input type="submit" class="submitbutton" value="OK" />
+          </p>
+        </form>
+        <h1>
+          <a href="{% url 'zinnia:entry_archive_index' %}" title="Zinnia's Weblog" rel="home">
+          Blog de Marketing Digital
+          </a>
+        </h1>
+        <blockquote>
+          <div class="social-btns">
+            <a class="btn facebook" href="https://www.facebook.com/Bitnativo-443137372789482/"><i class="fa fa-facebook"></i></a>
+            <a class="btn twitter" href="https://twitter.com/bitnativo"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/company/bitnativo"><i class="fa fa-linkedin"></i></a>
+            <a class="btn google" href="https://plus.google.com/u/0/104787045732925536305"><i class="fa fa-google"></i></a>
+            <a href="https://www.instagram.com/bitnativo"><i class="fa fa-instagram"></i></a>
+<!--
+            <a class="btn skype" href="#"><i class="fa fa-skype"></i></a>
+-->
+        </div>
+        </blockquote>
+        {% block breadcrumbs %}{% endblock breadcrumbs %}
+      </header>
+      {% block slider %}{% endblock slider %}
+      <div id="content" class="hfeed" role="main">
+        {% block content %}
+        <div class="links">
+          <h2>{% trans "Links útiles" %}</h2>
+          <ul>
+            <li>
+              <a href="{% url 'zinnia:entry_archive_index' %}" title="{% trans "Weblog index" %}">
+                {% trans "Weblog index" %}
+              </a>
+            </li>
+            <li>
+              <a href="{% url 'zinnia:sitemap' %}" title="{% trans "Sitemap" %}">
+                {% trans "Sitemap" %}
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="search">
+          <h2>{% trans "Búsqueda" %}</h2>
+          {% include "zinnia/tags/search_form.html" %}
+        </div>
+        {% endblock content %}
+      </div>
+      <div id="sidebar" role="complementary">
+        {% block sidebar %}
+        {% endblock sidebar %}
+      </div>
+      <footer id="footer" role="contentinfo">
+        <p>{% blocktrans %}Construido en <a href="http://www.djangoproject.com">Django</a> y <a href="https://github.com/Fantomas42/django-blog-zinnia">Zinnia {{ ZINNIA_VERSION }}</a>.{% endblocktrans %}</p>
+      </footer>
+    </div>
+  </body>
+</html>
