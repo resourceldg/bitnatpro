@@ -17,3 +17,4 @@ bitnat/*.swp
 bitnat/*.pyc
 bitnat/*.save
 bitnat/*.save*
+localsettings.py
