@@ -5,3 +5,10 @@
 *.save*
 info.py
 info.pyc
+btn/*.pyc
+btn/*.py
+btn/*.save
+btn/*.save*
+bitnat/*.pyc
+bitnat/*.save
+bitnat/*.save*
