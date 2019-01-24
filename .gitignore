@@ -1,4 +1,7 @@
 *.pyc
 *.py
+*.save
+*.save
+*.save*
 info.py
 info.pyc
