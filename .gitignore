@@ -3,12 +3,17 @@
 *.save
 *.save
 *.save*
+*.swp
 info.py
 info.pyc
 btn/*.pyc
 btn/*.py
 btn/*.save
 btn/*.save*
+btn/*.save
+btn/*.swp
+btn/*.save
+bitnat/*.swp
 bitnat/*.pyc
 bitnat/*.save
 bitnat/*.save*
