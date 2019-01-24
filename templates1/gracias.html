@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang= "es-ES">
+<head>
+  <meta charset="utf-8">
+  <link rel="canonical" href="self.html" />
+  <meta name="viewport" content="width=device-width,minimum-scale=1">
+ <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <style>
+
+  html, body{
+  font-size: 100%;
+	background: url(/static/images/messagein.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	margin: 0;
+	padding-top: 0px;
+}
+
+
+    .conteiner input[type="submit"] {
+    border: none;
+    outline: none;
+    color: #333;
+    box-shadow:  0 0.5rem 1.5rem 0 rgba(9, 9, 9, 0.8);
+    background: color:rgb(84, 85, 99);
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 40px;
+    margin-bottom:30px;
+    margin-left:30px;
+     float:right;
+}
+
+
+    .gracias h2, p{
+        margin-top:25px;
+        font-family:'Cairo', sans-serif;
+        text-align:center;
+        margin-top:30px;
+         }
+    .gracias h2{
+
+       color:#023380;
+         }
+     .gracias p{
+        font-size:20px;
+        text-align:center;
+        margin-left:20px;
+        margin-right:20px;
+        font-weight: bold;
+        color:#000;
+
+        }
+
+
+    h1{
+         text-align:left;
+         text-shadow:2px 1px 3px  #000;
+        font-family:amarillo;
+        font-size:38px;
+        color:#fff;
+        line-height: 3;
+        margin-right:20px;
+
+        }
+@media screen and (max-width: 480px){
+
+
+    .gracias h2, p{
+        margin-top:5px;
+
+         }
+    .gracias h2{
+        margin-top:15px;
+        padding-left:30px;
+        padding-right:30px;
+
+         }
+     .gracias p{
+        font-size:18px;
+        text-align:center;
+
+        padding-bottom:30px;
+
+        }
+
+
+.gracias{
+
+        text-align:center;
+
+    }
+
+     h1{
+
+
+
+        font-size:25px;
+
+
+
+
+        }
+
+
+    }
+
+
+
+.gracias{
+    margin-top:35px;
+    text-align:center;
+
+    }
+.gracias h2{
+        margin-top:15px;
+        padding-left:30px;
+        padding-right:30px;
+
+         }
+
+.conteinerm {
+            display:flex;
+            flex-direction:row;
+            flex-wrap:wrap;
+            justify-content:flex-end;
+            align-items:center;
+}
+
+.conteiner{
+background:#fff;
+margin-top:30px;
+ max-width:400px;
+margin-bottom:100px;
+opacity: 0.6;
+  filter: alpha(opacity=10);
+
+  }
+
+
+.social-btns {
+
+
+    padding-top:10px;
+    padding-bottom:10px;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:space-around;
+   font-size:45px;
+   color:#fff;
+
+    }
+.social-btns i:hover{
+    color:#33cc33;
+    text-shadow:2px 1px 3px  #000;
+
+ }
+
+.social-btns i{
+    color:#000;
+    padding-top:30px;
+    padding-bottom:30px;
+ }
+
+.loca{
+
+    padding-bottom:70px;
+
+ }
+
+
+  </style>
+</head>
+<body>
+<div class = "conteinerm">
+ <h1>Gran decisión !!</h1>
+     <div class = "conteiner">
+<div class="loca">
+<a href="{% url 'inicio' %}"><input class = "btn_inicio" type="submit" value="volver"></a>	
+
+</div>
+
+        <div class = "gracias">
+
+                <h2>El proyecto para transformar tu empresa ya está en marcha.</h2>
+                <p> Tu consulta fue enviada con éxito, en breve recibirás una respuesta.
+                <br>Seguí todas las novedades en marketing digital y sustentabilidad en nuestras redes sociales</p>
+
+        </div>
+            <div class="social-btns">
+                    <a class="btn facebook" href="https://www.facebook.com/Bitnativo-443137372789482/"><i class="fa fa-facebook"></i></a>
+                    <a class="btn twitter" href="https://twitter.com/bitnativo"><i class="fa fa-twitter"></i></a>
+                    <a class="btn google" href="https://plus.google.com/u/0/104787045732925536305"><i class="fa fa-google"></i></a>
+                    <a class="btn instagram" href="https://www.instagram.com/bitnativo"><i class="fa fa-instagram"></i></a>
+            </div>
+
+    </div>
+
+</div>
+	
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+{% load i18n %}
+{% load staticfiles %}
+<form method="get" id="searchform" action="{% url 'zinnia:entry_search' %}">
+  <p>
+    <input type="text" name="pattern" id="searchbox" placeholder="{% trans "Buscar..." %}" {% if pattern %}value="{{ pattern }}"{% endif %} />
+    <input type="submit" class="submitbutton" value="OK" />
+    <a title="{% trans 'Puedes usar - para excluir palabras o frases, comillas dobles para frases exactas, operadores lógicos o paréntesis para consultas complejas' %}">
+      <img src="{% static "images/help.png" %}" alt="?" class="help" width="14" height="14" />
+    </a>
+  </p>
+</form>

@@ -1,0 +1,39 @@
+{% extends "zinnia/base.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "Solicitud de Login" %}{% endblock title %}
+
+{% block body-class %}login-required{% endblock body-class %}
+
+{% block content %}
+<h1>{% trans "Solicitud de Login" %}</h1>
+
+{% if form.errors %}
+<p class="error">
+  {% trans "Usuario no es correcto. Por favor intente una vez mas." %}
+</p>
+{% endif %}
+<p>
+  {% trans "Necesitas estar logeado para ver esta entrada." %}
+</p>
+
+<form method="post" action=".">
+  {% csrf_token %}
+  <table>
+    <tr>
+      <td>{{ form.username.label_tag }}</td>
+      <td>{{ form.username }}</td>
+    </tr>
+    <tr>
+      <td>{{ form.password.label_tag }}</td>
+      <td>{{ form.password }}</td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <input type="hidden" name="next" value="." />
+        <input type="submit" value="{% trans "Login" %}" />
+      </td>
+    </tr>
+  </table>
+</form>
+{% endblock content %}

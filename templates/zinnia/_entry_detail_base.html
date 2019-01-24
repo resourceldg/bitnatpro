@@ -21,7 +21,7 @@
         <a href="{{ author.get_absolute_url }}" class="fn url{% if not author.get_full_name %} nickname{% endif %}" rel="author"
            title="{% blocktrans %}Mostrar de {{ author }} las entradas {% endblocktrans %}" itemprop="url">{{ author }}</a></span>{% if not forloop.last %}, {% endif %}
       {% endfor %}
-      {% trans "on" context "on date" %}
+      {% trans "el " context "on date" %}
       {% else %}
       {% trans "Written on" context "on date" %}
       {% endif %}
@@ -90,6 +90,21 @@
     <div class="entry-content" itemprop="articleBody">
       {{ object_content|safe }}
     </div>
+      <div class="social">
+			<ul class="navi">
+					<li><a><i class="fa fa-share-alt"> </i> Compartir</a>
+    					    <ul>
+                					<li><a href="https://www.facebook.com/sharer/sharer.php?u={{ object.short_url }}" class="fa fa-facebook" target="_blank"></a></li>
+                					<li><a href="https://twitter.com/home?status=@bitnativo {{ object.title }}%20{{ object.short_url }}" class="fa fa-twitter" target="_blank"></a></li>
+                					<li><a href="https://www.linkedin.com/shareArticle?mini=true&url={{ object.short_url }}&title={{ object.title }}&summary={{ object.lead}}&source={{ object.get_absolute_url }}" class="fa fa-linkedin" target="_blank"></a></li>
+                					<li><a href="https://plus.google.com/share?url={{ object.short_url }}" class="fa fa-google" target="_blank"></a></li>
+                                                </ul>
+                                            </li>
+                       	</ul>
+      </div>
+
+
+
     {% endblock entry-content %}
 
     {% block continue-reading %}
@@ -98,7 +113,7 @@
       <a href="{{ object.get_absolute_url }}"
          title="{% blocktrans with object=object.title percent=object_content.remaining_percent|floatformat:0 %}{{ percent }}% of {{ object }} still remains to read.{% endblocktrans %}"
          rel="bookmark" itemprop="url">
-        {% trans "Continue reading" %}
+        {% trans "Continue reading" %} ..._ . _-  <i class="fa fa-rocket"></i>
       </a>
     </p>
     {% endif %}
@@ -121,6 +136,7 @@
       {% endfor %}
     </p>
     {% endblock entry-tags %}
+<!--
     {% block entry-shorturl %}
     <p class="entry-shorturl">
       <strong>{% trans "Url corta" %}</strong> :
@@ -131,6 +147,8 @@
       </a>
     </p>
     {% endblock entry-shorturl %}
+-->
+<!--
     {% block entry-discussions %}
     <p class="entry-discussions">
       <strong>{% trans "Discusión" %}</strong> :
@@ -174,8 +192,9 @@
       {% endif %}
       {% endwith %}
       {% endblock entry-trackbacks %}
-    </p>
+
     {% endblock entry-discussions %}
+-->
   </footer>
   {% endblock entry-footer %}
 </article>

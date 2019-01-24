@@ -1,0 +1,9 @@
+User-agent: *
+Crawl-delay: 86400
+Disallow: /admin/
+Disallow: /accounts/
+Disallow: /blog/search/
+Disallow: /blog/feeds/
+Allow: /
+
+Sitemap: http://bitnativo.com/sitemap.xml
