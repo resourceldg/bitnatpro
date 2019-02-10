@@ -32,6 +32,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119139710-1"></script>
@@ -59,7 +61,8 @@ p{
 }
 h1,h3{
 	margin:0;
-	font-family: 'Cairo', sans-serif;
+	font-family: Anton,Rubik,'Cairo', sans-serif;
+
 }
 
 
@@ -255,8 +258,7 @@ p {
 
 
 .con > form{
-   background:linear-gradient(90deg, #023380,#00a6dd);
-   border-radius:15px;
+  background-image: linear-gradient(to top,#ff8a00,#da1b60);
    margin-left:15px;
    margin-right:15px;
 
@@ -276,7 +278,7 @@ p {
      flex-wrap:wrap;
      justify-content:space-around;
      align-content:space-around;
-     margin-top:0px;
+     margin-top:10px;
 
 
     }
@@ -398,7 +400,7 @@ h3{
 
 .primera{
 
-background: #fff;
+background:#ffff;
 
 
 
@@ -406,15 +408,24 @@ background: #fff;
 }
 
 .con{
-     background: #fff;
+     background-image: linear-gradient(to top,#ff8a00,#da1b60);
      display:flex;
      flex-direction:column;
      flex-wrap:wrap;
      justify-content:center;
      align-content:center;
-     border-radius:15px;
 
-    }
+
+
+}
+
+.con background-image {
+    transform: translate(0,-350px);
+    -webkit-transform: translate(0,-350px);
+    -o-transform: translate(0,-350px);
+    -moz-transform: translate(0,-350px);
+
+}
 .inter{
 
     display:flex;
@@ -434,6 +445,7 @@ background: #fff;
 .masarriba h3{
 
  text-align:left;
+ max-width:500px;
 
 
     }
@@ -527,6 +539,7 @@ textarea{
     margin-left:10px;
 
 
+
     }
 
 .doss i{
@@ -539,15 +552,19 @@ textarea{
 .doss{
     display:inline;
     text-align:center;
-    }
+    margin-bottom:30px;
+    margin-left:10px;
+    margin-right:10px;    }
 
 h1 > .fuerte{
-     font-size:30px;
+     font-size:50px;
+     font-weight:300;
+
 
     }
 
 .fuerte{
- font-weight: bold;
+
  font-size:20px;
 
     }
@@ -645,7 +662,7 @@ h1 > .fuerte{
 
 
 h1{
-    color:#023380;
+    color:#00a6dd;
 
     }
 
@@ -667,6 +684,9 @@ h1{
 
     }
 
+.logo{
+    margin-top:20px;
+ }
 
 
 html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}*{box-sizing:border-box}body{font-family:Source Sans Pro,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif;min-width:100%;overflow-x:hidden;font-smooth:always;-webkit-font-smoothing:antialiased}body{line-height:1.6;letter-spacing:normal}a:active,a:visited{color:inherit}body{line-height:1.4} </style>
@@ -686,7 +706,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="primera">
 
                     <div class="arriba">
-                        <div><a href= "{% url 'inicio' %}"><img src="{% static 'images/logo1.png' %}" width ="60" height="44" alt="Logo bitnativo"></a></img></div>
+                        <div class="logo"><a href= "{% url 'inicio' %}"><img src="{% static 'images/frentelogo-min.png' %}" width ="150" height="30" alt="Logo bitnativo"></a></img></div>
                         <div class="dos"><i class="fa fa-send-o"></i><a> ventas@bitnativo.com</a></div>
                         <div class="dos"><i class="fa fa-whatsapp" ></i><a> +54-2236687453</a></div>
 
@@ -699,15 +719,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                     	
                             <form action-xhr="#contact" method="POST" target="_top">{% csrf_token %}
-                                     <div class="ribbon">
-                            <p>Asesoría Gratuita</p>
-                            <h3>En gestión de Redes sociales<br><span><i class="fa fa-chevron-down"></i></span></h3>
-                        </div>
+                                <div class="ribbon">
+                                    <p>Asesoría Gratuita</p>
+                                    <h3>Gestión de Redes sociales<br><span><i class="fa fa-chevron-down"></i></span></h3>
+                                </div>
 
 
 
                                         {{form.fnombre.errors}}
-                                        <input type="text" name="fnombre" placeholder="Nombre" ><br>
+                                        <!--<input type="text" name="fnombre" placeholder="Nombre" ><br>-->
 
                                         <input type="text" name="ftelefono" placeholder="Teléfono"><br>
 
@@ -717,14 +737,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     		        {{form.femail.errors}}
                                         <input type="email" name="femail" placeholder="E-mail"><br>
 
-                                        <input type="text" name="fempresa" placeholder="Web o Compañía"><br>
+                                        <!--<input type="text" name="fempresa" placeholder="Web o Compañía"><br>-->
 
 
 
                                           {{form.fmensaje.errors}}
-                                        <textarea name="fmensaje" placeholder="Algo que nos quieras decir..."></textarea>
+                                        <textarea name="fmensaje" placeholder="Algo que nos quieras decir...[OPCIONAL]"></textarea>
 
-                                         <div class="botonser"><input type="submit" value="Mi asesoría gratuita "></div>
+                                         <div class="botonser"><input type="submit" value="Reservar"></div>
                                           <div class="doss"><i class="fa fa-lock"></i><a>Cuidamos tus datos: Están protegidos.</a></div>
 
                             </form>
@@ -738,30 +758,30 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                          <div class="ni">
 
-                         <h1><span class="fuerte">Estrategias efectivas en redes sociales </span></h1>
-                         <p><span class="fuerte">¿Sabías que el valor de tu comunicación
-                          es proporcional al valor de tus ingresos?</span> <br>
-                          Ahora que lo sabés. Obtené tu primera <span class="fuerte">asesoría gratuita en redes sociales.</span>
-                          <br>Conocer el valor de tu mensaje y el contexto digital por el que transita te brindará información privilegiada en la toma de decisiones.
-                            Hoy no hay excusas para la difusión de una compañia innovadora, nosotros nos ocupamos de ello.
-                          </p>
+                             <h1><span class="fuerte">Efectividad en redes sociales </span></h1>
+                             <!--<p><span class="fuerte">¿Sabías que el valor de tu comunicación-->
+                              <!--es proporcional al valor de tus ingresos?</span> <br>-->
+                              <!--Ahora que lo sabés. Obtené tu primera <span class="fuerte">asesoría gratuita en redes sociales.</span>-->
+                              <!--<br>Conocer el valor de tu mensaje y el contexto digital por el que transita te brindará información privilegiada en la toma de decisiones.-->
+                                 <!--Hoy no hay excusas para la difusión de una compañia innovadora, nosotros nos ocupamos de ello.-->
+                              <!--</p>-->
 
                          </div>
 
 
                          <div class="inter">
                              <div class="uno"><i class="fa fa-check"></i></div>
-                             <h3>Aprendé como utilizar tus<span class="sub"> redes sociales para vender más y mejor</span>.</h3>
+                             <h3>Aprendé como utilizar tus redes sociales para vender más y mejor.</h3>
                          </div>
 
                          <div class="inter">
                              <div class="uno"><i class="fa fa-check"></i></div>
-                             <h3>Conocé soluciones de comunicación efectiva <span class="sub">100% a la medida</span> de tu empresa.</h3>
+                             <h3>Conocé soluciones de comunicación efectiva 100% a la medida de tu empresa.</h3>
                          </div>
 
                          <div class="inter">
                              <div class="uno"><i class="fa fa-check"></i></div>
-                             <h3><span class="sub">Mejorá tanto la rentabilidad como la calidad</span> de tu servicio o producto.</h3>
+                             <h3>Mejorá tanto la rentabilidad como la calidad de tu servicio o producto.</h3>
                          </div>
 
                          <div class="inter">
