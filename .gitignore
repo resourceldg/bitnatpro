@@ -4,8 +4,8 @@
 *.save
 *.save*
 *.swp
-info.py
-info.pyc
+btn/info.py
+btn/info.pyc
 btn/*.pyc
 btn/*.py
 btn/*.save
