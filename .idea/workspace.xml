@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ff52bc8-3fcf-44ac-bf87-4bba510751b5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitnat/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/bitnat/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/ventas-en-redes-sociales.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ventas-en-redes-sociales.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -67,8 +65,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/ventas-en-redes-sociales.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="723" column="41" selection-start-line="723" selection-start-column="41" selection-end-line="723" selection-end-column="41" />
+            <state relative-caret-position="199">
+              <caret line="690" column="23" lean-forward="true" selection-start-line="690" selection-start-column="23" selection-end-line="690" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -104,6 +102,7 @@
       <find>playa</find>
       <find>.con</find>
       <find>h1</find>
+      <find>dos</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -122,11 +121,11 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="10" />
-    <option name="y" value="45" />
-    <option name="width" value="1346" />
-    <option name="height" value="703" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="28" />
+    <option name="y" value="25" />
+    <option name="width" value="1338" />
+    <option name="height" value="698" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -194,10 +193,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="25" width="1368" height="744" extended-state="6" />
+    <frame x="28" y="25" width="1338" height="698" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24963397" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25523952" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -283,8 +282,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/ventas-en-redes-sociales.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="723" column="41" selection-start-line="723" selection-start-column="41" selection-end-line="723" selection-end-column="41" />
+        <state relative-caret-position="199">
+          <caret line="690" column="23" lean-forward="true" selection-start-line="690" selection-start-column="23" selection-end-line="690" selection-end-column="23" />
         </state>
       </provider>
     </entry>
