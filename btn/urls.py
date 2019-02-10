@@ -55,20 +55,12 @@ urlpatterns = [
 
     #bitnativo.com
 
-
-    url(r'^admin/', admin.site.urls),
-    url(r'^$', views.inicio, name='inicio'),
-    url(r'^contact/$', views.Contact.as_view(), name='Contact'),
-#    url(r'^sitemap/$', views.sitemap, name='sitemap'),
- #   url(r'^robots.txt/$', views.robots, name='robots'),
-
     
     url(r'^admin/', admin.site.urls),
     url(r'^$', views.inicio, name='inicio'),
     url(r'^contact/$', views.Contact.as_view(), name='Contact'),
     url(r'^sitemap/$', views.sitemap, name='sitemap'),
     url(r'^robots.txt/$', views.robots, name='robots'),
-
     url(r'^contact/gracias/$', views.gracias, name='gracias'),
     url(r'^ventas-en-redes-sociales/gracias/$', views.gracias, name='gracias'),#dry(dont repeat yourself): me estoy repitiendo (SOLUCION: APRENDER A USAR REGEX EN PATRONES URL)
     url(r'^negocios-digitales/gracias/$', views.gracias, name='gracias'),#dry(dont repeat yourself): me estoy repitiendo (SOLUCION: APRENDER A USAR REGEX EN PATRONES URL)
@@ -97,8 +89,7 @@ urlpatterns = [
 
 ]
 
-
-
 if settings.DEBUG==False:
     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+

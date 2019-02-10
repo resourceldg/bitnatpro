@@ -33,7 +33,7 @@ USE_X_FORWARDED_HOST = True
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['.bitnativo.com','168.181.185.152']
 
