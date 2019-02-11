@@ -233,6 +233,14 @@ p {
         font-size:20px;
         }
 
+         .arriba {
+         display:flex;
+         flex-direction:column;
+         flex-wrap:wrap;
+         justify-content:space-between;
+          align-content:space-between;
+     }
+
 }
 
 @media screen and (max-width: 600px) {
@@ -253,7 +261,14 @@ p {
         font-size:20px;
         }
 
+  .arriba {
+         display:flex;
+         flex-direction:column;
+         flex-wrap:wrap;
+         justify-content:center;
+         align-content:center;
 
+    }
 }
 
 @ms-viewport {
@@ -304,8 +319,9 @@ p {
 .masarriba{
     min-width:200px;
     display:flex;
-    flex-direction:row;
+    flex-direction:column;
     flex-wrap:wrap;
+    align-content:center;
 
 
     }
@@ -508,14 +524,37 @@ textarea{
      text-shadow: 3px 3px 3px #000;
     }
 
+.sel a {
 
+   font-size:26px;
+   font-weight:300;
+
+ }
+
+ .sel i {
+
+   font-size:46px;
+  color: #9c47fc;
+  background: -webkit-linear-gradient(#9c47fc, #356ad2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+
+ }
+
+ .sel {
+
+  margin-top:50px;
+  margin-left:50px;
+
+ }
 
 .dos i{
     margin-top:3px;
-    margin-bottom:3px;
+    margin-bottom:10px;
     font-size:20px;
     color:rgb(84, 85, 99);
-    margin-left:10px;
+
 
     }
 
@@ -534,7 +573,11 @@ textarea{
     padding-bottom:10px;
     font-size:20px;
     font-family:sans-serif;
-    margin-left: 50px;
+
+    padding-left:50px;
+    padding-right:50px;
+
+
     }
 .doss  a{
 
@@ -697,9 +740,19 @@ h1{
     }
 
 .logo{
-    margin-top:20px;
-    margin-right:100px;
+    margin-top:30px;
+    padding-left:50px;
+    padding-right:50px;
+
+
  }
+
+
+
+
+
+
+
 
 
 html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}*{box-sizing:border-box}body{font-family:Source Sans Pro,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif;min-width:100%;overflow-x:hidden;font-smooth:always;-webkit-font-smoothing:antialiased}body{line-height:1.6;letter-spacing:normal}a:active,a:visited{color:inherit}body{line-height:1.4} </style>
@@ -767,20 +820,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                     <div class="masarriba">
 
-                         <div class="launa">
-                         <h1 >Un placer asesorarte!</h1>
+                         <div class="launa"><h1 >Un placer asesorarte!</h1></div>
 
+                         <div id="myButton"></div>
+                         <div class="sel"><i class="fa fa-send"></i><a> info@bitnativo.com</a></div>
+                         <div class="sel"><i class="fa fa-phone" ></i><a> +54-2236687453</a></div>
+                         <div class="sel"><i class="fa fa-phone" ></i><a> +54-2235193258</a></div>
 
+                    </div>
 
-                             <div id="myButton"></div>
-
-                         </div>
-
-                          <!--<div class="doss1"><a href="https://wa.me/5492236687453?text=Hola!%20Quiero%20generar%20mas%20ventas!" target="_blank"><i class="fa fa-whatsapp"></i></a></div>-->
-
-
-                         
-                  </div>
                    <div class="clearfix"> </div>
 
                   <div class="medio">
@@ -798,7 +846,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     $(function () {
         $('#myButton').floatingWhatsApp({
             phone: '5492236687453',
-            popupMessage: 'Hola, por Whatsapp es mas rápido. Comenzamos a transformar tu empresa?',
+            popupMessage: 'Hola, Comenzamos a transformar tu empresa?',
             message: "Hola, tengo una gran idea...",
             showPopup: true,
             showOnIE: false,

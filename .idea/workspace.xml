@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="8ff52bc8-3fcf-44ac-bf87-4bba510751b5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static_pro/static/css/floating-wpp.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static_pro/static/css/floating-wpp.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/ventas-en-redes-sociales.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ventas-en-redes-sociales.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,7 +18,7 @@
         <entry file="file://$PROJECT_DIR$/btn/settings.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1860">
-              <caret line="125" lean-forward="true" selection-start-line="125" selection-end-line="125" />
+              <caret line="125" selection-start-line="125" selection-end-line="125" />
             </state>
           </provider>
         </entry>
@@ -35,8 +35,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/ventas-en-redes-sociales.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="11310">
-              <caret line="754" column="31" selection-start-line="754" selection-start-column="31" selection-end-line="754" selection-end-column="31" />
+            <state relative-caret-position="11655">
+              <caret line="777" column="31" selection-start-line="777" selection-start-column="31" selection-end-line="777" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -44,8 +44,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/contact.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="735" column="47" selection-start-line="735" selection-start-column="47" selection-end-line="735" selection-end-column="47" />
+            <state relative-caret-position="326">
+              <caret line="529" column="16" selection-start-line="529" selection-start-column="16" selection-end-line="529" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -54,7 +54,7 @@
         <entry file="file://$PROJECT_DIR$/static_pro/static/css/floating-wpp.min.css">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="1470" selection-start-column="1470" selection-end-column="1470" />
+              <caret column="927" selection-start-column="927" selection-end-column="927" />
             </state>
           </provider>
         </entry>
@@ -62,7 +62,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static_pro/static/css/floating-wpp.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
+            <state relative-caret-position="1440">
               <caret line="96" column="6" selection-start-line="96" selection-start-column="6" selection-end-line="96" selection-end-column="6" />
             </state>
           </provider>
@@ -71,7 +71,9 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/inicio.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-18728" />
+            <state relative-caret-position="161">
+              <caret line="365" column="65" lean-forward="true" selection-start-line="365" selection-end-line="365" selection-end-column="65" />
+            </state>
           </provider>
         </entry>
       </file>
@@ -122,6 +124,10 @@
       <find>doss</find>
       <find>DFE5E7</find>
       <find>masarriba</find>
+      <find>.floating-wpp .floating-wpp-popup.active</find>
+      <find>.arriba</find>
+      <find>.masarri</find>
+      <find>.sel</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -157,6 +163,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane" />
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -191,7 +198,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -282,7 +288,7 @@
     <entry file="file://$PROJECT_DIR$/btn/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1860">
-          <caret line="125" lean-forward="true" selection-start-line="125" selection-end-line="125" />
+          <caret line="125" selection-start-line="125" selection-end-line="125" />
         </state>
       </provider>
     </entry>
@@ -295,8 +301,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/ventas-en-redes-sociales.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="11310">
-          <caret line="754" column="31" selection-start-line="754" selection-start-column="31" selection-end-line="754" selection-end-column="31" />
+        <state relative-caret-position="11655">
+          <caret line="777" column="31" selection-start-line="777" selection-start-column="31" selection-end-line="777" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static_pro/static/css/floating-wpp.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1440">
+          <caret line="96" column="6" selection-start-line="96" selection-start-column="6" selection-end-line="96" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -317,29 +330,24 @@
     <entry file="file://$PROJECT_DIR$/bitnat/views.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/inicio.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-18728" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static_pro/static/css/floating-wpp.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="96" column="6" selection-start-line="96" selection-start-column="6" selection-end-line="96" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static_pro/static/css/floating-wpp.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="1470" selection-start-column="1470" selection-end-column="1470" />
+          <caret column="927" selection-start-column="927" selection-end-column="927" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/inicio.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="365" column="65" lean-forward="true" selection-start-line="365" selection-end-line="365" selection-end-column="65" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/contact.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="735" column="47" selection-start-line="735" selection-start-column="47" selection-end-line="735" selection-end-column="47" />
+        <state relative-caret-position="326">
+          <caret line="529" column="16" selection-start-line="529" selection-start-column="16" selection-end-line="529" selection-end-column="16" />
         </state>
       </provider>
     </entry>
