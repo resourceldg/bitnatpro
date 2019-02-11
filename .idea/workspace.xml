@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ff52bc8-3fcf-44ac-bf87-4bba510751b5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static_pro/static/css/floating-wpp.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static_pro/static/css/floating-wpp.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/ventas-en-redes-sociales.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ventas-en-redes-sociales.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,20 +31,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/ventas-en-redes-sociales.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="11655">
-              <caret line="777" column="31" selection-start-line="777" selection-start-column="31" selection-end-line="777" selection-end-column="31" />
+            <state relative-caret-position="312">
+              <caret line="821" column="70" selection-start-line="821" selection-start-column="70" selection-end-line="821" selection-end-column="70" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/contact.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="326">
-              <caret line="529" column="16" selection-start-line="529" selection-start-column="16" selection-end-line="529" selection-end-column="16" />
+            <state relative-caret-position="171">
+              <caret line="29" column="73" lean-forward="true" selection-start-line="25" selection-end-line="29" selection-end-column="73" />
             </state>
           </provider>
         </entry>
@@ -142,10 +141,10 @@
         <option value="$PROJECT_DIR$/btn/settings.py" />
         <option value="$PROJECT_DIR$/btn/localsettings.py" />
         <option value="$PROJECT_DIR$/bitnat/forms.py" />
-        <option value="$PROJECT_DIR$/templates/ventas-en-redes-sociales.html" />
         <option value="$PROJECT_DIR$/static_pro/static/css/floating-wpp.css" />
         <option value="$PROJECT_DIR$/static_pro/static/css/floating-wpp.min.css" />
         <option value="$PROJECT_DIR$/templates/contact.html" />
+        <option value="$PROJECT_DIR$/templates/ventas-en-redes-sociales.html" />
       </list>
     </option>
   </component>
@@ -299,13 +298,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/ventas-en-redes-sociales.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="11655">
-          <caret line="777" column="31" selection-start-line="777" selection-start-column="31" selection-end-line="777" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static_pro/static/css/floating-wpp.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1440">
@@ -346,8 +338,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/contact.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="529" column="16" selection-start-line="529" selection-start-column="16" selection-end-line="529" selection-end-column="16" />
+        <state relative-caret-position="171">
+          <caret line="29" column="73" lean-forward="true" selection-start-line="25" selection-end-line="29" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/ventas-en-redes-sociales.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="821" column="70" selection-start-line="821" selection-start-column="70" selection-end-line="821" selection-end-column="70" />
         </state>
       </provider>
     </entry>
